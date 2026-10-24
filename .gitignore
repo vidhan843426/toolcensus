@@ -1,0 +1,16 @@
+# Responsible-disclosure output: NEVER commit (ETHICS.md rule 5)
+private/
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+dist/
+build/
+*.sqlite
+.DS_Store
