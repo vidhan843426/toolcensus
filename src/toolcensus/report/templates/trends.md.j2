@@ -1,0 +1,28 @@
+# Ecosystem trends
+
+Live weekly observations{% if history %} plus backfilled history (reconstructed from past npm
+versions, marked as such){% endif %}.
+
+{% for chart in charts -%}
+![{{ chart.title }}](assets/charts/{{ chart.file }})
+{% endfor %}
+
+## All weekly aggregates
+
+| Week | {% for k in keys %}{{ k }} | {% endfor %}
+|---|{% for k in keys %}---|{% endfor %}
+{% for row in rows -%}
+| {{ row.week }} | {% for k in keys %}{{ fmt(row[k], '') }} | {% endfor %}
+{% endfor %}
+
+{% if history -%}
+## Backfilled tool-surface changes per month
+
+*Observed via backfill: past npm versions introspected with the same sandbox and rules.*
+
+| Month | Packages with a tool change | Change records |
+|---|---|---|
+{% for m in history -%}
+| {{ m.month }} | {{ m.packages }} | {{ m.changes }} |
+{% endfor %}
+{% endif %}

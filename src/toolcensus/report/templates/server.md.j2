@@ -1,0 +1,46 @@
+# `{{ rec.package.name | u }}`
+
+| | |
+|---|---|
+| Latest observed version | `{{ rec.package.version | u }}` |
+| Status | {{ rec.introspection.status.value }} |
+| Weekly downloads | {{ rec.package.weekly_downloads if rec.package.weekly_downloads is not none else '—' }} |
+| Protocol version | {{ (rec.introspection.protocol_version or '—') | u }} |
+| Registry entry | {{ (rec.package.registry_name or 'not listed') | u }} |
+| Surface hash | `{{ (rec.introspection.surface_hash or '—')[:23] }}` |
+
+{% if hints -%}
+!!! tip "Improvement hints"
+{% for h in hints %}    - {{ h }}
+{% endfor %}
+{% endif %}
+
+## Supply-chain signals
+
+{% if rec.supply_chain -%}
+| Signal | Value |
+|---|---|
+{% for k, v in rec.supply_chain.model_dump().items() -%}
+| `{{ k }}` | {{ v if v not in ([], None) else '—' }} |
+{% endfor %}
+{% else %}Not available.{% endif %}
+
+## Tools ({{ rec.introspection.tools | length }})
+
+{% if rec.introspection.tools -%}
+| Tool | Annotations | Required declared | additionalProperties false | Tool hash |
+|---|---|---|---|---|
+{% for t in rec.introspection.tools -%}
+| `{{ t.name | u }}` | {{ t.annotation_metrics.declared | dictsort | selectattr(1) | map(attribute=0) | join(', ') or '—' }} | {{ 'yes' if t.schema_metrics.declares_required else 'no' }} | {{ 'yes' if t.schema_metrics.additional_properties_false else 'no' }} | `{{ t.hashes.tool_hash[7:19] }}` |
+{% endfor %}
+{% else %}No tools observed{% if rec.introspection.error %} ({{ rec.introspection.error | u }}){% endif %}.{% endif %}
+
+## Change history
+
+{% if changes -%}
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+{% for c in changes -%}
+| {{ c.when }} | `{{ c.rec.from_version | u }}` → `{{ c.rec.to_version | u }}` | `{{ c.rec.tool | u }}` | {{ c.rec.change_type.value }}{% if c.rec.schema_change %} ({{ c.rec.schema_change.value }}){% endif %} | {{ c.rec.details | join('; ') | u(400) }} |
+{% endfor %}
+{% else %}No tool-definition changes observed.{% endif %}

@@ -1,0 +1,7 @@
+# Servers (week {{ week }})
+
+| Package | Version | Status | Tools | Downloads/week |
+|---|---|---|---|---|
+{% for r in records -%}
+| [`{{ r.package.name | u }}`]({{ slug(r.package.name) }}.md) | `{{ r.package.version | u }}` | {{ r.introspection.status.value }} | {{ r.introspection.tools | length }} | {{ r.package.weekly_downloads or '—' }} |
+{% endfor %}

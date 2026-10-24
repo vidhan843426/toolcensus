@@ -1,0 +1,24 @@
+# ToolCensus — MCP ecosystem health report
+
+*Week {{ week }} · methodology v{{ methodology_version }} · {{ agg.servers_measured }} servers measured*
+
+ToolCensus measures the **published metadata** of popular public MCP servers every week:
+supply-chain signals, how precisely tools are described, annotation adoption and how tool
+definitions change over time. These are neutral measurements, not security verdicts.
+
+## Headline numbers
+
+| Metric | This week |
+|---|---|
+{% for label, key, unit in headline -%}
+| {{ label }} | {{ fmt(agg[key], unit) }} |
+{% endfor %}
+
+## Trends
+
+{% for chart in charts -%}
+![{{ chart.title }}](assets/charts/{{ chart.file }})
+{% endfor %}
+
+See [Ecosystem trends](trends.md) for every metric, [Servers](servers/index.md) for per-server
+pages, and [Download](download.md) for the open dataset.
