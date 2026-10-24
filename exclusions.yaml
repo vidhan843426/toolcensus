@@ -1,0 +1,11 @@
+# Packages that match the population rule but are not MCP servers.
+# Every entry needs a reason; the list and reasons are recorded in each population.json.
+exclude:
+  - name: "@modelcontextprotocol/sdk"
+    reason: official TypeScript SDK (library)
+  - name: "@modelcontextprotocol/inspector"
+    reason: developer tool / client, not a server
+  - name: mcp-remote
+    reason: client-side bridge to remote servers, not a server itself
+  - name: fastmcp
+    reason: server framework (library)

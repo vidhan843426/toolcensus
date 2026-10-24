@@ -1,0 +1,19 @@
+{
+ "servers": [
+  {
+   "server": {
+    "name": "io.github.x/remote-only",
+    "version": "1.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://r.example.com"
+     }
+    ]
+   }
+  }
+ ],
+ "metadata": {
+  "count": 1
+ }
+}

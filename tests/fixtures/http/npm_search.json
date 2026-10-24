@@ -1,0 +1,84 @@
+{
+ "objects": [
+  {
+   "package": {
+    "name": "popular-mcp-server",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp",
+     "mcp-server"
+    ]
+   },
+   "downloads": {
+    "weekly": 5000,
+    "monthly": 20000
+   }
+  },
+  {
+   "package": {
+    "name": "mcp-client-lib",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp"
+    ]
+   },
+   "downloads": {
+    "weekly": 4000,
+    "monthly": 16000
+   }
+  },
+  {
+   "package": {
+    "name": "excluded-server",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp-server"
+    ]
+   },
+   "downloads": {
+    "weekly": 3000,
+    "monthly": 12000
+   }
+  },
+  {
+   "package": {
+    "name": "no-bin-mcp",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp-server"
+    ]
+   },
+   "downloads": {
+    "weekly": 2000,
+    "monthly": 8000
+   }
+  },
+  {
+   "package": {
+    "name": "gone-mcp-server",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp-server"
+    ]
+   },
+   "downloads": {
+    "weekly": 1000,
+    "monthly": 4000
+   }
+  },
+  {
+   "package": {
+    "name": "random-mcp-thing",
+    "version": "1.0.0",
+    "keywords": [
+     "mcp"
+    ]
+   },
+   "downloads": {
+    "weekly": 10,
+    "monthly": 40
+   }
+  }
+ ],
+ "total": 6
+}

@@ -1,0 +1,108 @@
+{
+ "popular-mcp-server": {
+  "name": "popular-mcp-server",
+  "dist-tags": {
+   "latest": "1.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "1.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "1.0.0": {
+    "name": "popular-mcp-server",
+    "version": "1.0.0",
+    "bin": {
+     "popular-mcp-server": "dist/index.js"
+    }
+   }
+  }
+ },
+ "mcp-client-lib": {
+  "name": "mcp-client-lib",
+  "dist-tags": {
+   "latest": "1.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "1.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "1.0.0": {
+    "name": "mcp-client-lib",
+    "version": "1.0.0",
+    "bin": "cli.js",
+    "dependencies": {
+     "@modelcontextprotocol/sdk": "1"
+    }
+   }
+  }
+ },
+ "excluded-server": {
+  "name": "excluded-server",
+  "dist-tags": {
+   "latest": "1.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "1.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "1.0.0": {
+    "name": "excluded-server",
+    "version": "1.0.0",
+    "bin": "x.js"
+   }
+  }
+ },
+ "no-bin-mcp": {
+  "name": "no-bin-mcp",
+  "dist-tags": {
+   "latest": "1.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "1.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "1.0.0": {
+    "name": "no-bin-mcp",
+    "version": "1.0.0"
+   }
+  }
+ },
+ "random-mcp-thing": {
+  "name": "random-mcp-thing",
+  "dist-tags": {
+   "latest": "1.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "1.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "1.0.0": {
+    "name": "random-mcp-thing",
+    "version": "1.0.0",
+    "bin": "x.js"
+   }
+  }
+ },
+ "@scope/registry-server": {
+  "name": "@scope/registry-server",
+  "dist-tags": {
+   "latest": "2.0.0"
+  },
+  "time": {
+   "created": "2026-01-01T00:00:00Z",
+   "2.0.0": "2026-10-01T00:00:00Z"
+  },
+  "versions": {
+   "2.0.0": {
+    "name": "@scope/registry-server",
+    "version": "2.0.0",
+    "bin": "server.js"
+   }
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "servers": [
+  {
+   "server": {
+    "name": "io.github.scope/registry-server",
+    "version": "2.0.0",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "@scope/registry-server",
+      "version": "2.0.0",
+      "transport": {
+       "type": "stdio"
+      },
+      "environmentVariables": [
+       {
+        "name": "API_KEY",
+        "isRequired": true
+       },
+       {
+        "name": "OPTIONAL"
+       }
+      ]
+     },
+     {
+      "registryType": "pypi",
+      "identifier": "py-thing",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ],
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://mcp.example.com/mcp"
+     },
+     {
+      "type": "sse",
+      "url": "http://insecure.example.com"
+     }
+    ]
+   },
+   "_meta": {}
+  }
+ ],
+ "metadata": {
+  "nextCursor": "c1",
+  "count": 1
+ }
+}
