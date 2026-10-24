@@ -1,0 +1,14 @@
+# Per-package launch overrides. Reviewed by a maintainer before merging.
+#
+#   packages:
+#     "<npm name>":
+#       bin: <bin name or relative path>      # which bin to start
+#       args: ["--stdio"]                     # extra arguments (safe characters only)
+#       env: {SOME_VAR: toolcensus-placeholder-not-a-real-secret}
+#                                             # placeholders ONLY; real values are rejected in code
+#       allow_install_scripts: false          # true only after review
+#
+# Every override used is recorded in the record's `launch.source` field.
+packages:
+  "@modelcontextprotocol/server-filesystem":
+    args: ["/tmp"]
