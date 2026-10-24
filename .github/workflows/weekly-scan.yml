@@ -1,0 +1,84 @@
+name: weekly-scan
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Monday 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      top:
+        description: Population size
+        default: "200"
+
+# Nothing is granted by default; each job asks for exactly what it needs (ETHICS.md rule 7).
+permissions: {}
+
+concurrency:
+  group: weekly-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    # Runs untrusted third-party packages (inside the sandbox). Read-only token, no secrets.
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: read
+    outputs:
+      week: ${{ steps.week.outputs.week }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+      - run: uv sync --locked
+      - id: week
+        run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+      - name: Discover population
+        env:
+          TOP: ${{ inputs.top || '200' }}
+        run: uv run toolcensus discover --top "$TOP" --week "${{ steps.week.outputs.week }}"
+      - name: Scan (sandboxed, metadata only)
+        run: uv run toolcensus scan --week "${{ steps.week.outputs.week }}" --concurrency 4
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: snapshot
+          path: data/snapshots/${{ steps.week.outputs.week }}/
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    # Never executes third-party package code: it only validates JSON, renders pages and commits.
+    needs: scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment: github-pages
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+      - run: uv sync --locked --extra site --extra dataset
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: snapshot
+          path: data/snapshots/${{ needs.scan.outputs.week }}/
+      - name: Validate before anything is committed
+        run: uv run toolcensus verify-data
+      - name: Build dataset and report
+        run: |
+          uv run toolcensus dataset
+          uv run toolcensus report --week "${{ needs.scan.outputs.week }}"
+      - name: Commit data
+        run: |
+          git config user.name "toolcensus-bot"
+          git config user.email "toolcensus-bot@users.noreply.github.com"
+          git add data/ site/docs/
+          git diff --cached --quiet || git commit -m "data: weekly scan ${{ needs.scan.outputs.week }}"
+          git push
+      - run: uv run mkdocs build -f site/mkdocs.yml
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: build/site
+      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

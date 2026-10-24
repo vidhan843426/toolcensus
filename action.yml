@@ -1,0 +1,37 @@
+# Reusable GitHub Action (phase 2): gate CI on MCP server tool-surface changes.
+#
+#   - uses: vidhan843426/toolcensus@<sha>
+#     with:
+#       package: "@modelcontextprotocol/server-filesystem@2025.12.18"
+#       baseline: .mcp/filesystem.toolcensus.json   # a committed `toolcensus check --json` output
+name: ToolCensus check
+description: Measure an npm MCP server (sandboxed, metadata only) and fail if its tool surface changed.
+inputs:
+  package:
+    description: npm package, optionally with @version
+    required: true
+  baseline:
+    description: Path to a reviewed `toolcensus check --json` record to compare against
+    required: false
+  sarif:
+    description: Write SARIF to this path (for github/codeql-action/upload-sarif)
+    required: false
+runs:
+  using: composite
+  steps:
+    - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+    - shell: bash
+      env:
+        PKG: ${{ inputs.package }}
+      run: uvx --from "${{ github.action_path }}" toolcensus check "$PKG" --json > "$RUNNER_TEMP/toolcensus-current.json"
+    - if: inputs.sarif != ''
+      shell: bash
+      env:
+        BASELINE: ${{ inputs.baseline }}
+        SARIF: ${{ inputs.sarif }}
+      run: uvx --from "${{ github.action_path }}" toolcensus diff "$BASELINE" "$RUNNER_TEMP/toolcensus-current.json" --format sarif > "$SARIF"
+    - if: inputs.baseline != ''
+      shell: bash
+      env:
+        BASELINE: ${{ inputs.baseline }}
+      run: uvx --from "${{ github.action_path }}" toolcensus diff "$BASELINE" "$RUNNER_TEMP/toolcensus-current.json" --fail-on-change
