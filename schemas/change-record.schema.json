@@ -1,0 +1,126 @@
+{
+  "$defs": {
+    "ChangeType": {
+      "enum": [
+        "tool_added",
+        "tool_removed",
+        "description_changed",
+        "input_schema_changed",
+        "output_schema_changed",
+        "annotations_changed",
+        "other_changed"
+      ],
+      "title": "ChangeType",
+      "type": "string"
+    },
+    "SchemaChangeKind": {
+      "enum": [
+        "schema_widened",
+        "schema_narrowed",
+        "schema_other"
+      ],
+      "title": "SchemaChangeKind",
+      "type": "string"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/vidhan843426/toolcensus/main/schemas/change-record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "change_type": {
+      "$ref": "#/$defs/ChangeType"
+    },
+    "details": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Details",
+      "type": "array"
+    },
+    "from_tool_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "From Tool Hash"
+    },
+    "from_version": {
+      "title": "From Version",
+      "type": "string"
+    },
+    "methodology_version": {
+      "default": "1.0.0",
+      "title": "Methodology Version",
+      "type": "string"
+    },
+    "package": {
+      "title": "Package",
+      "type": "string"
+    },
+    "scanned_at": {
+      "format": "date-time",
+      "title": "Scanned At",
+      "type": "string"
+    },
+    "schema_change": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SchemaChangeKind"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "to_tool_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "To Tool Hash"
+    },
+    "to_version": {
+      "title": "To Version",
+      "type": "string"
+    },
+    "tool": {
+      "title": "Tool",
+      "type": "string"
+    },
+    "tool_version": {
+      "default": "0.1.0",
+      "title": "Tool Version",
+      "type": "string"
+    },
+    "version_bumped": {
+      "title": "Version Bumped",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "package",
+    "from_version",
+    "to_version",
+    "version_bumped",
+    "tool",
+    "change_type"
+  ],
+  "title": "ChangeRecord",
+  "type": "object"
+}

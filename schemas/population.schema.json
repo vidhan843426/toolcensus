@@ -1,0 +1,131 @@
+{
+  "$defs": {
+    "ExcludedEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "reason"
+      ],
+      "title": "ExcludedEntry",
+      "type": "object"
+    },
+    "PopulationEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "registry_listed": {
+          "title": "Registry Listed",
+          "type": "boolean"
+        },
+        "registry_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registry Name"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "weekly_downloads": {
+          "title": "Weekly Downloads",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "weekly_downloads",
+        "registry_listed",
+        "sources"
+      ],
+      "title": "PopulationEntry",
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/vidhan843426/toolcensus/main/schemas/population.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "excluded": {
+      "items": {
+        "$ref": "#/$defs/ExcludedEntry"
+      },
+      "title": "Excluded",
+      "type": "array"
+    },
+    "methodology_version": {
+      "default": "1.0.0",
+      "title": "Methodology Version",
+      "type": "string"
+    },
+    "packages": {
+      "items": {
+        "$ref": "#/$defs/PopulationEntry"
+      },
+      "title": "Packages",
+      "type": "array"
+    },
+    "scanned_at": {
+      "format": "date-time",
+      "title": "Scanned At",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "selection_rule": {
+      "title": "Selection Rule",
+      "type": "string"
+    },
+    "tool_version": {
+      "default": "0.1.0",
+      "title": "Tool Version",
+      "type": "string"
+    },
+    "top_n": {
+      "title": "Top N",
+      "type": "integer"
+    },
+    "week": {
+      "title": "Week",
+      "type": "string"
+    }
+  },
+  "required": [
+    "week",
+    "selection_rule",
+    "top_n",
+    "packages"
+  ],
+  "title": "Population",
+  "type": "object"
+}

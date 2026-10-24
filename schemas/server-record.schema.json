@@ -1,0 +1,631 @@
+{
+  "$defs": {
+    "AnnotationMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "declared": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "title": "Declared",
+          "type": "object"
+        },
+        "has_any": {
+          "title": "Has Any",
+          "type": "boolean"
+        },
+        "side_effect_unannotated": {
+          "title": "Side Effect Unannotated",
+          "type": "boolean"
+        },
+        "side_effect_verb": {
+          "title": "Side Effect Verb",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "declared",
+        "has_any",
+        "side_effect_verb",
+        "side_effect_unannotated"
+      ],
+      "title": "AnnotationMetrics",
+      "type": "object"
+    },
+    "DescriptionMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "invisible_categories": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Invisible Categories",
+          "type": "object"
+        },
+        "invisible_char_count": {
+          "title": "Invisible Char Count",
+          "type": "integer"
+        },
+        "length": {
+          "title": "Length",
+          "type": "integer"
+        },
+        "markup_tag_count": {
+          "title": "Markup Tag Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "length",
+        "invisible_char_count",
+        "markup_tag_count"
+      ],
+      "title": "DescriptionMetrics",
+      "type": "object"
+    },
+    "Introspection": {
+      "additionalProperties": false,
+      "properties": {
+        "capabilities": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Capabilities"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        },
+        "launch": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LaunchInfo"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "prompts": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Prompts",
+          "type": "array"
+        },
+        "protocol_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Protocol Version"
+        },
+        "resource_templates": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Resource Templates",
+          "type": "array"
+        },
+        "resources": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Resources",
+          "type": "array"
+        },
+        "server_info": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Server Info"
+        },
+        "status": {
+          "$ref": "#/$defs/Status"
+        },
+        "surface_hash": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surface Hash"
+        },
+        "timings_ms": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Timings Ms",
+          "type": "object"
+        },
+        "tools": {
+          "items": {
+            "$ref": "#/$defs/ToolRecord"
+          },
+          "title": "Tools",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "Introspection",
+      "type": "object"
+    },
+    "LaunchInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Command",
+          "type": "array"
+        },
+        "install_scripts_ran": {
+          "default": false,
+          "title": "Install Scripts Ran",
+          "type": "boolean"
+        },
+        "placeholder_env": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Placeholder Env",
+          "type": "array"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "command"
+      ],
+      "title": "LaunchInfo",
+      "type": "object"
+    },
+    "ObservedVia": {
+      "enum": [
+        "weekly_scan",
+        "backfill",
+        "check"
+      ],
+      "title": "ObservedVia",
+      "type": "string"
+    },
+    "PackageInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "ecosystem": {
+          "default": "npm",
+          "title": "Ecosystem",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Published At"
+        },
+        "registry_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registry Name"
+        },
+        "repository_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repository Url"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "weekly_downloads": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weekly Downloads"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "title": "PackageInfo",
+      "type": "object"
+    },
+    "SchemaMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "additional_properties_false": {
+          "title": "Additional Properties False",
+          "type": "boolean"
+        },
+        "constrained_string_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Constrained String Ratio"
+        },
+        "declares_required": {
+          "title": "Declares Required",
+          "type": "boolean"
+        },
+        "has_input_schema": {
+          "title": "Has Input Schema",
+          "type": "boolean"
+        },
+        "has_output_schema": {
+          "title": "Has Output Schema",
+          "type": "boolean"
+        },
+        "property_count": {
+          "title": "Property Count",
+          "type": "integer"
+        },
+        "typed_property_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Typed Property Ratio"
+        }
+      },
+      "required": [
+        "has_input_schema",
+        "declares_required",
+        "additional_properties_false",
+        "property_count",
+        "typed_property_ratio",
+        "constrained_string_ratio",
+        "has_output_schema"
+      ],
+      "title": "SchemaMetrics",
+      "type": "object"
+    },
+    "ServerSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "all_tools_annotated": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "All Tools Annotated"
+        },
+        "annotated_tool_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Annotated Tool Ratio"
+        },
+        "side_effect_unannotated_count": {
+          "title": "Side Effect Unannotated Count",
+          "type": "integer"
+        },
+        "tool_count": {
+          "title": "Tool Count",
+          "type": "integer"
+        },
+        "tools_with_invisible_chars": {
+          "title": "Tools With Invisible Chars",
+          "type": "integer"
+        },
+        "tools_with_markup": {
+          "title": "Tools With Markup",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "tool_count",
+        "all_tools_annotated",
+        "annotated_tool_ratio",
+        "side_effect_unannotated_count",
+        "tools_with_invisible_chars",
+        "tools_with_markup"
+      ],
+      "title": "ServerSummary",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "ok",
+        "timeout",
+        "crashed",
+        "requires_configuration",
+        "install_failed",
+        "not_mcp"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "SupplyChainMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "direct_dependency_count": {
+          "title": "Direct Dependency Count",
+          "type": "integer"
+        },
+        "has_install_scripts": {
+          "title": "Has Install Scripts",
+          "type": "boolean"
+        },
+        "has_provenance": {
+          "title": "Has Provenance",
+          "type": "boolean"
+        },
+        "install_scripts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Install Scripts",
+          "type": "array"
+        },
+        "maintainer_count": {
+          "title": "Maintainer Count",
+          "type": "integer"
+        },
+        "median_days_between_releases": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Median Days Between Releases"
+        },
+        "registry_listed": {
+          "title": "Registry Listed",
+          "type": "boolean"
+        },
+        "releases_last_90d": {
+          "title": "Releases Last 90D",
+          "type": "integer"
+        },
+        "repo_linked": {
+          "title": "Repo Linked",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "has_provenance",
+        "has_install_scripts",
+        "direct_dependency_count",
+        "maintainer_count",
+        "releases_last_90d",
+        "median_days_between_releases",
+        "repo_linked",
+        "registry_listed"
+      ],
+      "title": "SupplyChainMetrics",
+      "type": "object"
+    },
+    "ToolHashes": {
+      "additionalProperties": false,
+      "properties": {
+        "annotations_hash": {
+          "title": "Annotations Hash",
+          "type": "string"
+        },
+        "description_hash": {
+          "title": "Description Hash",
+          "type": "string"
+        },
+        "input_schema_hash": {
+          "title": "Input Schema Hash",
+          "type": "string"
+        },
+        "output_schema_hash": {
+          "title": "Output Schema Hash",
+          "type": "string"
+        },
+        "tool_hash": {
+          "title": "Tool Hash",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tool_hash",
+        "description_hash",
+        "input_schema_hash",
+        "output_schema_hash",
+        "annotations_hash"
+      ],
+      "title": "ToolHashes",
+      "type": "object"
+    },
+    "ToolRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "annotation_metrics": {
+          "$ref": "#/$defs/AnnotationMetrics"
+        },
+        "definition": {
+          "additionalProperties": true,
+          "title": "Definition",
+          "type": "object"
+        },
+        "description_metrics": {
+          "$ref": "#/$defs/DescriptionMetrics"
+        },
+        "hashes": {
+          "$ref": "#/$defs/ToolHashes"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "redacted": {
+          "default": false,
+          "title": "Redacted",
+          "type": "boolean"
+        },
+        "schema_metrics": {
+          "$ref": "#/$defs/SchemaMetrics"
+        }
+      },
+      "required": [
+        "name",
+        "definition",
+        "hashes",
+        "schema_metrics",
+        "annotation_metrics",
+        "description_metrics"
+      ],
+      "title": "ToolRecord",
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/vidhan843426/toolcensus/main/schemas/server-record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "introspection": {
+      "$ref": "#/$defs/Introspection"
+    },
+    "methodology_version": {
+      "default": "1.0.0",
+      "title": "Methodology Version",
+      "type": "string"
+    },
+    "observed_via": {
+      "$ref": "#/$defs/ObservedVia"
+    },
+    "package": {
+      "$ref": "#/$defs/PackageInfo"
+    },
+    "scanned_at": {
+      "format": "date-time",
+      "title": "Scanned At",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ServerSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "supply_chain": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SupplyChainMetrics"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "tool_version": {
+      "default": "0.1.0",
+      "title": "Tool Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "observed_via",
+    "package",
+    "introspection"
+  ],
+  "title": "ServerRecord",
+  "type": "object"
+}
