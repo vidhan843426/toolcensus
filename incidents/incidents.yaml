@@ -1,0 +1,49 @@
+# Publicly documented, already-disclosed MCP ecosystem incidents used by `toolcensus backtest`.
+#
+# Rules (ETHICS.md): only incidents that are public AND resolved/disclosed; neutral one-line
+# descriptions; links to public references only; never exploit details.
+# `split: holdout` incidents must not be used when designing or tuning metrics.
+# Ranges were checked against the GitHub Advisory Database and the npm registry on 2026-10-24.
+
+incidents:
+  - id: GHSA-q66q-fx2p-7w4m
+    package: "@modelcontextprotocol/server-filesystem"
+    affected_versions: ["2025.1.14", "2025.3.28"]
+    disclosed: 2025-07-01
+    kind: vulnerability
+    description: Path validation could be bypassed via a directory prefix match (CVE-2025-53109); fixed in 2025.7.1.
+    references:
+      - https://github.com/advisories/GHSA-q66q-fx2p-7w4m
+    split: dev
+
+  - id: GHSA-hc55-p739-j48w
+    package: "@modelcontextprotocol/server-filesystem"
+    affected_versions: ["2025.1.14", "2025.3.28"]
+    disclosed: 2025-07-01
+    kind: vulnerability
+    description: Path validation could be bypassed via symbolic links (CVE-2025-53110); fixed in 2025.7.1.
+    references:
+      - https://github.com/advisories/GHSA-hc55-p739-j48w
+    split: holdout
+
+  - id: GHSA-6xpm-ggf7-wc3p
+    package: mcp-remote
+    affected_versions: ["0.0.5", "0.0.6", "0.0.7", "0.0.8", "0.0.9", "0.0.10"]
+    disclosed: 2025-07-09
+    kind: vulnerability
+    description: OS command injection when connecting to an untrusted MCP server (CVE-2025-6514); fixed in 0.1.16.
+    references:
+      - https://github.com/advisories/GHSA-6xpm-ggf7-wc3p
+    split: dev
+
+  - id: NPM-postmark-mcp-2025-09
+    package: postmark-mcp
+    affected_versions: ["1.0.16", "1.0.17", "1.0.18"]
+    disclosed: 2025-09-25
+    kind: malicious_release
+    description: >-
+      Releases from 1.0.16 were publicly reported to add a hidden BCC recipient to outgoing
+      email; all versions were unpublished from npm on 2025-09-25.
+    references:
+      - https://registry.npmjs.org/postmark-mcp
+    split: holdout
