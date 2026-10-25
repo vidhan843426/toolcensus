@@ -119,3 +119,4 @@ async def test_unicode_fixture_is_redacted_and_routed_privately(tmp_path: Path) 
 def test_config_hint() -> None:
     assert looks_like_config_error("Please set the OPENAI_API_KEY")
     assert not looks_like_config_error("Segmentation fault")
+    assert looks_like_config_error("PandaError: Cannot find config file `panda.config.ts`")

@@ -29,7 +29,8 @@ _STDERR_TAIL = 4096
 _CONFIG_HINT = re.compile(
     r"api[_ -]?key|access[_ -]?token|\btoken\b|environment variable|env(?:ironment)? var|"
     r"is required|must be (?:set|provided)|missing required|not set|credential|"
-    r"unauthori[sz]ed|no such file or directory.*config",
+    r"unauthori[sz]ed|no such file or directory.*config|"
+    r"cannot find (?:a |the )?config|config(?:uration)? file (?:not found|missing|is required)",
     re.IGNORECASE,
 )
 
