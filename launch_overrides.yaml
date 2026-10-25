@@ -8,7 +8,16 @@
 #                                             # placeholders ONLY; real values are rejected in code
 #       allow_install_scripts: false          # true only after review
 #
+# Without an entry, literal `packageArguments` from the package's MCP Registry entry are used.
 # Every override used is recorded in the record's `launch.source` field.
 packages:
   "@modelcontextprotocol/server-filesystem":
     args: ["/tmp"]
+  # Registry entry io.github.firebase/firebase-mcp lists `mcp` under runtimeArguments (meant for
+  # the launcher, e.g. npx) instead of packageArguments; the server is started with `firebase mcp`.
+  firebase-tools:
+    args: ["mcp"]
+  # Ships a native .NET binary; the slim base image has no ICU, so .NET needs invariant mode.
+  "@azure/mcp":
+    args: ["server", "start"]
+    env: {DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "1"}
