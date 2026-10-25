@@ -24,10 +24,39 @@ app = typer.Typer(
 )
 
 DataDir = Annotated[Path, typer.Option("--data", help="Data directory.")]
+KeepSandboxes = Annotated[
+    bool,
+    typer.Option(
+        "--keep-sandboxes",
+        help="Keep each server's downloaded install after measuring it (debugging; uses disk).",
+    ),
+]
 
 
 def _settings(**kw: object) -> Settings:
     return Settings(**kw)  # type: ignore[arg-type]
+
+
+def _with_sandbox(
+    settings: Settings, *, timeout: float | None = None, keep: bool = False
+) -> Settings:
+    from dataclasses import replace
+
+    sandbox = replace(settings.sandbox, keep_sandboxes=keep)
+    if timeout is not None:
+        sandbox = replace(sandbox, timeout_s=timeout)
+    return replace(settings, sandbox=sandbox)
+
+
+def _sweep(settings: Settings, *, quiet: bool = False) -> None:
+    """Remove anything a run left on disk, including after Ctrl-C or a crash."""
+    if settings.sandbox.keep_sandboxes:
+        return
+    from toolcensus.sandbox.docker import DockerRunner
+
+    removed = asyncio.run(DockerRunner(settings.sandbox).clean())
+    if removed and not quiet:
+        typer.echo(f"cleaned up {', '.join(removed)}", err=True)
 
 
 def _this_week() -> str:
@@ -104,10 +133,9 @@ def scan(
     timeout: Annotated[float, typer.Option(help="Per-server wall-clock limit (s).")] = 60.0,
     data: DataDir = Path("data"),
     overrides: Path = Path("launch_overrides.yaml"),
+    keep_sandboxes: KeepSandboxes = False,
 ) -> None:
     """Introspect every server in the population (sandboxed) and write the week's snapshot + diffs."""
-    from dataclasses import replace
-
     from toolcensus.diff.engine import diff_snapshots, drift_without_bump
     from toolcensus.discovery.http import CachedHttp
     from toolcensus.discovery.registry import registry_npm_index
@@ -115,8 +143,7 @@ def scan(
     from toolcensus.sandbox.docker import DockerRunner
     from toolcensus.storage.snapshots import SnapshotStore
 
-    settings = _settings(data_dir=data)
-    settings = replace(settings, sandbox=replace(settings.sandbox, timeout_s=timeout))
+    settings = _with_sandbox(_settings(data_dir=data), timeout=timeout, keep=keep_sandboxes)
     _require_engine(settings)
     store = SnapshotStore(data)
     wk = week or _this_week()
@@ -138,7 +165,10 @@ def scan(
             typer.echo(f"scanning {len(pop.packages)} servers (concurrency {concurrency})")
             return await scan_population(ctx, pop, concurrency=concurrency, progress=_progress)
 
-    records = asyncio.run(run())
+    try:
+        records = asyncio.run(run())
+    finally:
+        _sweep(settings)
     path = store.write_servers(wk, records)
     prev = store.previous_week(wk)
     changes = diff_snapshots(store.read_servers(prev), records) if prev else []
@@ -163,6 +193,7 @@ def backfill(
     package: Annotated[list[str] | None, typer.Option(help="Only these packages.")] = None,
     data: DataDir = Path("data"),
     overrides: Path = Path("launch_overrides.yaml"),
+    keep_sandboxes: KeepSandboxes = False,
 ) -> None:
     """Introspect past versions (oldest to newest) into data/backfill/. Resumable."""
     from toolcensus.discovery.http import CachedHttp
@@ -171,7 +202,7 @@ def backfill(
     from toolcensus.sandbox.docker import DockerRunner
     from toolcensus.storage.snapshots import SnapshotStore
 
-    settings = _settings(data_dir=data)
+    settings = _with_sandbox(_settings(data_dir=data), keep=keep_sandboxes)
     _require_engine(settings)
     store = SnapshotStore(data)
     if package:
@@ -214,7 +245,11 @@ def backfill(
                     typer.echo(f"  skipped: {exc}")
         return total
 
-    typer.echo(f"{asyncio.run(run())} historical versions introspected -> {store.backfill}")
+    try:
+        total = asyncio.run(run())
+    finally:
+        _sweep(settings)
+    typer.echo(f"{total} historical versions introspected -> {store.backfill}")
 
 
 @app.command()
@@ -314,10 +349,9 @@ def check(
     as_json: Annotated[bool, typer.Option("--json", help="Emit the full record as JSON.")] = False,
     timeout: float = 60.0,
     overrides: Path = Path("launch_overrides.yaml"),
+    keep_sandboxes: KeepSandboxes = False,
 ) -> None:
     """Measure one npm MCP server locally, with the same sandbox and allowlist as the weekly scan."""
-    from dataclasses import replace
-
     from toolcensus.discovery import npm
     from toolcensus.discovery.http import CachedHttp
     from toolcensus.discovery.registry import registry_npm_index
@@ -325,8 +359,7 @@ def check(
     from toolcensus.privacy import NullSink
     from toolcensus.sandbox.docker import DockerRunner
 
-    settings = _settings()
-    settings = replace(settings, sandbox=replace(settings.sandbox, timeout_s=timeout))
+    settings = _with_sandbox(_settings(), timeout=timeout, keep=keep_sandboxes)
     _require_engine(settings)
     name, _, ver = (
         package.rpartition("@")
@@ -356,11 +389,37 @@ def check(
         typer.echo(
             f"building sandbox for {package} (install has network; run has none)...", err=True
         )
-    rec = asyncio.run(run())
+    try:
+        rec = asyncio.run(run())
+    finally:
+        _sweep(settings, quiet=as_json)
     if as_json:
         typer.echo(rec.model_dump_json(indent=2))
     else:
         _print_summary(rec)
+
+
+@app.command()
+def clean(
+    all_: Annotated[
+        bool,
+        typer.Option("--all", help="Also remove the node base image (re-downloaded next run)."),
+    ] = False,
+    cache: Annotated[
+        bool, typer.Option("--cache", help="Also delete the HTTP cache of npm/registry responses.")
+    ] = False,
+) -> None:
+    """Delete everything scans downloaded: sandbox containers, install volumes, old images."""
+    from toolcensus.sandbox.docker import DockerRunner
+
+    settings = _settings()
+    removed: list[str] = []
+    if shutil.which(settings.sandbox.engine):
+        removed = asyncio.run(DockerRunner(settings.sandbox).clean(base_image=all_))
+    if cache and settings.http.cache_dir.exists():
+        shutil.rmtree(settings.http.cache_dir)
+        removed.append(f"HTTP cache ({settings.http.cache_dir})")
+    typer.echo(f"removed {', '.join(removed)}" if removed else "nothing to clean")
 
 
 @app.command("check-local")

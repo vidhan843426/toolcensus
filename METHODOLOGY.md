@@ -49,23 +49,27 @@ install, not the long tail.
 
 Implemented in `src/toolcensus/sandbox/` and `src/toolcensus/introspect/`.
 
-1. **Build** (network on): a container image is built from `node:22-slim`, pinned by digest, and
-   the exact package version is installed with `npm install --omit=dev --ignore-scripts`. Install
-   scripts stay off unless a reviewed entry in `launch_overrides.yaml` turns them on, and records
-   say whether they ran (`launch.install_scripts_ran`).
-2. **Run** (network off): the package's `bin` is started with `node` inside a container with
-   `--network none`, a read-only root filesystem (only a tmpfs at `/tmp` is writable), uid 10001,
-   `--cap-drop ALL`, `no-new-privileges`, 1 CPU, 512 MB of memory, 256 PIDs, and a 60 s wall-clock
-   limit.
-3. **Environment:** no host variables are passed. If the MCP Registry lists required environment
+1. **Install** (network on): a throwaway container from `node:22-slim`, pinned by digest, installs
+   the exact package version into a fresh Docker volume with
+   `npm install --omit=dev --ignore-scripts` (capabilities dropped, read-only root filesystem).
+   Install scripts stay off unless a reviewed entry in `launch_overrides.yaml` turns them on, and
+   records say whether they ran (`launch.install_scripts_ran`).
+2. **Run** (network off): the package's `bin` is started with `node` from the volume, mounted
+   read-only, inside a container with `--network none`, a read-only root filesystem (only a tmpfs
+   at `/tmp` is writable), uid 10001, `--cap-drop ALL`, `no-new-privileges`, 1 CPU, 512 MB of
+   memory, 256 PIDs, and a 60 s wall-clock limit.
+3. **Cleanup:** the volume is deleted as soon as the server has been measured, whatever the
+   outcome, and each run ends by sweeping any labelled leftovers (for example after Ctrl-C).
+   Nothing a scan downloads stays on disk; `toolcensus clean` removes leftovers on demand.
+4. **Environment:** no host variables are passed. If the MCP Registry lists required environment
    variables, they are set to the literal placeholder `toolcensus-placeholder-not-a-real-secret`.
    Their names are recorded in `launch.placeholder_env`.
-4. **Handshake** (allowlisted client): `initialize` → `notifications/initialized` → `tools/list` →
+5. **Handshake** (allowlisted client): `initialize` → `notifications/initialized` → `tools/list` →
    `prompts/list` and `resources/list` + `resources/templates/list` (only if the server declares
    those capabilities). `nextCursor` pagination is followed, up to 100 pages, and stops if a
    cursor repeats. The client offers protocol version `2025-11-25` and declares no capabilities.
    It declines every request the server sends to the client (sampling, roots, elicitation).
-5. **Status** (exactly one per record):
+6. **Status** (exactly one per record):
 
 | Status | Meaning |
 |---|---|

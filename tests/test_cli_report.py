@@ -10,6 +10,7 @@ import pytest
 from typer.testing import CliRunner
 
 from toolcensus.cli import app
+from toolcensus.config import Settings
 from toolcensus.diff.engine import diff_snapshots
 from toolcensus.models import Population, PopulationEntry
 from toolcensus.privacy import PrivateSink
@@ -224,3 +225,18 @@ def test_weeks_and_loading(tmp_path: Path) -> None:
     assert load_records(tmp_path / "missing.jsonl") == []
     write_schemas(tmp_path / "s")
     assert "no data yet" in line_chart("t", ["a"], [None])
+
+
+def test_clean_command(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr("toolcensus.cli.shutil.which", lambda _: None)
+    assert "nothing to clean" in runner.invoke(app, ["clean"]).output
+    cache = tmp_path / "cache"
+    (cache / "x").mkdir(parents=True)
+    monkeypatch.setenv("TOOLCENSUS_CACHE", str(cache))
+    from toolcensus.config import HttpSettings
+
+    monkeypatch.setattr(
+        "toolcensus.cli._settings", lambda **kw: Settings(http=HttpSettings(cache_dir=cache))
+    )
+    res = runner.invoke(app, ["clean", "--cache"])
+    assert res.exit_code == 0 and "HTTP cache" in res.output and not cache.exists()

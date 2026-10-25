@@ -202,6 +202,7 @@ and proven by tests**, not just written down:
 |---|---|
 | 🚫 **Never calls a tool** | The MCP client sends messages through one choke point with an allowlist of 6 metadata methods. It has no `call_tool` code at all. Tests try *every* method defined in the official SDK and check the wire to confirm nothing else is sent. |
 | 📦 **Sandboxed** | Install (with network) and run (with `--network none`) are separate steps. At run time: read-only root filesystem, non-root user, `--cap-drop ALL`, `no-new-privileges`, CPU/memory/PID limits, 60 s hard timeout. Integration tests prove outbound connections fail. |
+| 🧹 **Leaves nothing behind** | Each server is installed into a throwaway Docker volume that is deleted right after it is measured, so scans don't fill your disk. `toolcensus clean` removes anything an interrupted run left (`--all` also drops the base image, `--cache` the HTTP cache). |
 | 🔑 **No secrets, ever** | Host environment variables are never forwarded. Required config gets an obvious placeholder (`toolcensus-placeholder-not-a-real-secret`). Anything else is rejected in code. |
 | 🤝 **Responsible disclosure** | Anything that might need private handling is written only to a git-ignored `private/` directory. A test checks that none of it leaks into the site or the dataset. |
 | 🌐 **Polite to upstream** | Official APIs only, an identifying User-Agent, caching with conditional requests, rate limiting, `Retry-After`, exponential backoff. |
@@ -255,6 +256,7 @@ flowchart LR
 | `toolcensus report [--week YYYY-WW]` | Generate the static site (MkDocs) from committed data |
 | `toolcensus dataset [--sqlite F]` | Export flat CSV / Parquet / SQLite tables |
 | `toolcensus verify-data` | Validate every data file against the JSON Schemas |
+| `toolcensus clean [--all] [--cache]` | Delete everything scans downloaded (sandbox volumes, containers, old images) |
 | `toolcensus schemas [--check]` | Regenerate (or check) the published JSON Schemas |
 
 ---
