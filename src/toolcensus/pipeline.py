@@ -36,6 +36,7 @@ from toolcensus.models import (
 )
 from toolcensus.privacy import PrivateSink
 from toolcensus.sandbox.runner import (
+    PLACEHOLDER,
     InstallFailedError,
     SandboxError,
     SandboxRunner,
@@ -112,14 +113,17 @@ async def introspect_version(
 
     try:
         spec = resolve_launch(
-            doc, overrides=ctx.overrides, required_env=reg.required_env if reg else ()
+            doc,
+            overrides=ctx.overrides,
+            required_env=reg.required_env if reg else (),
+            registry_args=reg.package_args if reg else (),
         )
     except SandboxError as exc:
         return record(Introspection(status=Status.NOT_MCP, error=str(exc)))
     launch = LaunchInfo(
         source=spec.source,
         command=["node", f"node_modules/{spec.package}/{spec.bin_path}", *spec.args],
-        placeholder_env=sorted(spec.env),
+        placeholder_env=sorted(k for k, v in spec.env.items() if v.startswith(PLACEHOLDER)),
         install_scripts_ran=spec.allow_install_scripts,
     )
     try:

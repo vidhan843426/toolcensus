@@ -21,6 +21,8 @@ class RegistryPackage:
     package: str
     version: str | None
     required_env: tuple[str, ...]
+    #: Literal launch arguments the server declares (``packageArguments``), e.g. ("server", "start").
+    package_args: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -62,9 +64,37 @@ def npm_stdio_packages(server: dict[str, Any]) -> list[RegistryPackage]:
             if isinstance(v, dict) and v.get("isRequired") and v.get("name")
         )
         out.append(
-            RegistryPackage(str(server["name"]), str(pkg["identifier"]), pkg.get("version"), env)
+            RegistryPackage(
+                str(server["name"]),
+                str(pkg["identifier"]),
+                pkg.get("version"),
+                env,
+                literal_package_args(pkg.get("packageArguments") or []),
+            )
         )
     return out
+
+
+def literal_package_args(args: list[Any]) -> tuple[str, ...]:
+    """Fixed launch arguments only. Anything that needs user input (a ``{placeholder}``, a
+    required value without a default) makes us fall back to launching with no arguments."""
+    out: list[str] = []
+    for arg in args:
+        if not isinstance(arg, dict):
+            return ()
+        value = arg.get("value", arg.get("default"))
+        if value is None or "{" in str(value):
+            if arg.get("isRequired"):
+                return ()
+            continue
+        if arg.get("type") == "named":
+            name = str(arg.get("name", ""))
+            if not name:
+                return ()
+            out += [name, str(value)] if value != "" else [name]
+        else:
+            out.append(str(value))
+    return tuple(out)
 
 
 def remotes(server: dict[str, Any]) -> list[RegistryRemote]:

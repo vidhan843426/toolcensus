@@ -42,8 +42,9 @@ class SandboxSettings:
     #: Hard wall-clock limit for one server's introspection.
     timeout_s: float = 60.0
     build_timeout_s: float = 600.0
-    #: uid:gid of the non-root user inside the sandbox.
-    user: str = "10001:10001"
+    #: uid:gid of the non-root user inside the sandbox: the base image's `node` account. It must
+    #: exist in /etc/passwd, or servers that look up the current user (os.userInfo) crash.
+    user: str = "1000:1000"
     engine: str = os.environ.get("TOOLCENSUS_CONTAINER_ENGINE", "docker")
     #: Keep each server's install volume after measuring it (debugging only; uses disk space).
     keep_sandboxes: bool = False

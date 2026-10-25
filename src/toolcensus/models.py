@@ -117,7 +117,7 @@ class ToolRecord(_Model):
 
 
 class LaunchInfo(_Model):
-    source: str  # "bin" | "override" | "local"
+    source: str  # "bin" | "registry" | "override" | "local"
     command: list[str]
     placeholder_env: list[str] = Field(default_factory=list)
     install_scripts_ran: bool = False

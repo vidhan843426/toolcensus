@@ -43,7 +43,7 @@ class LaunchSpec:
     bin_path: str
     args: tuple[str, ...] = ()
     env: dict[str, str] = field(default_factory=dict)
-    source: str = "bin"  # "bin" | "override"
+    source: str = "bin"  # "bin" | "registry" | "override"
     allow_install_scripts: bool = False
 
     def __post_init__(self) -> None:
@@ -81,6 +81,7 @@ def resolve_launch(
     *,
     overrides: dict[str, dict[str, Any]] | None = None,
     required_env: tuple[str, ...] = (),
+    registry_args: tuple[str, ...] = (),
 ) -> LaunchSpec:
     name = str(version_doc["name"])
     version = str(version_doc["version"])
@@ -95,13 +96,20 @@ def resolve_launch(
         raise SandboxError(f"{name}@{version} declares no bin")
     env = {k: PLACEHOLDER for k in required_env}
     env.update({str(k): str(v) for k, v in (override.get("env") or {}).items()})
+    if override.get("args"):
+        args = tuple(str(a) for a in override["args"])
+    elif registry_args and all(_SAFE_ARG.match(a) for a in registry_args):
+        args = registry_args
+    else:
+        args = ()
+    source = "override" if override else "registry" if args else "bin"
     return LaunchSpec(
         package=name,
         version=version,
         bin_path=bin_path.removeprefix("./"),
-        args=tuple(str(a) for a in override.get("args") or ()),
+        args=args,
         env=env,
-        source="override" if override else "bin",
+        source=source,
         allow_install_scripts=bool(override.get("allow_install_scripts", False)),
     )
 

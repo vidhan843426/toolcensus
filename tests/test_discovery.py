@@ -90,6 +90,25 @@ def test_registry_parsing() -> None:
     assert [r.url for r in remotes(server)] == ["https://mcp.example.com/mcp"]
 
 
+def test_literal_package_args() -> None:
+    from toolcensus.discovery.registry import literal_package_args
+
+    pos = [{"type": "positional", "value": "server"}, {"type": "positional", "value": "start"}]
+    assert literal_package_args(pos) == ("server", "start")
+    named = [
+        {"type": "named", "name": "--mode", "value": "stdio"},
+        {"type": "named", "name": "--x", "value": ""},
+    ]
+    assert literal_package_args(named) == ("--mode", "stdio", "--x")
+    assert (
+        literal_package_args([{"type": "positional", "valueHint": "path", "isRequired": True}])
+        == ()
+    )
+    assert literal_package_args([{"type": "positional", "value": "{dir}"}]) == ()
+    assert literal_package_args(["bad"]) == ()
+    assert literal_package_args([{"type": "named", "value": "v"}]) == ()
+
+
 def test_library_names() -> None:
     assert library_name("@modelcontextprotocol/sdk")
     assert library_name("mcp-proxy")

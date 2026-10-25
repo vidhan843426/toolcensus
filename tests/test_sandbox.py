@@ -38,7 +38,7 @@ def test_run_flags_enforce_isolation() -> None:
     assert "--read-only" in flags
     assert _flag(flags, "--cap-drop") == "ALL"
     assert _flag(flags, "--security-opt") == "no-new-privileges"
-    assert _flag(flags, "--user") == "10001:10001"
+    assert _flag(flags, "--user") == "1000:1000"
     assert _flag(flags, "--memory") == "512m" and _flag(flags, "--pids-limit") == "256"
     assert _flag(flags, "--cpus") == "1"
     assert "/tmp:" in _flag(flags, "--tmpfs")
@@ -161,6 +161,12 @@ def test_resolve_launch(tmp_path) -> None:  # type: ignore[no-untyped-def]
     )
     spec2 = resolve_launch(doc, overrides=load_overrides(ov))
     assert (spec2.bin_path, spec2.args, spec2.source) == ("o.js", ("--stdio",), "override")
+    spec3 = resolve_launch(doc, registry_args=("server", "start"))
+    assert (spec3.args, spec3.source) == (("server", "start"), "registry")
+    assert resolve_launch(doc, registry_args=("$(id)",)).args == ()  # unsafe -> ignored
+    assert resolve_launch(doc, overrides=load_overrides(ov), registry_args=("x",)).args == (
+        "--stdio",
+    )
     with pytest.raises(SandboxError):
         resolve_launch({"name": "x", "version": "1.0.0"})
     assert load_overrides(tmp_path / "missing.yaml") == {}
@@ -199,7 +205,7 @@ async def test_sandbox_rootfs_read_only_and_non_root() -> None:
     script = "id -u; touch /app/x 2>/dev/null && echo WROTE || echo RO; touch /tmp/ok && echo TMPOK"
     cmd = runner.raw_command(BASE, f"toolcensus-test-{uuid.uuid4().hex[:8]}", ["sh", "-c", script])
     out = subprocess.run(cmd, capture_output=True, text=True, timeout=120).stdout.split()
-    assert out == ["10001", "RO", "TMPOK"]
+    assert out == ["1000", "RO", "TMPOK"]
 
 
 @pytest.mark.sandbox

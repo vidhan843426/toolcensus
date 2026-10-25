@@ -56,8 +56,11 @@ Implemented in `src/toolcensus/sandbox/` and `src/toolcensus/introspect/`.
    records say whether they ran (`launch.install_scripts_ran`).
 2. **Run** (network off): the package's `bin` is started with `node` from the volume, mounted
    read-only, inside a container with `--network none`, a read-only root filesystem (only a tmpfs
-   at `/tmp` is writable), uid 10001, `--cap-drop ALL`, `no-new-privileges`, 1 CPU, 512 MB of
-   memory, 256 PIDs, and a 60 s wall-clock limit.
+   at `/tmp` is writable), the image's unprivileged `node` user (uid 1000), `--cap-drop ALL`,
+   `no-new-privileges`, 1 CPU, 512 MB of memory, 256 PIDs, and a 60 s wall-clock limit.
+   Launch arguments come from `launch_overrides.yaml` if the package has an entry, otherwise from
+   the literal `packageArguments` in its MCP Registry entry (for example `server start`),
+   otherwise none. Records say which was used (`launch.source`: `override`, `registry`, `bin`).
 3. **Cleanup:** the volume is deleted as soon as the server has been measured, whatever the
    outcome, and each run ends by sweeping any labelled leftovers (for example after Ctrl-C).
    Nothing a scan downloads stays on disk; `toolcensus clean` removes leftovers on demand.
@@ -221,6 +224,10 @@ returned (`published`), the HTTP status, and which of `resource`, `authorization
   in an empty, offline sandbox.
 - Remote and hosted servers can change at any time. Weekly sampling misses changes within a week.
 - Heuristic metrics (side-effect verbs) have false positives and false negatives.
+- The sandbox image is a minimal Node.js image. Packages that need another runtime (for example
+  Bun) or native system libraries it lacks (for example a bundled .NET binary that needs OpenSSL)
+  cannot start and are reported as `crashed`. Servers that download their tool list from the
+  internet at startup cannot do so offline and are reported the same way.
 - Install scripts are disabled by default, so a few packages that need them may fail to start.
   They are reported as `crashed` or `install_failed`, not silently dropped.
 - The population is popularity-biased by design.
