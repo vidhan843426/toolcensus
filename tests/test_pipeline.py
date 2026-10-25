@@ -35,6 +35,7 @@ VARIANT_BY_VERSION = {
 class FakeRunner:
     def __init__(self) -> None:
         self.cleaned: list[str] = []
+        self.released: list[str] = []
 
     async def prepare(self, spec: LaunchSpec) -> str:
         if spec.package == "broken":
@@ -48,6 +49,9 @@ class FakeRunner:
 
     async def cleanup(self, name: str) -> None:
         self.cleaned.append(name)
+
+    async def release(self, ref: str) -> None:
+        self.released.append(ref)
 
     def cli_env(self) -> dict[str, str]:
         return {"PATH": "/usr/bin:/bin"}
@@ -81,6 +85,7 @@ async def test_introspect_version_statuses(tmp_path: Path) -> None:
         )
         assert ok.introspection.launch and ok.introspection.launch.placeholder_env == ["API_KEY"]
         assert c.runner.cleaned  # type: ignore[attr-defined]
+        assert c.runner.released == ["img"]  # type: ignore[attr-defined]
 
         broken = await introspect_version(
             c, packument("broken"), "1.0.0", observed_via=ObservedVia.WEEKLY_SCAN

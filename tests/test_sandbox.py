@@ -2,16 +2,21 @@
 
 from __future__ import annotations
 
+import json
 import shutil
+import stat
 import subprocess
+import sys
 import uuid
+from dataclasses import replace
+from pathlib import Path
 
 import pytest
 
 from toolcensus.config import SandboxSettings
 from toolcensus.introspect.collect import introspect_command
 from toolcensus.models import Status
-from toolcensus.sandbox.docker import DOCKERFILE, DockerRunner, sandbox_flags
+from toolcensus.sandbox.docker import INSTALL_SCRIPT, DockerRunner, install_flags, sandbox_flags
 from toolcensus.sandbox.runner import (
     PLACEHOLDER,
     LaunchSpec,
@@ -42,7 +47,8 @@ def test_run_flags_enforce_isolation() -> None:
 
 def test_run_command_never_forwards_host_env() -> None:
     spec = LaunchSpec("@a/b", "1.0.0", "dist/index.js", env={"API_KEY": PLACEHOLDER})
-    cmd = DockerRunner().run_command("img", spec, "name")
+    cmd = DockerRunner().run_command("vol", spec, "name")
+    assert cmd[cmd.index("-v") + 1] == "vol:/app:ro"
     for i, part in enumerate(cmd):
         if part == "-e":
             assert "=" in cmd[i + 1], "a bare `-e NAME` would copy the host value"
@@ -55,12 +61,74 @@ def test_cli_env_is_filtered(monkeypatch: pytest.MonkeyPatch) -> None:
     assert "AWS_SECRET_ACCESS_KEY" not in DockerRunner().cli_env()
 
 
-def test_dockerfile_pins_digest_and_ignores_scripts() -> None:
-    assert "@sha256:" in SandboxSettings().base_image
-    assert "--ignore-scripts" in DOCKERFILE.format(base="b", scripts_flag="--ignore-scripts")
-    a = DockerRunner().image_tag(LaunchSpec("p", "1.0.0", "x.js"))
-    b = DockerRunner().image_tag(LaunchSpec("p", "1.0.1", "x.js"))
-    assert a != b and a.startswith("toolcensus-sbx:")
+def test_install_container_is_locked_down() -> None:
+    s = SandboxSettings()
+    assert "@sha256:" in s.base_image
+    flags = install_flags(s)
+    assert _flag(flags, "--cap-drop") == "ALL" and "--read-only" in flags
+    assert "--privileged" not in flags
+    # The npm cache is written inside the volume and removed before the container exits.
+    assert (
+        "--cache /app/.npm-cache" in INSTALL_SCRIPT and "rm -rf /app/.npm-cache" in INSTALL_SCRIPT
+    )
+
+
+def _fake_engine(tmp_path: Path, *, fail_on: str = "") -> tuple[SandboxSettings, Path]:
+    """A stand-in `docker` binary that logs its argv and prints canned output."""
+    log = tmp_path / "calls.jsonl"
+    script = tmp_path / "docker"
+    script.write_text(
+        f"#!{sys.executable}\n"
+        "import json, sys\n"
+        f"open({str(log)!r}, 'a').write(json.dumps(sys.argv[1:]) + '\\n')\n"
+        f"if {fail_on!r} and {fail_on!r} in sys.argv[1:2]: print('npm ERR! 404'); sys.exit(1)\n"
+        "if sys.argv[1:3] in (['ps', '-aq'], ['volume', 'ls'], ['images', '-q']): print('abc def')\n"
+    )
+    script.chmod(script.stat().st_mode | stat.S_IEXEC)
+    return replace(SandboxSettings(), engine=str(script)), log
+
+
+def _calls(log: Path) -> list[list[str]]:
+    return [json.loads(line) for line in log.read_text().splitlines()]
+
+
+async def test_prepare_installs_into_a_volume_and_release_deletes_it(tmp_path: Path) -> None:
+    settings, log = _fake_engine(tmp_path)
+    runner = DockerRunner(settings)
+    spec = LaunchSpec("@a/b", "1.2.3", "cli.js")
+    volume = await runner.prepare(spec)
+    await runner.release(volume)
+    create, install, delete = _calls(log)
+    assert create[:2] == ["volume", "create"] and create[-1] == volume
+    assert install[0] == "run" and f"{volume}:/app" in install
+    assert "PKG=@a/b@1.2.3" in install and "NPM_FLAGS=--ignore-scripts" in install
+    assert "--network" not in install  # needs the registry, but nothing else is granted
+    assert delete == ["volume", "rm", "-f", volume]
+
+
+async def test_failed_install_removes_the_volume(tmp_path: Path) -> None:
+    from toolcensus.sandbox.runner import InstallFailedError
+
+    settings, log = _fake_engine(tmp_path, fail_on="run")
+    with pytest.raises(InstallFailedError, match="404"):
+        await DockerRunner(settings).prepare(LaunchSpec("p", "1.0.0", "x.js"))
+    calls = _calls(log)
+    assert calls[-1][:3] == ["volume", "rm", "-f"]
+    assert calls[-2][:2] == ["rm", "-f"]
+
+
+async def test_clean_sweeps_everything_labelled(tmp_path: Path) -> None:
+    settings, log = _fake_engine(tmp_path)
+    removed = await DockerRunner(settings).clean(base_image=True)
+    assert removed == [
+        "2 container(s)",
+        "2 volume(s)",
+        "2 legacy image(s)",
+        "base image node:22-slim",
+    ]
+    calls = _calls(log)
+    assert ["rm", "-f", "abc", "def"] in calls and ["volume", "rm", "-f", "abc", "def"] in calls
+    assert ["rmi", settings.base_image] in calls
 
 
 @pytest.mark.parametrize(

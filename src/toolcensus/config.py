@@ -35,6 +35,8 @@ class SandboxSettings:
     )
     cpus: str = "1"
     memory: str = "512m"
+    #: npm needs more headroom than the server itself.
+    install_memory: str = "1g"
     pids: int = 256
     tmpfs_size: str = "64m"
     #: Hard wall-clock limit for one server's introspection.
@@ -43,7 +45,8 @@ class SandboxSettings:
     #: uid:gid of the non-root user inside the sandbox.
     user: str = "10001:10001"
     engine: str = os.environ.get("TOOLCENSUS_CONTAINER_ENGINE", "docker")
-    image_prefix: str = "toolcensus-sbx"
+    #: Keep each server's install volume after measuring it (debugging only; uses disk space).
+    keep_sandboxes: bool = False
 
 
 @dataclass(frozen=True)

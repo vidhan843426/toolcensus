@@ -123,19 +123,24 @@ async def introspect_version(
         install_scripts_ran=spec.allow_install_scripts,
     )
     try:
-        image = await ctx.runner.prepare(spec)
+        installed = await ctx.runner.prepare(spec)
     except InstallFailedError as exc:
         return record(
             Introspection(status=Status.INSTALL_FAILED, error=str(exc)[-300:], launch=launch)
         )
 
     container = f"toolcensus-{uuid.uuid4().hex[:12]}"
-    raw: RawIntrospection = await introspect_command(
-        ctx.runner.run_command(image, spec, container),
-        env=ctx.runner.cli_env(),
-        timeout_s=ctx.settings.sandbox.timeout_s,
-        cleanup=lambda: ctx.runner.cleanup(container),
-    )
+    try:
+        raw: RawIntrospection = await introspect_command(
+            ctx.runner.run_command(installed, spec, container),
+            env=ctx.runner.cli_env(),
+            timeout_s=ctx.settings.sandbox.timeout_s,
+            cleanup=lambda: ctx.runner.cleanup(container),
+        )
+    finally:
+        # Downloaded packages never outlive the measurement unless explicitly kept.
+        if not ctx.settings.sandbox.keep_sandboxes:
+            await ctx.runner.release(installed)
     intro = build_introspection(
         raw, launch=launch, package=name, version=version, private=ctx.private
     )

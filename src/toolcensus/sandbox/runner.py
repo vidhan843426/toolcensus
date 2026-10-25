@@ -108,13 +108,16 @@ def resolve_launch(
 
 class SandboxRunner(Protocol):
     async def prepare(self, spec: LaunchSpec) -> str:
-        """Build (with network) an image containing the package. Returns an image reference."""
+        """Install (with network) the package. Returns a reference to the installed copy."""
 
-    def run_command(self, image: str, spec: LaunchSpec, name: str) -> list[str]:
+    def run_command(self, ref: str, spec: LaunchSpec, name: str) -> list[str]:
         """argv that starts the server *without network* and with stdio attached."""
 
     async def cleanup(self, name: str) -> None:
         """Force-stop and remove a running sandbox (used on timeout)."""
+
+    async def release(self, ref: str) -> None:
+        """Delete the installed copy returned by ``prepare`` (frees the disk space)."""
 
     def cli_env(self) -> dict[str, str]:
         """Environment for the container CLI process itself (never forwarded into the sandbox)."""
