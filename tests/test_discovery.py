@@ -29,7 +29,13 @@ async def _no_sleep(_: float) -> None:
 
 
 def client(tmp_path: Path | None = None, **kw: object) -> CachedHttp:
-    settings = HttpSettings(min_interval_s=0, backoff_base_s=0, **kw)  # type: ignore[arg-type]
+    settings = HttpSettings(
+        min_interval_s=0,
+        backoff_base_s=0,
+        rate_limit_backoff_s=0,
+        slow_paths=(),
+        **kw,  # type: ignore[arg-type]
+    )
     return CachedHttp(
         settings, cache_path=(tmp_path / "c.sqlite") if tmp_path else None, sleep=_no_sleep
     )
@@ -151,6 +157,53 @@ async def test_errors_and_backoff() -> None:
         assert (await http.get_json_status("https://example.test/500"))[0] == 503
         assert await http.get_json_status("https://example.test/bad") == (200, None)
         assert await http.get_json("https://example.test/flaky") == [1]
+
+
+@respx.mock
+async def test_rate_limit_is_patient_and_honours_retry_after() -> None:
+    """Regression: the first CI run gave up on npm search after ~30 s of 429s."""
+    sleeps: list[float] = []
+
+    async def record(seconds: float) -> None:
+        sleeps.append(seconds)
+
+    route = respx.get("https://registry.npmjs.org/-/v1/search")
+    route.side_effect = (
+        [httpx.Response(429, headers={"Retry-After": "90"})]
+        + [httpx.Response(429) for _ in range(6)]
+        + [httpx.Response(200, json={"objects": []})]
+    )
+    settings = HttpSettings(min_interval_s=0, rate_limit_backoff_s=5, max_backoff_s=300)
+    async with CachedHttp(settings, cache_path=None, sleep=record) as http:
+        assert await http.get_json("https://registry.npmjs.org/-/v1/search") == {"objects": []}
+        assert http.rate_limited == 7
+    waits = [s for s in sleeps if s >= 5]  # ignore the 2 s search spacing
+    assert waits[0] == 90  # Retry-After wins
+    assert all(5 <= w <= 330 for w in waits[1:]) and sum(waits) > 600
+
+
+@respx.mock
+async def test_errors_are_never_cached(tmp_path: Path) -> None:
+    """Regression: an exhausted 429 was cached for 6 h, so a retry got the same failure."""
+    url = "https://example.test/limited"
+    route = respx.get(url)
+    route.side_effect = [httpx.Response(429), httpx.Response(429), httpx.Response(200, json=[1])]
+    async with client(tmp_path, rate_limit_retries=1) as http:
+        with pytest.raises(HttpError):
+            await http.get_json(url)
+    async with client(tmp_path, rate_limit_retries=1) as http:  # a fresh run, same cache
+        assert await http.get_json(url) == [1]
+    assert route.call_count == 3
+
+
+async def test_search_has_its_own_slower_spacing() -> None:
+    async with client() as http:
+        http.settings = HttpSettings()  # production defaults
+        assert http._throttle_key("https://registry.npmjs.org/-/v1/search?text=x") == (
+            "registry.npmjs.org/-/v1/search",
+            2.0,
+        )
+        assert http._throttle_key("https://registry.npmjs.org/pkg")[0] == "registry.npmjs.org"
 
 
 def test_retry_after_parsing() -> None:

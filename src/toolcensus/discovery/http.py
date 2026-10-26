@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import random
 import sqlite3
 import time
 from email.utils import parsedate_to_datetime
@@ -19,6 +20,7 @@ from toolcensus import USER_AGENT
 from toolcensus.config import HttpSettings
 
 RETRY_STATUSES = {429, 500, 502, 503, 504}
+CACHEABLE_STATUSES = {200, 404, 410}
 
 
 class HttpError(RuntimeError):
@@ -95,6 +97,7 @@ class CachedHttp:
         self._locks: dict[str, asyncio.Lock] = {}
         self._sleep = sleep
         self.requests_sent = 0
+        self.rate_limited = 0
 
     async def __aenter__(self) -> CachedHttp:
         return self
@@ -105,13 +108,27 @@ class CachedHttp:
         await self._client.aclose()
         self._cache.db.close()
 
-    async def _throttle(self, host: str) -> None:
-        lock = self._locks.setdefault(host, asyncio.Lock())
+    def _throttle_key(self, url: str) -> tuple[str, float]:
+        parts = urlsplit(url)
+        where = parts.netloc + parts.path
+        for prefix, interval in self.settings.slow_paths:
+            if where.startswith(prefix):
+                return prefix, interval
+        return parts.netloc, self.settings.min_interval_s
+
+    async def _throttle(self, url: str) -> None:
+        key, interval = self._throttle_key(url)
+        lock = self._locks.setdefault(key, asyncio.Lock())
         async with lock:
-            wait = self._last.get(host, 0.0) + self.settings.min_interval_s - time.monotonic()
+            wait = self._last.get(key, 0.0) + interval - time.monotonic()
             if wait > 0:
                 await self._sleep(wait)
-            self._last[host] = time.monotonic()
+            self._last[key] = time.monotonic()
+
+    def _backoff(self, base: float, attempt: int) -> float:
+        delay = min(base * 2.0**attempt, self.settings.max_backoff_s)
+        # Jitter so concurrent requests that were limited together don't retry together.
+        return delay + random.uniform(0, delay * 0.1)  # noqa: S311 - not security sensitive
 
     async def get_raw(self, url: str, params: dict[str, Any] | None = None) -> tuple[int, bytes]:
         if params:
@@ -126,36 +143,43 @@ class CachedHttp:
             if cached[2]:
                 headers["If-Modified-Since"] = cached[2]
 
-        host = urlsplit(url).netloc
-        for attempt in range(self.settings.max_retries + 1):
-            await self._throttle(host)
+        errors = limited = 0
+        while True:
+            await self._throttle(url)
             self.requests_sent += 1
             try:
                 resp = await self._client.get(url, headers=headers)
             except httpx.TransportError:
-                if attempt == self.settings.max_retries:
+                if errors == self.settings.max_retries:
                     raise
-                await self._sleep(self.settings.backoff_base_s * 2**attempt)
+                await self._sleep(self._backoff(self.settings.backoff_base_s, errors))
+                errors += 1
                 continue
-            if resp.status_code == 304 and cached:
+            status = resp.status_code
+            if status == 304 and cached:
                 self._cache.touch(url)
                 return cached[0], cached[3]
-            if resp.status_code in RETRY_STATUSES and attempt < self.settings.max_retries:
-                delay = retry_after_seconds(
-                    resp.headers.get("Retry-After"), self.settings.backoff_base_s * 2**attempt
-                )
-                await self._sleep(min(delay, 300))
+            if status == 429 and limited < self.settings.rate_limit_retries:
+                fallback = self._backoff(self.settings.rate_limit_backoff_s, limited)
+                delay = retry_after_seconds(resp.headers.get("Retry-After"), fallback)
+                self.rate_limited += 1
+                await self._sleep(min(delay, 2 * self.settings.max_backoff_s))
+                limited += 1
                 continue
-            if resp.status_code < 500:
+            if status in RETRY_STATUSES and status != 429 and errors < self.settings.max_retries:
+                await self._sleep(self._backoff(self.settings.backoff_base_s, errors))
+                errors += 1
+                continue
+            # Only definitive answers are cached; errors (429, 5xx, ...) must be retried later.
+            if status in CACHEABLE_STATUSES:
                 self._cache.put(
                     url,
-                    resp.status_code,
+                    status,
                     resp.headers.get("ETag"),
                     resp.headers.get("Last-Modified"),
                     resp.content,
                 )
-            return resp.status_code, resp.content
-        raise AssertionError("unreachable")  # pragma: no cover
+            return status, resp.content
 
     async def get_json_status(
         self, url: str, params: dict[str, Any] | None = None

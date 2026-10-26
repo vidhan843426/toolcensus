@@ -15,8 +15,16 @@ def _env_path(name: str, default: str) -> Path:
 class HttpSettings:
     #: Minimum seconds between two requests to the same host.
     min_interval_s: float = float(os.environ.get("TOOLCENSUS_MIN_INTERVAL", "0.25"))
+    #: Retries for network errors and 5xx responses.
     max_retries: int = 5
     backoff_base_s: float = 1.0
+    #: HTTP 429 gets a longer, separate budget: shared CI IPs can be limited for minutes.
+    #: Defaults wait 5, 10, 20 ... capped at 300 s per attempt (about 15 min in total).
+    rate_limit_retries: int = 8
+    rate_limit_backoff_s: float = 5.0
+    max_backoff_s: float = 300.0
+    #: Stricter spacing for endpoints that rate-limit harder than their host (URL prefix -> s).
+    slow_paths: tuple[tuple[str, float], ...] = (("registry.npmjs.org/-/v1/search", 2.0),)
     timeout_s: float = 30.0
     cache_dir: Path = field(
         default_factory=lambda: _env_path("TOOLCENSUS_CACHE", "~/.cache/toolcensus")
