@@ -1,0 +1,17 @@
+# Download the dataset
+
+All data is published under **CC BY 4.0** (code under Apache-2.0). Please cite
+"ToolCensus, methodology v1.0.0" and the week(s) you used.
+
+| File | Description |
+|---|---|
+| `data/snapshots/YYYY-WW/population.json` | Selection rule and population for the week |
+| `data/snapshots/YYYY-WW/servers.jsonl` | One record per server-version (full tool definitions, hashes, metrics) |
+| `data/snapshots/YYYY-WW/diffs.jsonl` | Change records vs the previous week |
+| `data/dataset/*.csv` / `*.parquet` | Flattened `servers`, `tools`, `changes`, `weekly_aggregates` tables |
+| `schemas/*.schema.json` | JSON Schemas for every record type |
+
+Weeks available: 2026-43, 2026-44.
+
+Every number on this site can be regenerated with `toolcensus report --week <week>` from the
+committed data.

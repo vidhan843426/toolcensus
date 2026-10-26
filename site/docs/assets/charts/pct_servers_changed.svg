@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="% servers with a tool change (week over week)" font-family="system-ui, sans-serif" font-size="11">
+<title>% servers with a tool change (week over week)</title>
+<text x="48" y="18" font-size="13" font-weight="600" fill="currentColor">% servers with a tool change (week over week)</text>
+<line x1="48" x2="624" y1="184.0" y2="184.0" stroke="#8884" />
+<text x="42" y="188.0" text-anchor="end" fill="#888">0%</text>
+<line x1="48" x2="624" y1="108.0" y2="108.0" stroke="#8884" />
+<text x="42" y="112.0" text-anchor="end" fill="#888">50%</text>
+<line x1="48" x2="624" y1="32.0" y2="32.0" stroke="#8884" />
+<text x="42" y="36.0" text-anchor="end" fill="#888">100%</text>
+<text x="48.0" y="208" text-anchor="middle" fill="#888">2026-43</text>
+<text x="624.0" y="208" text-anchor="middle" fill="#888">2026-44</text>
+<polyline points="48.0,184.0 624.0,172.6" fill="none" stroke="#3b82f6" stroke-width="2.5" />
+<circle cx="48.0" cy="184.0" r="3" fill="#3b82f6"><title>2026-43: 0.0%</title></circle>
+<circle cx="624.0" cy="172.6" r="3" fill="#3b82f6"><title>2026-44: 7.5%</title></circle>
+</svg>

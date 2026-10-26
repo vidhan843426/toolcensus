@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="% packages with npm provenance" font-family="system-ui, sans-serif" font-size="11">
+<title>% packages with npm provenance</title>
+<text x="48" y="18" font-size="13" font-weight="600" fill="currentColor">% packages with npm provenance</text>
+<line x1="48" x2="624" y1="184.0" y2="184.0" stroke="#8884" />
+<text x="42" y="188.0" text-anchor="end" fill="#888">0%</text>
+<line x1="48" x2="624" y1="108.0" y2="108.0" stroke="#8884" />
+<text x="42" y="112.0" text-anchor="end" fill="#888">50%</text>
+<line x1="48" x2="624" y1="32.0" y2="32.0" stroke="#8884" />
+<text x="42" y="36.0" text-anchor="end" fill="#888">100%</text>
+<text x="48.0" y="208" text-anchor="middle" fill="#888">2026-43</text>
+<text x="624.0" y="208" text-anchor="middle" fill="#888">2026-44</text>
+<polyline points="48.0,86.7 624.0,96.6" fill="none" stroke="#3b82f6" stroke-width="2.5" />
+<circle cx="48.0" cy="86.7" r="3" fill="#3b82f6"><title>2026-43: 64.0%</title></circle>
+<circle cx="624.0" cy="96.6" r="3" fill="#3b82f6"><title>2026-44: 57.5%</title></circle>
+</svg>
