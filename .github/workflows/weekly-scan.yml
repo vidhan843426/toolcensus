@@ -36,7 +36,16 @@ jobs:
       - name: Discover population
         env:
           TOP: ${{ inputs.top || '200' }}
-        run: uv run toolcensus discover --top "$TOP" --week "${{ steps.week.outputs.week }}"
+          WEEK: ${{ steps.week.outputs.week }}
+        # npm rate-limits shared runner IPs hard. Successful responses are cached on disk, so a
+        # later attempt resumes where the previous one stopped instead of starting over.
+        run: |
+          for attempt in 1 2 3; do
+            uv run toolcensus discover --top "$TOP" --week "$WEEK" && exit 0
+            echo "::warning::discover attempt $attempt failed; waiting 15 minutes before retrying"
+            [ "$attempt" -lt 3 ] && sleep 900
+          done
+          exit 1
       - name: Scan (sandboxed, metadata only)
         run: uv run toolcensus scan --week "${{ steps.week.outputs.week }}" --concurrency 4
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
