@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.13.1` |
+| Latest observed version | `3.13.3` |
 | Status | ok |
-| Weekly downloads | 9370 |
+| Weekly downloads | 16269 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.nteract/semiotic |
-| Surface hash | `sha256:7a0da41580e2e121` |
+| Surface hash | `sha256:e5463e94b5a8427b` |
 
 !!! tip "Improvement hints"
     - Consider `additionalProperties: false` on the input schema of 24 tool(s) so unexpected arguments are rejected.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 17 |
-| `median_days_between_releases` | 3.84 |
+| `releases_last_90d` | 19 |
+| `median_days_between_releases` | 3.81 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -54,8 +54,8 @@
 | `suggestChart` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6556070c9f2d` |
 | `suggestCharts` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `da2023d1c229` |
 | `suggestDashboard` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `8ecdf0dbdcdf` |
-| `suggestStreamCharts` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `efda46c4988b` |
-| `suggestStreamDashboard` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6af89d87cfca` |
+| `suggestStreamCharts` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `aaddefcb178b` |
+| `suggestStreamDashboard` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `2d279983f97a` |
 | `suggestStretchCharts` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `dbd656021af5` |
 | `suggestTokenEncoding` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `4217258172fe` |
 
@@ -63,4 +63,10 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `3.13.1` → `3.13.3` | `suggestStreamCharts` | description_changed | length 390 -&gt; 521 |
+| week 2026-45 | `3.13.1` → `3.13.3` | `suggestStreamCharts` | input_schema_changed (schema_other) | property 'schema' changed (annotations/descriptions) |
+| week 2026-45 | `3.13.1` → `3.13.3` | `suggestStreamDashboard` | input_schema_changed (schema_other) | property 'schemas' changed (annotations/descriptions) |
+
+

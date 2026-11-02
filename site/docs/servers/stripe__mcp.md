@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.3.3` |
 | Status | requires_configuration |
-| Weekly downloads | 12818 |
+| Weekly downloads | 22262 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |

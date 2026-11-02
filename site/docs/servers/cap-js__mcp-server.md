@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.1.0` |
 | Status | ok |
-| Weekly downloads | 60959 |
+| Weekly downloads | 74107 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.cap-js/mcp-server |
 | Surface hash | `sha256:97d093523e37c32c` |

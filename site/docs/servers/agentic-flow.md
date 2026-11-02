@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.1.5` |
+| Latest observed version | `3.1.0` |
 | Status | not_mcp |
-| Weekly downloads | 79486 |
+| Weekly downloads | 116011 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |

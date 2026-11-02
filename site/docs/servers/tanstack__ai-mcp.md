@@ -3,8 +3,8 @@
 | | |
 |---|---|
 | Latest observed version | `1.0.0` |
-| Status | install_failed |
-| Weekly downloads | 101581 |
+| Status | crashed |
+| Weekly downloads | 249486 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -32,7 +32,7 @@
 
 ## Tools (0)
 
-No tools observed (npm error Cannot read properties of null (reading 'edgesOut') npm error A complete log of this run can be found in: /app/.npm-cache/_logs/2026-10-26T20_21_30_229Z-debug-0.log ).
+No tools observed (server closed the connection).
 
 ## Change history
 

@@ -8,8 +8,10 @@
 <line x1="48" x2="624" y1="32.0" y2="32.0" stroke="#8884" />
 <text x="42" y="36.0" text-anchor="end" fill="#888">220</text>
 <text x="48.0" y="208" text-anchor="middle" fill="#888">2026-43</text>
-<text x="624.0" y="208" text-anchor="middle" fill="#888">2026-44</text>
-<polyline points="48.0,114.9 624.0,45.8" fill="none" stroke="#3b82f6" stroke-width="2.5" />
+<text x="336.0" y="208" text-anchor="middle" fill="#888">2026-44</text>
+<text x="624.0" y="208" text-anchor="middle" fill="#888">2026-45</text>
+<polyline points="48.0,114.9 336.0,45.8 624.0,45.8" fill="none" stroke="#3b82f6" stroke-width="2.5" />
 <circle cx="48.0" cy="114.9" r="3" fill="#3b82f6"><title>2026-43: 100</title></circle>
-<circle cx="624.0" cy="45.8" r="3" fill="#3b82f6"><title>2026-44: 200</title></circle>
+<circle cx="336.0" cy="45.8" r="3" fill="#3b82f6"><title>2026-44: 200</title></circle>
+<circle cx="624.0" cy="45.8" r="3" fill="#3b82f6"><title>2026-45: 200</title></circle>
 </svg>

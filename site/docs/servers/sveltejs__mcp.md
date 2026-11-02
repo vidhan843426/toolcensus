@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.1.28` |
 | Status | crashed |
-| Weekly downloads | 18808 |
+| Weekly downloads | 69205 |
 | Protocol version | — |
 | Registry entry | dev.svelte/mcp |
 | Surface hash | `—` |

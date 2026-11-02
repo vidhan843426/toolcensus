@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.13.2` |
 | Status | ok |
-| Weekly downloads | 82921 |
+| Weekly downloads | 136495 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.GLips/Figma-Context-MCP |
 | Surface hash | `sha256:a9fd1241cad4c8fa` |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.99.0` |
+| Latest observed version | `1.99.2` |
 | Status | ok |
-| Weekly downloads | 8897 |
+| Weekly downloads | 17534 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.appium/appium-mcp |
-| Surface hash | `sha256:280a54c7d3938dd2` |
+| Surface hash | `sha256:1f23bbf8a0d50e31` |
 
 
 
@@ -21,7 +21,7 @@
 | `direct_dependency_count` | 17 |
 | `maintainer_count` | 5 |
 | `releases_last_90d` | 37 |
-| `median_days_between_releases` | 0.65 |
+| `median_days_between_releases` | 0.66 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -56,7 +56,7 @@
 | `appium_orientation` | openWorldHint, readOnlyHint | yes | yes | `ed769fbbb51d` |
 | `appium_perform_actions` | openWorldHint, readOnlyHint | yes | yes | `10fce2dcc149` |
 | `appium_prepare_ios_real_device` | openWorldHint, readOnlyHint | yes | yes | `8bb748136437` |
-| `appium_screen_recording` | openWorldHint, readOnlyHint | yes | yes | `34efed7c76ee` |
+| `appium_screen_recording` | openWorldHint, readOnlyHint | yes | yes | `6f9218883efd` |
 | `appium_screenshot` | openWorldHint, readOnlyHint | no | yes | `9ee0716f7130` |
 | `appium_session_management` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `84219feb2b57` |
 | `appium_set_value` | openWorldHint, readOnlyHint | yes | yes | `19ea717cd28e` |
@@ -68,4 +68,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `1.99.0` → `1.99.2` | `appium_screen_recording` | input_schema_changed (schema_other) | property 'videoScale': pattern changed |
+
+

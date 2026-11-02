@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.11.0` |
 | Status | crashed |
-| Weekly downloads | 74321 |
+| Weekly downloads | 222710 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 12 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 85 |
+| `releases_last_90d` | 84 |
 | `median_days_between_releases` | 1.0 |
 | `repo_linked` | True |
 | `registry_listed` | False |

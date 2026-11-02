@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.5.0` |
+| Latest observed version | `0.7.0` |
 | Status | ok |
-| Weekly downloads | 20788 |
+| Weekly downloads | 42546 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:1669210b7c61ae40` |
+| Surface hash | `sha256:17e0396109c5f888` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -25,7 +25,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 5 |
+| `releases_last_90d` | 7 |
 | `median_days_between_releases` | 8.07 |
 | `repo_linked` | True |
 | `registry_listed` | False |
@@ -37,7 +37,7 @@
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
 | `device_app_state` | readOnlyHint | yes | no | `c88df3fc4a2f` |
-| `device_clipboard` | — | yes | no | `99400ec91051` |
+| `device_clipboard` | — | yes | no | `b536be640ddb` |
 | `device_close_app` | — | yes | no | `94cf4eee1864` |
 | `device_context` | — | yes | no | `e7ef1b0765ca` |
 | `device_dismiss_alert` | — | yes | no | `6df945ef7004` |
@@ -70,4 +70,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `0.5.0` → `0.7.0` | `device_clipboard` | description_changed | length 153 -&gt; 180 |
+
+

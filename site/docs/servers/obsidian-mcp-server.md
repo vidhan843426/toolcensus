@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.7.2` |
+| Latest observed version | `3.8.0` |
 | Status | ok |
-| Weekly downloads | 8428 |
+| Weekly downloads | 10513 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.cyanheads/obsidian-mcp-server |
-| Surface hash | `sha256:df327c7c4fff6ef4` |
+| Surface hash | `sha256:1efff975a8dd91e7` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 9 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 17 |
-| `median_days_between_releases` | 1.21 |
+| `releases_last_90d` | 15 |
+| `median_days_between_releases` | 1.22 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -34,21 +34,37 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `obsidian_append_to_note` | destructiveHint | yes | yes | `13359a871a99` |
-| `obsidian_delete_note` | destructiveHint | yes | yes | `0b8f1061c7d8` |
-| `obsidian_get_note` | idempotentHint, readOnlyHint | yes | yes | `4705bc27f3fe` |
-| `obsidian_list_notes` | idempotentHint, readOnlyHint | no | yes | `d5b24cb0d04e` |
-| `obsidian_list_tags` | idempotentHint, readOnlyHint | no | yes | `24f9a38eb817` |
-| `obsidian_manage_frontmatter` | destructiveHint | yes | yes | `858c39bde51b` |
-| `obsidian_manage_tags` | destructiveHint | yes | yes | `fa077268a8eb` |
-| `obsidian_open_in_ui` | destructiveHint, idempotentHint, openWorldHint | yes | yes | `662b33c67534` |
-| `obsidian_patch_note` | destructiveHint | yes | yes | `247e9d9b5099` |
-| `obsidian_replace_in_note` | destructiveHint | yes | yes | `2e0341fbbe5a` |
-| `obsidian_search_notes` | idempotentHint, readOnlyHint | yes | yes | `0eb315047725` |
-| `obsidian_write_note` | destructiveHint, idempotentHint | yes | yes | `f997d7963e32` |
+| `obsidian_append_to_note` | destructiveHint | yes | yes | `94c6dfed68b6` |
+| `obsidian_delete_note` | destructiveHint | yes | yes | `c19961352b1b` |
+| `obsidian_get_note` | idempotentHint, readOnlyHint | yes | yes | `8329117694d3` |
+| `obsidian_list_notes` | idempotentHint, readOnlyHint | no | yes | `ae697c55d190` |
+| `obsidian_list_tags` | idempotentHint, readOnlyHint | no | yes | `dbc9dbe330a3` |
+| `obsidian_manage_frontmatter` | destructiveHint | yes | yes | `fa91c120d052` |
+| `obsidian_manage_tags` | destructiveHint | yes | yes | `44657c4e5ddf` |
+| `obsidian_open_in_ui` | destructiveHint, idempotentHint, openWorldHint | yes | yes | `e180831fd5b7` |
+| `obsidian_patch_note` | destructiveHint | yes | yes | `cbd889bc35bc` |
+| `obsidian_replace_in_note` | destructiveHint | yes | yes | `6c02122b7adf` |
+| `obsidian_search_notes` | idempotentHint, readOnlyHint | yes | yes | `1a696f3ebeff` |
+| `obsidian_write_note` | destructiveHint, idempotentHint | yes | yes | `a66ebd371f95` |
 
 
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_append_to_note` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_delete_note` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_get_note` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_list_notes` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_list_tags` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_manage_frontmatter` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_manage_tags` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_open_in_ui` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_patch_note` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_replace_in_note` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_search_notes` | input_schema_changed (schema_other) | property 'cursor' changed (annotations/descriptions) |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_search_notes` | output_schema_changed |  |
+| week 2026-45 | `3.7.2` → `3.8.0` | `obsidian_write_note` | output_schema_changed |  |
+
+

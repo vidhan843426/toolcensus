@@ -2,15 +2,14 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.17.1` |
+| Latest observed version | `0.18.3` |
 | Status | ok |
-| Weekly downloads | 24677 |
+| Weekly downloads | 21433 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
 | Surface hash | `sha256:c089d9ce07cea7e6` |
 
 !!! tip "Improvement hints"
-    - Consider publishing from CI with npm provenance (`npm publish --provenance`).
     - Consider listing the server in the official MCP Registry.
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 18 of 18 tools.
     - Consider `additionalProperties: false` on the input schema of 18 tool(s) so unexpected arguments are rejected.
@@ -21,13 +20,13 @@
 
 | Signal | Value |
 |---|---|
-| `has_provenance` | False |
+| `has_provenance` | True |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 4 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 9 |
-| `median_days_between_releases` | 1.86 |
+| `releases_last_90d` | 14 |
+| `median_days_between_releases` | 0.93 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

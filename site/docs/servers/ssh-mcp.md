@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.22.0` |
+| Latest observed version | `2.22.1` |
 | Status | ok |
-| Weekly downloads | 8761 |
+| Weekly downloads | 13102 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.tufantunc/ssh-mcp |
 | Surface hash | `sha256:6d40369ad1d85ce3` |
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 9 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 48 |
-| `median_days_between_releases` | 1.05 |
+| `releases_last_90d` | 49 |
+| `median_days_between_releases` | 1.09 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

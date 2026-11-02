@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `3.5.0` |
 | Status | ok |
-| Weekly downloads | 985633 |
+| Weekly downloads | 1206204 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.colorjs/color-space |
 | Surface hash | `sha256:831e2177f0529bca` |

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.1.0` |
+| Latest observed version | `3.2.2` |
 | Status | ok |
-| Weekly downloads | 71427 |
+| Weekly downloads | 170471 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.mongodb-js/mongodb-mcp-server |
 | Surface hash | `sha256:842c18f4457ef42b` |
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 16 |
 | `maintainer_count` | 9 |
-| `releases_last_90d` | 24 |
+| `releases_last_90d` | 25 |
 | `median_days_between_releases` | 2.59 |
 | `repo_linked` | True |
 | `registry_listed` | True |

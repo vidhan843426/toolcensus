@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.5.0` |
 | Status | requires_configuration |
-| Weekly downloads | 14625 |
+| Weekly downloads | 34901 |
 | Protocol version | — |
 | Registry entry | io.github.bytebase/dbhub |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 8 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 12 |
+| `releases_last_90d` | 9 |
 | `median_days_between_releases` | 3.27 |
 | `repo_linked` | True |
 | `registry_listed` | True |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.6.6` |
+| Latest observed version | `0.6.7` |
 | Status | ok |
-| Weekly downloads | 12915 |
+| Weekly downloads | 20478 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:6b940cc246818bd4` |
+| Surface hash | `sha256:7c27fc84cbfae98c` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 9 |
-| `median_days_between_releases` | 6.3 |
+| `releases_last_90d` | 10 |
+| `median_days_between_releases` | 4.57 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -44,7 +44,7 @@
 | `meshy_creative_lab` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `503558a0f4f2` |
 | `meshy_download_model` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `b573115f09bb` |
 | `meshy_get_task_status` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `672d88f035b0` |
-| `meshy_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `efb5eb2fc97b` |
+| `meshy_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `22327f021426` |
 | `meshy_image_to_image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `93a10021aa32` |
 | `meshy_list_animations` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `1c276742f78d` |
 | `meshy_list_models` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `c974bbeb0d5d` |
@@ -58,7 +58,7 @@
 | `meshy_retexture` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `fdc60ef202b8` |
 | `meshy_rig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `4ff7c1b4decf` |
 | `meshy_send_to_slicer` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `bb41bc9e1728` |
-| `meshy_text_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `a090ec863163` |
+| `meshy_text_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `d26b4d398963` |
 | `meshy_text_to_3d_refine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `7b5be19a09ce` |
 | `meshy_text_to_image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `1c7e4b19d959` |
 | `meshy_text_to_motion` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `0e29f59a72c4` |
@@ -68,4 +68,9 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `0.6.6` → `0.6.7` | `meshy_image_to_3d` | input_schema_changed (schema_other) | property 'model_type': enum values removed; property 'ai_model' changed (annotations/descriptions) |
+| week 2026-45 | `0.6.6` → `0.6.7` | `meshy_text_to_3d` | input_schema_changed (schema_narrowed) | property 'model_type': enum values removed |
+
+

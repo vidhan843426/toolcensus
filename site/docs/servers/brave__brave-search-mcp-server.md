@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.1.4` |
 | Status | ok |
-| Weekly downloads | 14237 |
+| Weekly downloads | 31613 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.brave/brave-search-mcp-server |
 | Surface hash | `sha256:0b5b6d22254e63ab` |

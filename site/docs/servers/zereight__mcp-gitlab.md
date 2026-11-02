@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.3.11` |
+| Latest observed version | `2.3.19` |
 | Status | requires_configuration |
-| Weekly downloads | 77839 |
+| Weekly downloads | 251654 |
 | Protocol version | — |
 | Registry entry | io.github.zereight/gitlab-mcp |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 16 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 71 |
-| `median_days_between_releases` | 1.11 |
+| `releases_last_90d` | 97 |
+| `median_days_between_releases` | 0.9 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

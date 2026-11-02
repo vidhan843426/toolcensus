@@ -2,17 +2,17 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.63.4` |
+| Latest observed version | `3.71.0` |
 | Status | ok |
-| Weekly downloads | 20292 |
+| Weekly downloads | 19558 |
 | Protocol version | 2024-11-05 |
 | Registry entry | io.github.ruvnet/claude-flow |
-| Surface hash | `sha256:ad410f43d48a6f10` |
+| Surface hash | `sha256:f4a037080199faa8` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
-    - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 379 of 379 tools.
-    - Consider `additionalProperties: false` on the input schema of 343 tool(s) so unexpected arguments are rejected.
+    - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 385 of 385 tools.
+    - Consider `additionalProperties: false` on the input schema of 349 tool(s) so unexpected arguments are rejected.
 
 
 
@@ -25,14 +25,14 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 26 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 117 |
+| `releases_last_90d` | 119 |
 | `median_days_between_releases` | 0.03 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
 
 
-## Tools (379)
+## Tools (385)
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
@@ -40,8 +40,8 @@
 | `agent_health` | — | no | no | `00c4c48daf4b` |
 | `agent_list` | — | no | no | `54be2096a648` |
 | `agent_logs` | — | yes | no | `e5157232a266` |
-| `agent_pool` | — | yes | no | `304c34e0fe1d` |
-| `agent_spawn` | — | yes | no | `b152813bfd53` |
+| `agent_pool` | — | yes | no | `294df4ab9dfd` |
+| `agent_spawn` | — | yes | no | `cab62c0d8ef8` |
 | `agent_status` | — | yes | no | `cb7dab715c67` |
 | `agent_terminate` | — | yes | no | `c578667c7cef` |
 | `agent_update` | — | yes | no | `e6d2e98ad4ad` |
@@ -52,6 +52,11 @@
 | `agentdb_consolidate` | — | no | no | `0c23943625b3` |
 | `agentdb_context-synthesize` | — | yes | no | `47052287acf1` |
 | `agentdb_controllers` | — | no | no | `c158217c9fca` |
+| `agentdb_episode-delete` | — | yes | no | `ec91a12a0877` |
+| `agentdb_episode-get` | — | yes | no | `2c2c4cb92972` |
+| `agentdb_episode-list` | — | no | no | `8eec2302fc11` |
+| `agentdb_episode-recall` | — | yes | no | `fdfa022c9a00` |
+| `agentdb_episode-update` | — | yes | no | `fb80c7a25c08` |
 | `agentdb_feedback` | — | yes | no | `76b4e7914893` |
 | `agentdb_graph-pathfinder` | — | yes | no | `900340fe42d4` |
 | `agentdb_graph-query` | — | yes | no | `b87ec47f43e4` |
@@ -64,7 +69,7 @@
 | `agentdb_route` | — | yes | no | `6e25e177be1a` |
 | `agentdb_semantic-route` | — | yes | no | `c312519a9834` |
 | `agentdb_session-end` | — | yes | no | `0539bf836afc` |
-| `agentdb_session-start` | — | yes | no | `482175d27b83` |
+| `agentdb_session-start` | — | yes | no | `5c413866e5f7` |
 | `agenticow_branch` | — | yes | no | `7753636810e1` |
 | `agenticow_checkpoint` | — | yes | no | `238ba2de57f7` |
 | `agenticow_diff` | — | yes | no | `e4bb6a823e49` |
@@ -108,7 +113,7 @@
 | `claims_accept-handoff` | — | yes | no | `372bd163645e` |
 | `claims_board` | — | no | no | `6675adffa5c8` |
 | `claims_claim` | — | yes | no | `890ddf0e1981` |
-| `claims_handoff` | — | yes | no | `44d232ea0fd4` |
+| `claims_handoff` | — | yes | no | `a78d95290d93` |
 | `claims_list` | — | no | no | `a7ea1695cc5b` |
 | `claims_load` | — | no | no | `cf8c5e349494` |
 | `claims_mark-stealable` | — | yes | no | `b02a49b4055a` |
@@ -128,7 +133,7 @@
 | `coordination_metrics` | — | no | no | `56864e94ab52` |
 | `coordination_node` | — | no | no | `f2310588d344` |
 | `coordination_orchestrate` | — | yes | no | `ed8926aceb9b` |
-| `coordination_sync` | — | no | no | `bf1acdb2dff5` |
+| `coordination_sync` | — | no | no | `2768d3e78e5b` |
 | `coordination_topology` | — | no | no | `da4b4ef8d6fb` |
 | `daa_agent_adapt` | — | yes | no | `8cd18975ca54` |
 | `daa_agent_create` | — | yes | no | `bda12db1a0cf` |
@@ -196,6 +201,7 @@
 | `hooks_intelligence_trajectory-start` | — | yes | no | `a5f23a458cfb` |
 | `hooks_intelligence_trajectory-step` | — | yes | no | `735fd6a40ced` |
 | `hooks_intelligence_unified-stats` | — | no | no | `acef04127418` |
+| `hooks_intelligence_verified-ingest` | — | no | no | `5520c7e7e9c9` |
 | `hooks_list` | — | no | no | `0cf73f1fbecc` |
 | `hooks_metrics` | — | no | no | `aae1dff4139c` |
 | `hooks_model-outcome` | — | yes | no | `1c7fc8e5bca5` |
@@ -222,7 +228,7 @@
 | `hooks_worker-dispatch` | — | yes | no | `23278aa03aa8` |
 | `hooks_worker-list` | — | no | no | `38ff8e8bb786` |
 | `hooks_worker-status` | — | no | no | `946053e858fd` |
-| `http_fetch` | — | yes | no | `49dda0fc62af` |
+| `http_fetch` | — | yes | no | `423f102e780c` |
 | `managed_agent_capabilities` | — | no | no | `b65b7fca70df` |
 | `managed_agent_control` | — | yes | no | `f81edce14b0c` |
 | `managed_agent_create` | — | no | no | `0381eca2e91c` |
@@ -420,4 +426,20 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_episode-delete` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_episode-get` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_episode-list` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_episode-recall` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_episode-update` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `hooks_intelligence_verified-ingest` | tool_added |  |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agent_pool` | input_schema_changed (schema_other) | property 'targetSize' changed (annotations/descriptions) |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agent_spawn` | input_schema_changed (schema_other) | property 'agentType' changed (annotations/descriptions) |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_session-start` | description_changed | length 374 -&gt; 531 |
+| week 2026-45 | `3.63.4` → `3.71.0` | `agentdb_session-start` | input_schema_changed (schema_widened) | property 'hybrid' added (optional); property 'k' added (optional); property 'recall' added (optional); property 'rerank' added (optional) |
+| week 2026-45 | `3.63.4` → `3.71.0` | `claims_handoff` | input_schema_changed (schema_other) | property 'progress' changed (annotations/descriptions) |
+| week 2026-45 | `3.63.4` → `3.71.0` | `coordination_sync` | input_schema_changed (schema_other) | property 'action' changed (annotations/descriptions) |
+| week 2026-45 | `3.63.4` → `3.71.0` | `http_fetch` | description_changed | length 787 -&gt; 919 |
+
+

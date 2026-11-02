@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.36.1` |
+| Latest observed version | `2.36.2` |
 | Status | ok |
-| Weekly downloads | 7197 |
+| Weekly downloads | 41350 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.TencentCloudBase/cloudbase-mcp |
 | Surface hash | `sha256:e2e3310777d0466c` |
@@ -20,8 +20,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 16 |
-| `releases_last_90d` | 39 |
-| `median_days_between_releases` | 1.04 |
+| `releases_last_90d` | 35 |
+| `median_days_between_releases` | 1.05 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

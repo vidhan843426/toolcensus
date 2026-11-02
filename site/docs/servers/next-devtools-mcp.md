@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.4.0` |
 | Status | ok |
-| Weekly downloads | 84771 |
+| Weekly downloads | 157449 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.vercel/next-devtools-mcp |
 | Surface hash | `sha256:23d1d63e4a130c45` |

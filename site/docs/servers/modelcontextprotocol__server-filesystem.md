@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.0.1` |
+| Latest observed version | `2.1.0` |
 | Status | ok |
-| Weekly downloads | 395900 |
+| Weekly downloads | 1217330 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:69b3e7744b7f5a85` |
+| Surface hash | `sha256:0b5bd32c939b531a` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 4 |
-| `median_days_between_releases` | 18.0 |
+| `releases_last_90d` | 5 |
+| `median_days_between_releases` | 13.09 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -38,7 +38,7 @@
 | `create_directory` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `c736eae545b2` |
 | `directory_tree` | openWorldHint, readOnlyHint | yes | no | `17f792a5284a` |
 | `edit_file` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `64394ff801f9` |
-| `get_file_info` | openWorldHint, readOnlyHint | yes | no | `1d8585f3d596` |
+| `get_file_info` | openWorldHint, readOnlyHint | yes | no | `280a39abb004` |
 | `list_allowed_directories` | openWorldHint, readOnlyHint | no | no | `3ca0e52085e6` |
 | `list_directory` | openWorldHint, readOnlyHint | yes | no | `d8f41bcca189` |
 | `list_directory_with_sizes` | openWorldHint, readOnlyHint | yes | no | `2f5447f34154` |
@@ -54,4 +54,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `2.0.1` → `2.1.0` | `get_file_info` | description_changed | length 296 -&gt; 312 |
+
+

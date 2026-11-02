@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.2.22` |
 | Status | ok |
-| Weekly downloads | 61641 |
+| Weekly downloads | 26333 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.tavily-ai/tavily-mcp |
 | Surface hash | `sha256:8aef27a12c8b3f5a` |

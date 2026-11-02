@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.13.0` |
 | Status | not_mcp |
-| Weekly downloads | 17562 |
+| Weekly downloads | 75339 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |

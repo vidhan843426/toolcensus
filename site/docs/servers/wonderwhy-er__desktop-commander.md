@@ -4,10 +4,10 @@
 |---|---|
 | Latest observed version | `0.3.1` |
 | Status | ok |
-| Weekly downloads | 77969 |
+| Weekly downloads | 640833 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.wonderwhy-er/desktop-commander |
-| Surface hash | `sha256:bc146746491bd682` |
+| Surface hash | `sha256:2d59b31a1ff15fa3` |
 
 !!! tip "Improvement hints"
     - Consider whether the install-time script(s) (postinstall) are necessary; many users install with `--ignore-scripts`.
@@ -23,7 +23,7 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 34 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 10 |
+| `releases_last_90d` | 9 |
 | `median_days_between_releases` | 1.0 |
 | `repo_linked` | True |
 | `registry_listed` | True |
@@ -54,7 +54,7 @@
 | `read_multiple_files` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `89edd62fd77c` |
 | `read_process_output` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `1a9b20ee488e` |
 | `set_config_value` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `1f02fcd90f5f` |
-| `start_process` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `e436dc8faef6` |
+| `start_process` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `99123834c5b7` |
 | `start_search` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `00297166532f` |
 | `stop_search` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `3dec847d629a` |
 | `write_file` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `6a2b4f1fed22` |
@@ -67,5 +67,6 @@
 | Observed | Version | Tool | Change | Details |
 |---|---|---|---|---|
 | week 2026-44 | `0.3.1` → `0.3.1` | `start_process` | description_changed | length 3557 -&gt; 3557 |
+| week 2026-45 | `0.3.1` → `0.3.1` | `start_process` | description_changed | length 3557 -&gt; 3557 |
 
 

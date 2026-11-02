@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.7.1` |
+| Latest observed version | `0.7.2` |
 | Status | not_mcp |
-| Weekly downloads | 23063 |
+| Weekly downloads | 70587 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 2 |
-| `median_days_between_releases` | 7.14 |
+| `releases_last_90d` | 3 |
+| `median_days_between_releases` | 6.64 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

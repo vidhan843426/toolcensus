@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.3.1` |
 | Status | ok |
-| Weekly downloads | 11686 |
+| Weekly downloads | 26623 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.discourse/mcp |
 | Surface hash | `sha256:dbf13b804c552d6e` |

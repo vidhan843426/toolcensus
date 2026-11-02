@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.3.0` |
+| Latest observed version | `3.4.0` |
 | Status | crashed |
-| Weekly downloads | 254979 |
+| Weekly downloads | 584471 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -23,9 +23,9 @@
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
-| `maintainer_count` | 17 |
-| `releases_last_90d` | 48 |
-| `median_days_between_releases` | 0.22 |
+| `maintainer_count` | 16 |
+| `releases_last_90d` | 47 |
+| `median_days_between_releases` | 0.23 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

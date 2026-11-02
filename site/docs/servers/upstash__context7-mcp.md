@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `4.4.4` |
 | Status | ok |
-| Weekly downloads | 562925 |
+| Weekly downloads | 556118 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.upstash/context7 |
 | Surface hash | `sha256:ccfc6233c4945f1c` |

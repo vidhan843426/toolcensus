@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `30.0.0` |
 | Status | ok |
-| Weekly downloads | 10090 |
+| Weekly downloads | 14505 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.IgniteUI/igniteui-theming |
 | Surface hash | `sha256:6090531c82c77326` |

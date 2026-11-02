@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.12.0` |
 | Status | ok |
-| Weekly downloads | 2058331 |
+| Weekly downloads | 3281478 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.ChromeDevTools/chrome-devtools-mcp |
 | Surface hash | `sha256:91887292495d3ae5` |

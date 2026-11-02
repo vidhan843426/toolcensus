@@ -11,7 +11,7 @@ All data is published under **CC BY 4.0** (code under Apache-2.0). Please cite
 | `data/dataset/*.csv` / `*.parquet` | Flattened `servers`, `tools`, `changes`, `weekly_aggregates` tables |
 | `schemas/*.schema.json` | JSON Schemas for every record type |
 
-Weeks available: 2026-43, 2026-44.
+Weeks available: 2026-43, 2026-44, 2026-45.
 
 Every number on this site can be regenerated with `toolcensus report --week <week>` from the
 committed data.

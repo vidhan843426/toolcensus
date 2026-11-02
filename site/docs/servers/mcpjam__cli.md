@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `6.0.0` |
+| Latest observed version | `6.0.1` |
 | Status | not_mcp |
-| Weekly downloads | 7619 |
+| Weekly downloads | 17025 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -25,7 +25,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 6 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 51 |
+| `releases_last_90d` | 49 |
 | `median_days_between_releases` | 0.92 |
 | `repo_linked` | False |
 | `registry_listed` | False |

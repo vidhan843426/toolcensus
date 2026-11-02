@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.42.0` |
 | Status | ok |
-| Weekly downloads | 70314 |
+| Weekly downloads | 198109 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.getsentry/sentry-mcp |
 | Surface hash | `sha256:f85c38a269516cf2` |

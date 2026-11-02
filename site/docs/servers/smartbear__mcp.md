@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.42.0` |
 | Status | ok |
-| Weekly downloads | 17158 |
+| Weekly downloads | 10791 |
 | Protocol version | 2025-11-25 |
 | Registry entry | com.smartbear/smartbear-mcp |
 | Surface hash | `sha256:b7a91f601156c181` |

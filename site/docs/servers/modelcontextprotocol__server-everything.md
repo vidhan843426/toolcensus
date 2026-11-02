@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.0.1` |
+| Latest observed version | `2.1.0` |
 | Status | ok |
-| Weekly downloads | 59187 |
+| Weekly downloads | 300001 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:d17a29d80324972c` |
+| Surface hash | `sha256:7fbe81e57c7a6d75` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 5 |
-| `median_days_between_releases` | 13.6 |
+| `releases_last_90d` | 6 |
+| `median_days_between_releases` | 13.18 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -37,7 +37,7 @@
 |---|---|---|---|---|
 | `echo` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d7f485de086d` |
 | `get-annotated-message` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1f3bddfd9934` |
-| `get-env` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `d2e0bbab7f2e` |
+| `get-env` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `36bd36873ff7` |
 | `get-header-params` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `4e3336b5234a` |
 | `get-resource-links` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `9e99959e95b7` |
 | `get-resource-reference` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `37d436c35f53` |
@@ -56,4 +56,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `2.0.1` → `2.1.0` | `get-env` | description_changed | length 81 -&gt; 303 |
+
+

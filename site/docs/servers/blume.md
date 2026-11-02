@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.2.6` |
 | Status | install_failed |
-| Weekly downloads | 100359 |
+| Weekly downloads | 205807 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 82 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 37 |
+| `releases_last_90d` | 34 |
 | `median_days_between_releases` | 0.8 |
 | `repo_linked` | True |
 | `registry_listed` | False |

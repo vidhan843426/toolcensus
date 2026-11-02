@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.15.16` |
+| Latest observed version | `1.15.21` |
 | Status | ok |
-| Weekly downloads | 102503 |
+| Weekly downloads | 119605 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.SAP/fiori-mcp-server |
 | Surface hash | `sha256:abf064191efa28c8` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 5 |
-| `releases_last_90d` | 45 |
-| `median_days_between_releases` | 1.31 |
+| `releases_last_90d` | 47 |
+| `median_days_between_releases` | 1.3 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

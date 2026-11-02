@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.14.0` |
+| Latest observed version | `2.15.0` |
 | Status | ok |
-| Weekly downloads | 7080 |
+| Weekly downloads | 12400 |
 | Protocol version | 2025-11-25 |
 | Registry entry | com.postman/postman-mcp-server |
 | Surface hash | `sha256:422fb9c7eefd1b0c` |
@@ -23,8 +23,8 @@
 | `install_scripts` | ['preinstall'] |
 | `direct_dependency_count` | 6 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 6 |
-| `median_days_between_releases` | 4.31 |
+| `releases_last_90d` | 7 |
+| `median_days_between_releases` | 4.8 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

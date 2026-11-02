@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.13.18` |
 | Status | not_mcp |
-| Weekly downloads | 10057 |
+| Weekly downloads | 30991 |
 | Protocol version | — |
 | Registry entry | io.github.cyanheads/mcp-ts-core |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 34 |
+| `releases_last_90d` | 33 |
 | `median_days_between_releases` | 0.22 |
 | `repo_linked` | True |
 | `registry_listed` | True |

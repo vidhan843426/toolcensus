@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `6.8.0` |
 | Status | ok |
-| Weekly downloads | 318109 |
+| Weekly downloads | 553305 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.morluto/rea |
 | Surface hash | `sha256:cacc03095a563afe` |
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 42 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 16 |
+| `releases_last_90d` | 15 |
 | `median_days_between_releases` | 0.67 |
 | `repo_linked` | True |
 | `registry_listed` | True |

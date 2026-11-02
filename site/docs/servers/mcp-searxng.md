@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.8.1` |
+| Latest observed version | `2.9.0` |
 | Status | ok |
-| Weekly downloads | 21682 |
+| Weekly downloads | 19443 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.ihor-sokoliuk/mcp-searxng |
-| Surface hash | `sha256:5f8646e5a4617535` |
+| Surface hash | `sha256:98a544393a158588` |
 
 !!! tip "Improvement hints"
     - Consider `additionalProperties: false` on the input schema of 4 tool(s) so unexpected arguments are rejected.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 14 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 17 |
-| `median_days_between_releases` | 2.05 |
+| `releases_last_90d` | 15 |
+| `median_days_between_releases` | 2.04 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -36,11 +36,15 @@
 |---|---|---|---|---|
 | `searxng_instance_info` | openWorldHint, readOnlyHint | no | no | `8898f6303440` |
 | `searxng_search_suggestions` | openWorldHint, readOnlyHint | yes | no | `1616ab1f714a` |
-| `searxng_web_search` | openWorldHint, readOnlyHint | yes | no | `a3b54645eb05` |
+| `searxng_web_search` | openWorldHint, readOnlyHint | yes | no | `444a41d8a4b2` |
 | `web_url_read` | openWorldHint, readOnlyHint | yes | no | `4d765a61d29e` |
 
 
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-45 | `2.8.1` → `2.9.0` | `searxng_web_search` | input_schema_changed (schema_widened) | property 'pages' added (optional) |
+
+

@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 6 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 141 |
+| `releases_last_90d` | 77 |
 | `median_days_between_releases` | 0.01 |
 | `repo_linked` | True |
 | `registry_listed` | True |
