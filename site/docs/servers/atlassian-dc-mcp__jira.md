@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.43.2` |
 | Status | requires_configuration |
-| Weekly downloads | 11246 |
+| Weekly downloads | 17275 |
 | Protocol version | — |
 | Registry entry | io.github.b1ff/atlassian-dc-mcp-jira |
 | Surface hash | `—` |

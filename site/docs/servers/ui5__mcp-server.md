@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.3.2` |
 | Status | ok |
-| Weekly downloads | 105519 |
+| Weekly downloads | 103538 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.UI5/mcp-server |
 | Surface hash | `sha256:1fba53a36e015611` |

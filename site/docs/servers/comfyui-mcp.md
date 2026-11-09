@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.52.206` |
 | Status | ok |
-| Weekly downloads | 19173 |
+| Weekly downloads | 11752 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.artokun/comfyui-mcp |
 | Surface hash | `sha256:8bf1f4cb722e090c` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 10 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 382 |
+| `releases_last_90d` | 263 |
 | `median_days_between_releases` | 0.04 |
 | `repo_linked` | True |
 | `registry_listed` | True |

@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.12.0` |
 | Status | ok |
-| Weekly downloads | 3281478 |
+| Weekly downloads | 1887698 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.ChromeDevTools/chrome-devtools-mcp |
 | Surface hash | `sha256:91887292495d3ae5` |
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 7 |
+| `releases_last_90d` | 6 |
 | `median_days_between_releases` | 5.29 |
 | `repo_linked` | True |
 | `registry_listed` | True |

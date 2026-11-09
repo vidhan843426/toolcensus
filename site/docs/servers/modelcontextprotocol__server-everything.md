@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.1.0` |
+| Latest observed version | `2.2.1` |
 | Status | ok |
-| Weekly downloads | 300001 |
+| Weekly downloads | 435347 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:7fbe81e57c7a6d75` |
+| Surface hash | `sha256:7a8ef3235d03ca51` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 6 |
-| `median_days_between_releases` | 13.18 |
+| `releases_last_90d` | 7 |
+| `median_days_between_releases` | 12.95 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -35,22 +35,22 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `echo` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d7f485de086d` |
-| `get-annotated-message` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1f3bddfd9934` |
-| `get-env` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `36bd36873ff7` |
-| `get-header-params` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `4e3336b5234a` |
-| `get-resource-links` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `9e99959e95b7` |
-| `get-resource-reference` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `37d436c35f53` |
-| `get-structured-content` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d9caa8434171` |
-| `get-sum` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `eea3eeb67416` |
-| `get-tiny-image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `c122d095df87` |
-| `gzip-file-as-resource` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `df97e0c7d685` |
-| `toggle-simulated-logging` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `e334d5e9f815` |
-| `toggle-subscriber-updates` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `cc6a0e2572f8` |
-| `trigger-list-changed` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `832afa369ba6` |
-| `trigger-log-messages` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `fbbd43ef879b` |
-| `trigger-long-running-operation` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `c06ac9fb8ce0` |
-| `trigger-resource-update` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3d63c634c241` |
+| `echo` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `b00b5993bf61` |
+| `get-annotated-message` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `0f6b4cbc644d` |
+| `get-env` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1bfe300a1c6d` |
+| `get-header-params` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `81004e0be698` |
+| `get-resource-links` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `b1a37f5759af` |
+| `get-resource-reference` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1e9f3b67e454` |
+| `get-structured-content` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e01899dbf0e0` |
+| `get-sum` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `c0bfe393aeb2` |
+| `get-tiny-image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `d167988219fd` |
+| `gzip-file-as-resource` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `165dece2e0d5` |
+| `toggle-simulated-logging` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `c23b2942da14` |
+| `toggle-subscriber-updates` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `8d6b133c6f02` |
+| `trigger-list-changed` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `06e1ba36b229` |
+| `trigger-log-messages` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `0c4b5a5560fb` |
+| `trigger-long-running-operation` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `91d7e076f1f0` |
+| `trigger-resource-update` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e96c75aa963e` |
 
 
 
@@ -59,5 +59,21 @@
 | Observed | Version | Tool | Change | Details |
 |---|---|---|---|---|
 | week 2026-45 | `2.0.1` → `2.1.0` | `get-env` | description_changed | length 81 -&gt; 303 |
+| week 2026-46 | `2.1.0` → `2.2.1` | `echo` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-annotated-message` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-env` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-header-params` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-resource-links` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-resource-reference` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-structured-content` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-sum` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `get-tiny-image` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `gzip-file-as-resource` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `toggle-simulated-logging` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `toggle-subscriber-updates` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `trigger-list-changed` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `trigger-log-messages` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `trigger-long-running-operation` | other_changed | title or other top-level field changed |
+| week 2026-46 | `2.1.0` → `2.2.1` | `trigger-resource-update` | other_changed | title or other top-level field changed |
 
 

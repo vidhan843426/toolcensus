@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.0.1-beta.13775` |
+| Latest observed version | `0.0.1-beta.14500` |
 | Status | requires_configuration |
-| Weekly downloads | 48393 |
+| Weekly downloads | 22280 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,9 +24,9 @@
 | `has_provenance` | False |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
-| `direct_dependency_count` | 5 |
+| `direct_dependency_count` | 7 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 1430 |
+| `releases_last_90d` | 1479 |
 | `median_days_between_releases` | 0.02 |
 | `repo_linked` | False |
 | `registry_listed` | False |

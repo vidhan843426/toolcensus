@@ -4,13 +4,14 @@
 |---|---|
 | Latest observed version | `0.3.1` |
 | Status | ok |
-| Weekly downloads | 640833 |
+| Weekly downloads | 721771 |
 | Protocol version | 2025-11-25 |
-| Registry entry | io.github.wonderwhy-er/desktop-commander |
-| Surface hash | `sha256:2d59b31a1ff15fa3` |
+| Registry entry | not listed |
+| Surface hash | `sha256:86a1047270ff6f2f` |
 
 !!! tip "Improvement hints"
     - Consider whether the install-time script(s) (postinstall) are necessary; many users install with `--ignore-scripts`.
+    - Consider listing the server in the official MCP Registry.
 
 
 
@@ -23,10 +24,10 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 34 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 9 |
-| `median_days_between_releases` | 1.0 |
+| `releases_last_90d` | 11 |
+| `median_days_between_releases` | 1.03 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 
@@ -54,7 +55,7 @@
 | `read_multiple_files` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `89edd62fd77c` |
 | `read_process_output` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `1a9b20ee488e` |
 | `set_config_value` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `1f02fcd90f5f` |
-| `start_process` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `99123834c5b7` |
+| `start_process` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `d6d9d480985e` |
 | `start_search` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `00297166532f` |
 | `stop_search` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `3dec847d629a` |
 | `write_file` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `6a2b4f1fed22` |
@@ -68,5 +69,6 @@
 |---|---|---|---|---|
 | week 2026-44 | `0.3.1` → `0.3.1` | `start_process` | description_changed | length 3557 -&gt; 3557 |
 | week 2026-45 | `0.3.1` → `0.3.1` | `start_process` | description_changed | length 3557 -&gt; 3557 |
+| week 2026-46 | `0.3.1` → `0.3.1` | `start_process` | description_changed | length 3557 -&gt; 3557 |
 
 

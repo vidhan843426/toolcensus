@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.15.7` |
+| Latest observed version | `4.17.1` |
 | Status | ok |
-| Weekly downloads | 56124 |
+| Weekly downloads | 57473 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.letoribo/mcp-graphql-enhanced |
 | Surface hash | `sha256:d6eaa146ed46cf8c` |
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 13 |
-| `median_days_between_releases` | 1.14 |
+| `releases_last_90d` | 14 |
+| `median_days_between_releases` | 1.16 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

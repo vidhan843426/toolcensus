@@ -2,17 +2,17 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.71.0` |
+| Latest observed version | `3.74.1` |
 | Status | ok |
-| Weekly downloads | 19558 |
-| Protocol version | 2024-11-05 |
+| Weekly downloads | 12659 |
+| Protocol version | 2025-11-25 |
 | Registry entry | io.github.ruvnet/claude-flow |
-| Surface hash | `sha256:f4a037080199faa8` |
+| Surface hash | `sha256:c6821240281847da` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
-    - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 385 of 385 tools.
-    - Consider `additionalProperties: false` on the input schema of 349 tool(s) so unexpected arguments are rejected.
+    - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 386 of 386 tools.
+    - Consider `additionalProperties: false` on the input schema of 350 tool(s) so unexpected arguments are rejected.
 
 
 
@@ -23,22 +23,22 @@
 | `has_provenance` | False |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
-| `direct_dependency_count` | 26 |
+| `direct_dependency_count` | 27 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 119 |
-| `median_days_between_releases` | 0.03 |
+| `releases_last_90d` | 127 |
+| `median_days_between_releases` | 0.04 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
 
 
-## Tools (385)
+## Tools (386)
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
 | `agent_execute` | — | yes | no | `f1fffd296a18` |
 | `agent_health` | — | no | no | `00c4c48daf4b` |
-| `agent_list` | — | no | no | `54be2096a648` |
+| `agent_list` | — | no | no | `e2cb9b79abf0` |
 | `agent_logs` | — | yes | no | `e5157232a266` |
 | `agent_pool` | — | yes | no | `294df4ab9dfd` |
 | `agent_spawn` | — | yes | no | `cab62c0d8ef8` |
@@ -50,7 +50,7 @@
 | `agentdb_causal-edge-delete` | — | yes | no | `b36a6efac220` |
 | `agentdb_causal-node-delete` | — | yes | no | `a27d12f64ba7` |
 | `agentdb_consolidate` | — | no | no | `0c23943625b3` |
-| `agentdb_context-synthesize` | — | yes | no | `47052287acf1` |
+| `agentdb_context-synthesize` | — | yes | no | `1ac8273b7fb3` |
 | `agentdb_controllers` | — | no | no | `c158217c9fca` |
 | `agentdb_episode-delete` | — | yes | no | `ec91a12a0877` |
 | `agentdb_episode-get` | — | yes | no | `2c2c4cb92972` |
@@ -189,11 +189,12 @@
 | `hooks_coverage-route` | — | yes | no | `b44f02b5f0f6` |
 | `hooks_coverage-suggest` | — | yes | no | `064b26ed442d` |
 | `hooks_explain` | — | yes | no | `e35f837a1444` |
+| `hooks_fast-apply` | — | yes | no | `8b3b1a9bf2db` |
 | `hooks_init` | — | no | no | `a763c1dbc699` |
 | `hooks_intelligence` | — | no | no | `8a771e64135c` |
 | `hooks_intelligence-reset` | — | no | no | `8ad7e2fcc074` |
 | `hooks_intelligence_attention` | — | yes | no | `3d4e65b145e8` |
-| `hooks_intelligence_learn` | — | no | no | `f7248794d3e1` |
+| `hooks_intelligence_learn` | — | no | no | `150ec6f3568b` |
 | `hooks_intelligence_pattern-search` | — | yes | no | `3d81cf176add` |
 | `hooks_intelligence_pattern-store` | — | yes | no | `a900ae596860` |
 | `hooks_intelligence_stats` | — | no | no | `ec8fadf19dc2` |
@@ -248,15 +249,15 @@
 | `memory_delete` | — | yes | no | `399c35edc064` |
 | `memory_detailed-stats` | — | no | no | `dcfab0f25b1e` |
 | `memory_export` | — | yes | no | `eab3cf257934` |
-| `memory_import` | — | yes | no | `818aa836971d` |
-| `memory_import_claude` | — | no | no | `c092bb108c8b` |
+| `memory_import` | — | yes | no | `7268fc0c06df` |
+| `memory_import_claude` | — | no | no | `f91374b5a678` |
 | `memory_list` | — | no | no | `b133e45ca277` |
 | `memory_migrate` | — | no | no | `da88cd110c85` |
 | `memory_retrieve` | — | yes | no | `6c437db863a7` |
 | `memory_search` | — | yes | no | `e1d0ccedfaa0` |
 | `memory_search_unified` | — | yes | no | `47974d9d07dd` |
 | `memory_stats` | — | no | no | `4870fa95fc5b` |
-| `memory_store` | — | yes | no | `9044cc1dd028` |
+| `memory_store` | — | yes | no | `95895dbd0b6d` |
 | `metaharness_audit_list` | — | no | no | `5eba7264711a` |
 | `metaharness_audit_trend` | — | no | no | `877dbcb4f2da` |
 | `metaharness_bench` | — | yes | no | `9dcf33321f6a` |
@@ -284,7 +285,7 @@
 | `neural_predict` | — | yes | no | `a3827ab8c88b` |
 | `neural_status` | — | no | no | `483e677c9ad0` |
 | `neural_train` | — | yes | no | `eaff8aa9c480` |
-| `performance_benchmark` | — | no | no | `b768278dbe73` |
+| `performance_benchmark` | — | no | no | `de87bed799e3` |
 | `performance_bottleneck` | — | no | no | `88c7022c1966` |
 | `performance_metrics` | — | no | no | `326638794609` |
 | `performance_optimize` | — | no | no | `dae3ec52ff5e` |
@@ -318,7 +319,7 @@
 | `session_current` | — | no | no | `cf716f6762f9` |
 | `session_delete` | — | yes | no | `221755eac4e7` |
 | `session_export` | — | yes | no | `eeaf67a8bfeb` |
-| `session_import` | — | no | no | `1e701314d5a1` |
+| `session_import` | — | no | no | `838f3d2a4f80` |
 | `session_info` | — | yes | no | `29db23a8c49a` |
 | `session_list` | — | no | no | `bf7c0ccd1723` |
 | `session_restore` | — | no | no | `5a7fdd2d0b2e` |
@@ -416,7 +417,7 @@
 | `x_federation_channel_read` | — | yes | no | `d3d08c193471` |
 | `x_federation_claims` | — | no | no | `4e87535ab776` |
 | `x_federation_invite_mint` | — | no | no | `800e5724f7ff` |
-| `x_federation_join` | — | no | no | `c3239e82bd8e` |
+| `x_federation_join` | — | no | no | `c4b81be3fe15` |
 | `x_federation_publish` | — | yes | no | `e934951d0344` |
 | `x_federation_registry` | — | no | no | `7b666a13abd5` |
 | `x_federation_roster` | — | no | no | `4809450732bc` |
@@ -441,5 +442,16 @@
 | week 2026-45 | `3.63.4` → `3.71.0` | `claims_handoff` | input_schema_changed (schema_other) | property 'progress' changed (annotations/descriptions) |
 | week 2026-45 | `3.63.4` → `3.71.0` | `coordination_sync` | input_schema_changed (schema_other) | property 'action' changed (annotations/descriptions) |
 | week 2026-45 | `3.63.4` → `3.71.0` | `http_fetch` | description_changed | length 787 -&gt; 919 |
+| week 2026-46 | `3.71.0` → `3.74.1` | `hooks_fast-apply` | tool_added |  |
+| week 2026-46 | `3.71.0` → `3.74.1` | `agent_list` | input_schema_changed (schema_other) | property 'status' changed (annotations/descriptions) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `agentdb_context-synthesize` | description_changed | length 379 -&gt; 660 |
+| week 2026-46 | `3.71.0` → `3.74.1` | `agentdb_context-synthesize` | input_schema_changed (schema_other) | property 'maxEntries' changed (annotations/descriptions) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `hooks_intelligence_learn` | input_schema_changed (schema_other) | property 'trajectoryIds' changed (annotations/descriptions) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `memory_import` | input_schema_changed (schema_other) | property 'inputPath' changed (annotations/descriptions) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `memory_import_claude` | input_schema_changed (schema_narrowed) | property 'excludeFilePatterns': maxItems added |
+| week 2026-46 | `3.71.0` → `3.74.1` | `memory_store` | input_schema_changed (schema_widened) | property 'metadata' added (optional) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `performance_benchmark` | input_schema_changed (schema_other) | property 'iterations': minimum added; property 'iterations': maximum added; property 'iterations': type changed |
+| week 2026-46 | `3.71.0` → `3.74.1` | `session_import` | input_schema_changed (schema_other) | property 'inputPath' changed (annotations/descriptions) |
+| week 2026-46 | `3.71.0` → `3.74.1` | `x_federation_join` | input_schema_changed (schema_other) | property 'keyFile' changed (annotations/descriptions) |
 
 

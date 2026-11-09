@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.15.21` |
+| Latest observed version | `1.16.0` |
 | Status | ok |
-| Weekly downloads | 119605 |
+| Weekly downloads | 111110 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.SAP/fiori-mcp-server |
-| Surface hash | `sha256:abf064191efa28c8` |
+| Surface hash | `sha256:d72cb551973a2da3` |
 
 !!! tip "Improvement hints"
     - Consider `additionalProperties: false` on the input schema of 1 tool(s) so unexpected arguments are rejected.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 5 |
-| `releases_last_90d` | 47 |
-| `median_days_between_releases` | 1.3 |
+| `releases_last_90d` | 46 |
+| `median_days_between_releases` | 1.31 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -35,12 +35,12 @@
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
 | `download_odata_service_metadata` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `76dface58e0a` |
-| `execute_functionality` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `49b492f698c7` |
+| `execute_functionality` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `6634b95dda52` |
 | `generate_fiori_app_cap` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `5999181e6074` |
 | `generate_fiori_app_odata` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `89341ffbe56a` |
-| `get_functionality_details` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `068a9129b5df` |
+| `get_functionality_details` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `104c31715991` |
 | `list_fiori_apps` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `c73ad27f099b` |
-| `list_functionality` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `e3b12e05495e` |
+| `list_functionality` | idempotentHint, openWorldHint, readOnlyHint | yes | yes | `682350b7305f` |
 | `list_sap_systems` | idempotentHint, openWorldHint, readOnlyHint | no | no | `65f0c7c83645` |
 | `search_docs` | idempotentHint, openWorldHint, readOnlyHint | yes | no | `1ad7ca550e21` |
 
@@ -48,4 +48,12 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-46 | `1.15.21` → `1.16.0` | `execute_functionality` | input_schema_changed (schema_other) | property 'functionalityId' changed (annotations/descriptions) |
+| week 2026-46 | `1.15.21` → `1.16.0` | `execute_functionality` | output_schema_changed |  |
+| week 2026-46 | `1.15.21` → `1.16.0` | `get_functionality_details` | input_schema_changed (schema_other) | property 'functionalityId' changed (annotations/descriptions) |
+| week 2026-46 | `1.15.21` → `1.16.0` | `get_functionality_details` | output_schema_changed |  |
+| week 2026-46 | `1.15.21` → `1.16.0` | `list_functionality` | output_schema_changed |  |
+
+

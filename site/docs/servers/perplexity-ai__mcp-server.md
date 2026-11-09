@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.3.0` |
 | Status | requires_configuration |
-| Weekly downloads | 22729 |
+| Weekly downloads | 44867 |
 | Protocol version | — |
 | Registry entry | ai.perplexity/mcp-server |
 | Surface hash | `—` |

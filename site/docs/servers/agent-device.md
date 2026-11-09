@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.21.35` |
+| Latest observed version | `0.21.36` |
 | Status | ok |
-| Weekly downloads | 574283 |
+| Weekly downloads | 666963 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.callstack/agent-device |
-| Surface hash | `sha256:d0f3dacd981e38a0` |
+| Surface hash | `sha256:fcee724dfb859c0b` |
 
 !!! tip "Improvement hints"
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 62 of 62 tools.
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 62 |
+| `releases_last_90d` | 65 |
 | `median_days_between_releases` | 0.76 |
 | `repo_linked` | True |
 | `registry_listed` | True |
@@ -47,24 +47,24 @@
 | `capabilities` | — | no | yes | `01545c0d85f0` |
 | `click` | — | yes | yes | `c4c93433dd43` |
 | `clipboard` | — | yes | yes | `084632946368` |
-| `close` | — | no | yes | `f8e300cc7a4d` |
+| `close` | — | no | yes | `354521e86805` |
 | `debug` | — | yes | yes | `e9d222e342a2` |
 | `devices` | — | no | yes | `fdc715c9184e` |
 | `diff` | — | yes | yes | `5f5809df57c9` |
 | `doctor` | — | no | yes | `dd84365459ca` |
 | `events` | — | no | yes | `8fdb87f6e823` |
 | `fill` | — | yes | yes | `72bd4e98c111` |
-| `find` | — | yes | yes | `90589c356a02` |
+| `find` | — | yes | yes | `9ab077aeaa25` |
 | `focus` | — | yes | yes | `c40955656652` |
-| `fold` | — | no | yes | `4b3e58b62170` |
+| `fold` | — | no | yes | `44033e7c39d9` |
 | `gesture` | — | yes | yes | `d1f517610c10` |
 | `get` | — | yes | yes | `c099ad5b13e4` |
 | `hardware-button` | — | yes | yes | `54d74836e565` |
 | `help` | — | no | yes | `ad054ddc8698` |
 | `home` | — | no | yes | `b219c72e22ae` |
 | `hover` | — | yes | yes | `367575e72878` |
-| `install` | — | yes | yes | `a16c96b1c695` |
-| `install-from-source` | — | yes | yes | `5cb77e1c8bed` |
+| `install` | — | yes | yes | `cdaae780ee89` |
+| `install-from-source` | — | yes | yes | `2c6916dc4c28` |
 | `is` | — | yes | yes | `bff65cf780de` |
 | `keyboard` | — | no | yes | `1279b295999a` |
 | `logs` | — | no | yes | `ab1c5f263e7f` |
@@ -78,7 +78,7 @@
 | `push` | — | yes | yes | `0f201cb53faf` |
 | `react-native` | — | yes | yes | `ce33d8ab280b` |
 | `record` | — | yes | yes | `471892aa3154` |
-| `reinstall` | — | yes | yes | `7fe9707d7e7f` |
+| `reinstall` | — | yes | yes | `cc6316769723` |
 | `replay` | — | yes | yes | `f53735b837d6` |
 | `screenshot` | — | no | yes | `e865b5f7f24e` |
 | `scroll` | — | yes | yes | `4a6a2026b9e8` |
@@ -93,7 +93,7 @@
 | `trigger-app-event` | — | yes | yes | `3d68733fdd54` |
 | `tv-remote` | — | yes | yes | `bff91cbdf2ca` |
 | `type` | — | yes | yes | `a9a457f56adc` |
-| `uninstall` | — | yes | yes | `cdb1cd4734ce` |
+| `uninstall` | — | yes | yes | `56d8400ada14` |
 | `viewport` | — | yes | yes | `b203e58d0177` |
 | `wait` | — | no | yes | `a3103a463517` |
 
@@ -116,5 +116,12 @@
 | week 2026-45 | `0.21.32` → `0.21.35` | `orientation` | description_changed | length 170 -&gt; 295 |
 | week 2026-45 | `0.21.32` → `0.21.35` | `reinstall` | input_schema_changed (schema_widened) | property 'imageTag' added (optional); property 'osVersion' added (optional); property 'physical' added (optional) |
 | week 2026-45 | `0.21.32` → `0.21.35` | `uninstall` | input_schema_changed (schema_widened) | property 'imageTag' added (optional); property 'osVersion' added (optional); property 'physical' added (optional) |
+| week 2026-46 | `0.21.35` → `0.21.36` | `close` | description_changed | length 492 -&gt; 576 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `find` | description_changed | length 301 -&gt; 331 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `fold` | description_changed | length 1216 -&gt; 1256 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `install` | description_changed | length 199 -&gt; 306 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `install-from-source` | description_changed | length 116 -&gt; 238 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `reinstall` | description_changed | length 179 -&gt; 300 |
+| week 2026-46 | `0.21.35` → `0.21.36` | `uninstall` | description_changed | length 156 -&gt; 206 |
 
 

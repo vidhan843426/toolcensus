@@ -4,12 +4,13 @@
 |---|---|
 | Latest observed version | `0.4.0` |
 | Status | ok |
-| Weekly downloads | 157449 |
+| Weekly downloads | 162053 |
 | Protocol version | 2025-11-25 |
-| Registry entry | io.github.vercel/next-devtools-mcp |
+| Registry entry | not listed |
 | Surface hash | `sha256:23d1d63e4a130c45` |
 
 !!! tip "Improvement hints"
+    - Consider listing the server in the official MCP Registry.
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 4 of 4 tools.
     - Consider `additionalProperties: false` on the input schema of 4 tool(s) so unexpected arguments are rejected.
 
@@ -27,7 +28,7 @@
 | `releases_last_90d` | 0 |
 | `median_days_between_releases` | 0.7 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 

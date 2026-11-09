@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.0.0-beta.4` |
+| Latest observed version | `4.0.0-beta.6` |
 | Status | crashed |
-| Weekly downloads | 185462 |
+| Weekly downloads | 202327 |
 | Protocol version | — |
 | Registry entry | com.microsoft/azure |
 | Surface hash | `—` |

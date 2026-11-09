@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.5.0` |
+| Latest observed version | `0.6.4` |
 | Status | requires_configuration |
-| Weekly downloads | 27360 |
+| Weekly downloads | 30377 |
 | Protocol version | — |
 | Registry entry | io.getunleash/unleash-mcp |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 4 |
 | `maintainer_count` | 10 |
-| `releases_last_90d` | 17 |
-| `median_days_between_releases` | 2.92 |
+| `releases_last_90d` | 24 |
+| `median_days_between_releases` | 0.88 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

@@ -1,0 +1,2803 @@
+{
+  "schema_version": "1.0.0",
+  "methodology_version": "1.0.0",
+  "tool_version": "0.1.0",
+  "scanned_at": "2026-11-09T13:33:04Z",
+  "week": "2026-46",
+  "selection_rule": "Union of (a) npm stdio packages listed in the official MCP Registry (latest versions) and (b) npm search results for keywords mcp-server / mcp / modelcontextprotocol and the free text 'mcp server'. A candidate is kept if its latest version declares a `bin` and (is registry-listed OR depends on @modelcontextprotocol/sdk or @modelcontextprotocol/server OR has keyword `mcp-server`), its name does not match the library pattern (sdk|client|types|framework|inspector|proxy|gateway|bridge|cli-core), and it is not in exclusions.yaml. Ranked by npm weekly downloads; top N kept.",
+  "top_n": 200,
+  "packages": [
+    {
+      "name": "@playwright/mcp",
+      "version": "0.0.84",
+      "weekly_downloads": 10233094,
+      "registry_listed": true,
+      "registry_name": "io.github.microsoft/playwright-mcp",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "firebase-tools",
+      "version": "15.35.0",
+      "weekly_downloads": 4888224,
+      "registry_listed": true,
+      "registry_name": "io.github.firebase/firebase-mcp",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/server-pdf",
+      "version": "2.0.4",
+      "weekly_downloads": 2020886,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "version": "1.12.0",
+      "weekly_downloads": 1887698,
+      "registry_listed": true,
+      "registry_name": "io.github.ChromeDevTools/chrome-devtools-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/server-filesystem",
+      "version": "2.2.0",
+      "weekly_downloads": 1352654,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "color-space",
+      "version": "3.5.0",
+      "weekly_downloads": 1304163,
+      "registry_listed": true,
+      "registry_name": "io.github.colorjs/color-space",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "@upstash/context7-mcp",
+      "version": "4.6.0",
+      "weekly_downloads": 1024328,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@lovable.dev/mcp-js",
+      "version": "3.4.0",
+      "weekly_downloads": 888413,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@wonderwhy-er/desktop-commander",
+      "version": "0.3.1",
+      "weekly_downloads": 721771,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "agent-device",
+      "version": "0.21.36",
+      "weekly_downloads": 666963,
+      "registry_listed": true,
+      "registry_name": "io.github.callstack/agent-device",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcporter",
+      "version": "0.17.0",
+      "weekly_downloads": 532329,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "rea-agents",
+      "version": "6.8.0",
+      "weekly_downloads": 467636,
+      "registry_listed": true,
+      "registry_name": "io.github.morluto/rea",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/server-everything",
+      "version": "2.2.1",
+      "weekly_downloads": 435347,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/server-memory",
+      "version": "2.1.0",
+      "weekly_downloads": 300570,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@notionhq/notion-mcp-server",
+      "version": "2.6.1",
+      "weekly_downloads": 270649,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/server-sequential-thinking",
+      "version": "2.1.1",
+      "weekly_downloads": 264692,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@swmansion/argent",
+      "version": "0.32.0",
+      "weekly_downloads": 261303,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@pandacss/mcp",
+      "version": "2.5.0",
+      "weekly_downloads": 261131,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "hostinger-api-mcp",
+      "version": "3.31.3",
+      "weekly_downloads": 252834,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@sentry/mcp-server",
+      "version": "0.49.0",
+      "weekly_downloads": 247461,
+      "registry_listed": true,
+      "registry_name": "io.github.getsentry/sentry-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@supabase/mcp-server-supabase",
+      "version": "0.16.1",
+      "weekly_downloads": 243998,
+      "registry_listed": true,
+      "registry_name": "com.supabase/mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "yahoo-finance2",
+      "version": "4.0.6",
+      "weekly_downloads": 241157,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "ruvector",
+      "version": "0.3.18",
+      "weekly_downloads": 220453,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hostinger/mcp",
+      "version": "3.31.3",
+      "weekly_downloads": 204356,
+      "registry_listed": true,
+      "registry_name": "io.github.hostinger/hostinger-api-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@azure/mcp",
+      "version": "4.0.0-beta.6",
+      "weekly_downloads": 202327,
+      "registry_listed": true,
+      "registry_name": "com.microsoft/azure",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tanstack/ai-mcp",
+      "version": "1.1.1",
+      "weekly_downloads": 201413,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@zereight/mcp-gitlab",
+      "version": "2.3.22",
+      "weekly_downloads": 199316,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "firecrawl-mcp",
+      "version": "3.38.0",
+      "weekly_downloads": 191517,
+      "registry_listed": true,
+      "registry_name": "io.github.firecrawl/firecrawl-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "blume",
+      "version": "2.2.7",
+      "weekly_downloads": 179404,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "agentation-mcp",
+      "version": "1.3.2",
+      "weekly_downloads": 164636,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "next-devtools-mcp",
+      "version": "0.4.0",
+      "weekly_downloads": 162053,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "figma-developer-mcp",
+      "version": "0.13.2",
+      "weekly_downloads": 160081,
+      "registry_listed": true,
+      "registry_name": "io.github.GLips/Figma-Context-MCP",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mongodb-mcp-server",
+      "version": "3.3.0",
+      "weekly_downloads": 153673,
+      "registry_listed": true,
+      "registry_name": "io.github.mongodb-js/mongodb-mcp-server",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "agent-blackboard",
+      "version": "0.7.0",
+      "weekly_downloads": 147391,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "agentdb",
+      "version": "3.7.6",
+      "weekly_downloads": 145566,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@azure-devops/mcp",
+      "version": "2.11.0",
+      "weekly_downloads": 143415,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "xcodebuildmcp",
+      "version": "2.7.0",
+      "weekly_downloads": 130486,
+      "registry_listed": true,
+      "registry_name": "com.xcodebuildmcp/XcodeBuildMCP",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "nx-mcp",
+      "version": "0.25.3",
+      "weekly_downloads": 123474,
+      "registry_listed": true,
+      "registry_name": "io.github.nrwl/nx-console",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@sap-ux/fiori-mcp-server",
+      "version": "1.16.0",
+      "weekly_downloads": 111110,
+      "registry_listed": true,
+      "registry_name": "io.github.SAP/fiori-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@ui5/mcp-server",
+      "version": "0.3.2",
+      "weekly_downloads": 103538,
+      "registry_listed": true,
+      "registry_name": "io.github.UI5/mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@bike4mind/cli",
+      "version": "4.0.0",
+      "weekly_downloads": 99654,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@currents/mcp",
+      "version": "2.7.0",
+      "weekly_downloads": 94509,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "supergateway",
+      "version": "4.2.1",
+      "weekly_downloads": 89324,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@gitkraken/gk",
+      "version": "3.1.77",
+      "weekly_downloads": 89000,
+      "registry_listed": true,
+      "registry_name": "com.gitkraken/gk-cli",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tacticlaunch/mcp-linear",
+      "version": "1.4.5",
+      "weekly_downloads": 86430,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@zencoderai/slack-mcp-server",
+      "version": "0.0.1",
+      "weekly_downloads": 82863,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "creem",
+      "version": "1.13.0",
+      "weekly_downloads": 82536,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@cloudbase/cloudbase-mcp",
+      "version": "2.37.5",
+      "weekly_downloads": 78367,
+      "registry_listed": true,
+      "registry_name": "io.github.TencentCloudBase/cloudbase-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "scryfall-mcp-server",
+      "version": "0.1.1",
+      "weekly_downloads": 74838,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@aikidosec/mcp",
+      "version": "1.0.34",
+      "weekly_downloads": 72937,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "ruflo",
+      "version": "3.74.1",
+      "weekly_downloads": 72316,
+      "registry_listed": true,
+      "registry_name": "io.github.ruvnet/ruflo",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@launchdarkly/mcp-server",
+      "version": "0.7.2",
+      "weekly_downloads": 72236,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@cap-js/mcp-server",
+      "version": "0.1.0",
+      "weekly_downloads": 68105,
+      "registry_listed": true,
+      "registry_name": "io.github.cap-js/mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "kubernetes-mcp-server",
+      "version": "0.1.2",
+      "weekly_downloads": 66514,
+      "registry_listed": true,
+      "registry_name": "io.github.containers/kubernetes-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@cargo-ai/cli",
+      "version": "1.0.146",
+      "weekly_downloads": 66012,
+      "registry_listed": true,
+      "registry_name": "io.github.getcargohq/cargo",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tobilu/qmd",
+      "version": "2.8.3",
+      "weekly_downloads": 64850,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "exa-mcp-server",
+      "version": "3.4.3",
+      "weekly_downloads": 64125,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "instar",
+      "version": "1.3.1719",
+      "weekly_downloads": 63646,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "kordoc",
+      "version": "4.24.57",
+      "weekly_downloads": 62863,
+      "registry_listed": true,
+      "registry_name": "io.github.chrisryugj/kordoc",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@softeria/ms-365-mcp-server",
+      "version": "0.182.2",
+      "weekly_downloads": 62694,
+      "registry_listed": true,
+      "registry_name": "io.github.Softeria/ms-365-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@brave/brave-search-mcp-server",
+      "version": "2.1.4",
+      "weekly_downloads": 61189,
+      "registry_listed": true,
+      "registry_name": "io.github.brave/brave-search-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@google-cloud/storage-mcp",
+      "version": "0.6.0",
+      "weekly_downloads": 59742,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-evals",
+      "version": "2.0.1",
+      "weekly_downloads": 58886,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@metamask/device-mcp",
+      "version": "0.7.0",
+      "weekly_downloads": 58587,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@google-cloud/observability-mcp",
+      "version": "0.2.3",
+      "weekly_downloads": 58480,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@letoribo/mcp-graphql-enhanced",
+      "version": "4.17.1",
+      "weekly_downloads": 57473,
+      "registry_listed": true,
+      "registry_name": "io.github.letoribo/mcp-graphql-enhanced",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@google-cloud/gcloud-mcp",
+      "version": "0.5.3",
+      "weekly_downloads": 57336,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.5.5",
+      "weekly_downloads": 57281,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@yawlabs/ctxlint",
+      "version": "0.28.1",
+      "weekly_downloads": 57190,
+      "registry_listed": true,
+      "registry_name": "io.github.YawLabs/ctxlint",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@bytebase/dbhub",
+      "version": "1.6.0",
+      "weekly_downloads": 55874,
+      "registry_listed": true,
+      "registry_name": "io.github.bytebase/dbhub",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@imgly/codesign-mcp",
+      "version": "0.6.0",
+      "weekly_downloads": 55305,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hubspot/mcp-server",
+      "version": "0.4.0",
+      "weekly_downloads": 53472,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@netlify/mcp",
+      "version": "1.21.0",
+      "weekly_downloads": 52719,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@statelyai/mcp",
+      "version": "0.26.1",
+      "weekly_downloads": 52717,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "gitnexus",
+      "version": "1.6.12",
+      "weekly_downloads": 51505,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@coding-solo/godot-mcp",
+      "version": "0.1.1",
+      "weekly_downloads": 51424,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "n8n-mcp",
+      "version": "2.102.0",
+      "weekly_downloads": 49935,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-hello-world",
+      "version": "1.1.2",
+      "weekly_downloads": 49377,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@snowluma/mcp",
+      "version": "2.4.2",
+      "weekly_downloads": 48442,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@fanyangmeng/ghost-mcp",
+      "version": "0.2.0",
+      "weekly_downloads": 47222,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@drawio/mcp",
+      "version": "1.11.0",
+      "weekly_downloads": 45060,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@browsermcp/mcp",
+      "version": "2.4.0",
+      "weekly_downloads": 45019,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@perplexity-ai/mcp-server",
+      "version": "1.3.0",
+      "weekly_downloads": 44867,
+      "registry_listed": true,
+      "registry_name": "ai.perplexity/mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-use",
+      "version": "2.12.3",
+      "weekly_downloads": 44369,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@eslint/mcp",
+      "version": "0.3.16",
+      "weekly_downloads": 43749,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@shopify/dev-mcp",
+      "version": "1.18.0",
+      "weekly_downloads": 41903,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@ericthered926/duckduckgo-mcp-server",
+      "version": "0.6.0",
+      "weekly_downloads": 41187,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@apify/actors-mcp-server",
+      "version": "0.21.4",
+      "weekly_downloads": 41035,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@serdnaley/metabase-mcp",
+      "version": "0.5.0",
+      "weekly_downloads": 39959,
+      "registry_listed": true,
+      "registry_name": "io.github.Serdnaley/metabase-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@winor30/mcp-server-datadog",
+      "version": "1.8.0",
+      "weekly_downloads": 39802,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@vantasdk/vanta-mcp-server",
+      "version": "1.2.0",
+      "weekly_downloads": 38727,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "replicate-mcp",
+      "version": "0.9.0",
+      "weekly_downloads": 36302,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "endform",
+      "version": "0.82.2",
+      "weekly_downloads": 34554,
+      "registry_listed": true,
+      "registry_name": "dev.endform/mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@browserstack/mcp-server",
+      "version": "2.6.5",
+      "weekly_downloads": 32283,
+      "registry_listed": true,
+      "registry_name": "io.github.browserstack/mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-echo-server",
+      "version": "1.0.0",
+      "weekly_downloads": 30836,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@larksuiteoapi/lark-mcp",
+      "version": "0.5.1",
+      "weekly_downloads": 30761,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@unleash/mcp",
+      "version": "0.6.4",
+      "weekly_downloads": 30377,
+      "registry_listed": true,
+      "registry_name": "io.getunleash/unleash-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hasna/skills",
+      "version": "0.10.95",
+      "weekly_downloads": 29167,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@prefecthq/fastmcp-ts",
+      "version": "1.9.1",
+      "weekly_downloads": 29152,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-gsc",
+      "version": "0.4.1",
+      "weekly_downloads": 28839,
+      "registry_listed": true,
+      "registry_name": "io.github.pijusz/mcp-gsc",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "vercel-mcp",
+      "version": "0.0.7",
+      "weekly_downloads": 28803,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@angelogiacco/elevenlabs-mcp-server",
+      "version": "1.0.4",
+      "weekly_downloads": 28428,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "chelaile-mcp-server",
+      "version": "1.1.0",
+      "weekly_downloads": 28133,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-server-kubernetes",
+      "version": "4.2.1",
+      "weekly_downloads": 27755,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@bitbonsai/mcpvault",
+      "version": "0.18.3",
+      "weekly_downloads": 26988,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@dynatrace-oss/dynatrace-mcp-server",
+      "version": "2.1.2",
+      "weekly_downloads": 26895,
+      "registry_listed": true,
+      "registry_name": "io.github.dynatrace-oss/Dynatrace-mcp",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "argocd-mcp",
+      "version": "0.9.0",
+      "weekly_downloads": 26537,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "opencode-mcp",
+      "version": "3.1.0",
+      "weekly_downloads": 24816,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@next-ai-drawio/mcp-server",
+      "version": "0.4.13",
+      "weekly_downloads": 24660,
+      "registry_listed": true,
+      "registry_name": "io.github.DayuanJiang/next-ai-drawio",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "wikipedia-mcp",
+      "version": "1.0.3",
+      "weekly_downloads": 24616,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@mui/mcp",
+      "version": "0.1.9",
+      "weekly_downloads": 24551,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "sharp-mcp",
+      "version": "0.2.6",
+      "weekly_downloads": 24329,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@brightdata/mcp",
+      "version": "4.7.0",
+      "weekly_downloads": 24106,
+      "registry_listed": true,
+      "registry_name": "io.github.brightdata/brightdata-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@nanonets/graft",
+      "version": "0.29.0",
+      "weekly_downloads": 23956,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@meshy-ai/meshy-mcp-server",
+      "version": "0.6.10",
+      "weekly_downloads": 23798,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@mcpjam/cli",
+      "version": "6.1.0",
+      "weekly_downloads": 23301,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@foldkit/devtools-mcp",
+      "version": "0.26.0",
+      "weekly_downloads": 23290,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@discourse/mcp",
+      "version": "0.3.1",
+      "weekly_downloads": 23272,
+      "registry_listed": true,
+      "registry_name": "io.github.discourse/mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@storyshelf/mcp",
+      "version": "0.9.0",
+      "weekly_downloads": 23228,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "tidewave",
+      "version": "0.10.0",
+      "weekly_downloads": 22910,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@microsoft/powerbi-modeling-mcp",
+      "version": "1.0.1",
+      "weekly_downloads": 22376,
+      "registry_listed": true,
+      "registry_name": "com.microsoft/powerbi-modeling-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@productbrain/mcp",
+      "version": "0.0.1-beta.14500",
+      "weekly_downloads": 22280,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@sendinel/mcp-server",
+      "version": "1.0.197",
+      "weekly_downloads": 21572,
+      "registry_listed": true,
+      "registry_name": "ai.sendinel/mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@aashari/mcp-server-atlassian-jira",
+      "version": "3.3.0",
+      "weekly_downloads": 21525,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "tavily-mcp",
+      "version": "0.2.22",
+      "weekly_downloads": 21436,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hasna/todos",
+      "version": "0.18.0",
+      "weekly_downloads": 21425,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@benborla29/mcp-server-mysql",
+      "version": "2.0.9",
+      "weekly_downloads": 21010,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "loki-mode",
+      "version": "11.138.0",
+      "weekly_downloads": 20719,
+      "registry_listed": true,
+      "registry_name": "io.github.asklokesh/loki-mode",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "ai-hist",
+      "version": "0.57.1",
+      "weekly_downloads": 20084,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@agimon-ai/po-logsink",
+      "version": "0.0.1-alpha.113",
+      "weekly_downloads": 19708,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@vizejs/musea-mcp-server",
+      "version": "0.720.0",
+      "weekly_downloads": 19271,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@mastergo/magic-mcp",
+      "version": "0.2.15",
+      "weekly_downloads": 18888,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tableau/mcp-server",
+      "version": "5.5.0",
+      "weekly_downloads": 18786,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "freee-mcp",
+      "version": "0.37.11",
+      "weekly_downloads": 18728,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "dynoxide",
+      "version": "1.6.0",
+      "weekly_downloads": 18517,
+      "registry_listed": true,
+      "registry_name": "io.github.nubo-db/dynoxide",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "pptx-viewer-mcp",
+      "version": "2.10.1",
+      "weekly_downloads": 18400,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@nextscope/mcp",
+      "version": "0.3.0",
+      "weekly_downloads": 18259,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@programinglive/dev-workflow-mcp-server",
+      "version": "1.24.0",
+      "weekly_downloads": 18220,
+      "registry_listed": true,
+      "registry_name": "io.github.programinglive/dev-workflow-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "hlims-mcp",
+      "version": "1.0.0",
+      "weekly_downloads": 18050,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@lincyaw/mcp",
+      "version": "1.0.0-rc.80",
+      "weekly_downloads": 17845,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@decap/cli",
+      "version": "0.1.3",
+      "weekly_downloads": 17843,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "malicious-mcp-server",
+      "version": "1.5.0",
+      "weekly_downloads": 17734,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@gongrzhe/server-gmail-autoauth-mcp",
+      "version": "1.1.11",
+      "weekly_downloads": 17732,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@k2b/fibel",
+      "version": "0.7.6",
+      "weekly_downloads": 17388,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@juspay/neurolink",
+      "version": "13.10.5",
+      "weekly_downloads": 17354,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@atlassian-dc-mcp/jira",
+      "version": "0.43.2",
+      "weekly_downloads": 17275,
+      "registry_listed": true,
+      "registry_name": "io.github.b1ff/atlassian-dc-mcp-jira",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hasna/domains",
+      "version": "0.3.3",
+      "weekly_downloads": 17196,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@xeroapi/xero-mcp-server",
+      "version": "0.0.17",
+      "weekly_downloads": 17170,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@microsoft/clarity-mcp-server",
+      "version": "2.0.1",
+      "weekly_downloads": 17079,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@minecraft/creator-tools",
+      "version": "0.21.0",
+      "weekly_downloads": 16629,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "appium-mcp",
+      "version": "1.99.3",
+      "weekly_downloads": 16435,
+      "registry_listed": true,
+      "registry_name": "io.github.appium/appium-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hasna/conversations",
+      "version": "0.10.0",
+      "weekly_downloads": 16434,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "mcp-searxng",
+      "version": "2.10.0",
+      "weekly_downloads": 16367,
+      "registry_listed": true,
+      "registry_name": "io.github.ihor-sokoliuk/mcp-searxng",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "12306-mcp",
+      "version": "0.3.10",
+      "weekly_downloads": 16261,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@primer/mcp",
+      "version": "1.1.2",
+      "weekly_downloads": 16139,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@cyanheads/mcp-ts-core",
+      "version": "0.13.22",
+      "weekly_downloads": 16077,
+      "registry_listed": true,
+      "registry_name": "io.github.cyanheads/mcp-ts-core",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tiberriver256/mcp-server-azure-devops",
+      "version": "0.1.54",
+      "weekly_downloads": 15941,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "ssh-mcp",
+      "version": "2.23.1",
+      "weekly_downloads": 15831,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "codebase-memory-mcp",
+      "version": "0.12.1",
+      "weekly_downloads": 15286,
+      "registry_listed": true,
+      "registry_name": "io.github.DeusData/codebase-memory-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@smartbear/mcp",
+      "version": "0.43.0",
+      "weekly_downloads": 15283,
+      "registry_listed": true,
+      "registry_name": "com.smartbear/smartbear-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@volter/model-editor",
+      "version": "0.5.190",
+      "weekly_downloads": 15057,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@z_ai/mcp-server",
+      "version": "0.1.6",
+      "weekly_downloads": 15015,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@inkeep/open-knowledge",
+      "version": "0.89.3",
+      "weekly_downloads": 14942,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@atlassian-dc-mcp/confluence",
+      "version": "0.43.2",
+      "weekly_downloads": 14864,
+      "registry_listed": true,
+      "registry_name": "io.github.b1ff/atlassian-dc-mcp-confluence",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@wirecat/cli-memo",
+      "version": "0.131.72",
+      "weekly_downloads": 14495,
+      "registry_listed": true,
+      "registry_name": "dev.wirecat/cli-memo",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "@magicuidesign/mcp",
+      "version": "2.1.0",
+      "weekly_downloads": 14494,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@thirdstrandstudio/mcp-figma",
+      "version": "0.7.0",
+      "weekly_downloads": 14470,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@microsoft/dataverse",
+      "version": "1.0.88",
+      "weekly_downloads": 14374,
+      "registry_listed": true,
+      "registry_name": "com.microsoft/dataverse",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "figma-console-mcp",
+      "version": "1.46.0",
+      "weekly_downloads": 13916,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "sample-aws-pricing-calculator-mcp",
+      "version": "1.3.7",
+      "weekly_downloads": 13763,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@flyle/ai-cx-mcp",
+      "version": "0.2.1",
+      "weekly_downloads": 13665,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@bangdao-ai/acw-tools",
+      "version": "1.13.80",
+      "weekly_downloads": 13647,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "aws-s3-mcp",
+      "version": "0.4.0",
+      "weekly_downloads": 13637,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "igniteui-theming",
+      "version": "30.1.0",
+      "weekly_downloads": 13311,
+      "registry_listed": true,
+      "registry_name": "io.github.IgniteUI/igniteui-theming",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "elasticsearch-mcp",
+      "version": "0.1.3",
+      "weekly_downloads": 13286,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@runpod/mcp-server",
+      "version": "4.10.1",
+      "weekly_downloads": 12720,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@cocal/google-calendar-mcp",
+      "version": "2.8.1",
+      "weekly_downloads": 12712,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@railway/mcp-server",
+      "version": "0.1.12",
+      "weekly_downloads": 12675,
+      "registry_listed": true,
+      "registry_name": "io.github.railwayapp/mcp-server",
+      "sources": [
+        "mcp_registry"
+      ]
+    },
+    {
+      "name": "claude-flow",
+      "version": "3.74.1",
+      "weekly_downloads": 12659,
+      "registry_listed": true,
+      "registry_name": "io.github.ruvnet/claude-flow",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "cclsp",
+      "version": "0.7.0",
+      "weekly_downloads": 12652,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "bambu-printer-mcp",
+      "version": "1.1.79",
+      "weekly_downloads": 12481,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "howtocook-mcp",
+      "version": "0.2.2",
+      "weekly_downloads": 12397,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@testsprite/testsprite-mcp",
+      "version": "0.0.48",
+      "weekly_downloads": 12336,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@auth0/auth0-mcp-server",
+      "version": "0.1.0-beta.19",
+      "weekly_downloads": 12293,
+      "registry_listed": true,
+      "registry_name": "com.auth0/mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "comfyui-mcp",
+      "version": "0.52.206",
+      "weekly_downloads": 11752,
+      "registry_listed": true,
+      "registry_name": "io.github.artokun/comfyui-mcp",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@knip/mcp",
+      "version": "0.0.37",
+      "weekly_downloads": 11705,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@postman/postman-mcp-server",
+      "version": "2.15.0",
+      "weekly_downloads": 11682,
+      "registry_listed": true,
+      "registry_name": "com.postman/postman-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@hypothesi/tauri-mcp-server",
+      "version": "0.13.2",
+      "weekly_downloads": 11609,
+      "registry_listed": true,
+      "registry_name": "io.github.hypothesi/mcp-server-tauri",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@heroui/react-mcp",
+      "version": "1.1.4",
+      "weekly_downloads": 11472,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@sap/mdk-mcp-server",
+      "version": "0.4.2",
+      "weekly_downloads": 11445,
+      "registry_listed": true,
+      "registry_name": "io.github.SAP/mdk-mcp-server",
+      "sources": [
+        "mcp_registry",
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@ironbee-ai/cli",
+      "version": "0.53.0",
+      "weekly_downloads": 11423,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@ivotoby/openapi-mcp-server",
+      "version": "1.17.0",
+      "weekly_downloads": 11364,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@tinycloud/mcp",
+      "version": "0.9.0",
+      "weekly_downloads": 11351,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "ios-simulator-mcp",
+      "version": "2.2.0",
+      "weekly_downloads": 11342,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@contentful/mcp-server",
+      "version": "1.24.5",
+      "weekly_downloads": 11187,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "dataforseo-mcp-server",
+      "version": "3.1.3",
+      "weekly_downloads": 11143,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "korean-law-mcp",
+      "version": "4.15.23",
+      "weekly_downloads": 11139,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@flyle/ai-operator-mcp",
+      "version": "1.0.0",
+      "weekly_downloads": 11065,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "@nexus2520/bitbucket-mcp-server",
+      "version": "4.0.0",
+      "weekly_downloads": 11044,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    },
+    {
+      "name": "zames_pro",
+      "version": "2.96.21",
+      "weekly_downloads": 11002,
+      "registry_listed": false,
+      "registry_name": null,
+      "sources": [
+        "npm_search"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "reason": "exclusions.yaml: official TypeScript SDK (library)"
+    },
+    {
+      "name": "ai",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@modelcontextprotocol/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@modelcontextprotocol/server",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@modelcontextprotocol/client",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@ai-sdk/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@modelcontextprotocol/node",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "agent-install",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@earendil-works/pi-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@storybook/addon-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@assistant-ui/react",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@storybook/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "fallow",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "eve",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@modelcontextprotocol/express",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "mcp-handler",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "mcp-remote",
+      "reason": "exclusions.yaml: client-side bridge to remote servers, not a server itself"
+    },
+    {
+      "name": "@better-auth/cimd",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@better-auth/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@reactuses/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@posthog/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "dsh-windows-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@devframes/agentic",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@copilotkit/aimock",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "evmole",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@langchain/mcp-adapters",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "pi-mcp-adapter",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "add-mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@copilotkit/mcp-apps-renderer",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@clerk/mcp-tools",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@payloadcms/plugin-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "pi-mcp-extension",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@blaxel/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mcp-b/global",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mcp-b/transports",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@oh-my-pi/pi-mnemopi",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@mcp-b/webmcp-ts-sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "n8n-nodes-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "mockserver-client",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "metaharness",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@modelcontextprotocol/hono",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@vouchington/mcp-server",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "agentic-flow",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "use-webmcp-tool",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@raishin/vanguard-frontier-agentic",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@mongodb-js/mcp-types",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "clerk",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@kubb/mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@nitrostack/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "cline",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@nitrostack/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@azure/mcp-linux-x64",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@nitrostack/widgets",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@claude-flow/neural",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@sap-ux/fiori-docs-embeddings",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@claude-flow/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@claude-flow/shared",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-tools-mongodb",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-tools-atlas",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-fetch",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-ui",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-atlas-api-client",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-tools-assistant",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-tools-atlas-local",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-setup",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-atlas-telemetry",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mongodb-js/mcp-logging",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@azure/mcp-win32-x64",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "polotno",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "easy-skills",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@modelcontextprotocol/fastify",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mastra/mcp-docs-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "agnost",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "context-mode",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "mcp-framework",
+      "reason": "name matches library pattern"
+    },
+    {
+      "name": "mcp-lite",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "ctx7",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@traceloop/instrumentation-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "slack-mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@mcpjam/sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@claude-flow/cli-core",
+      "reason": "name matches library pattern"
+    },
+    {
+      "name": "@mcp-use/inspector",
+      "reason": "name matches library pattern"
+    },
+    {
+      "name": "@agents-dev/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "kubernetes-mcp-server-linux-amd64",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@azure/mcp-darwin-arm64",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@smthrs/cli",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mcp-use/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "configure",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@google/stitch-sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@smthrs/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@stacksjs/ai",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "headroom-ai",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "claude-mem",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@johnymontana/neo4j-mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@cotal-ai/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "critical",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "corsair",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "agnix",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "rsshub",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@taiga-ai/mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "xmcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@expo/agent-cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "callscript",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@databuddy/sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@atlassian-dc-mcp/common",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@shogo-ai/sdk",
+      "reason": "name matches library pattern"
+    },
+    {
+      "name": "@blaxel/telemetry",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@pascal-app/lingo",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "axe-mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@reticlehq/core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@nest-openapi/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@togglhq/mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@microsoft/jsts-upgrade-assistant",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "mcp-server-whisper",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "pi-fabric",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@mcp-b/react-webmcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@claude-flow/plugin-gastown-bridge",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@reticlehq/browser",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@usenotra/geo",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@json-render/mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mui/x-agent-tools",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "infy-mcp-playwright",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@aventurevc/mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@voltagent/mcp-server",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@lushly-dev/afd-client",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "agent-inspect",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "cotal-ai",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@lushly-dev/afd-core",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@coinbase/cdp-cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@lushly-dev/afd-server",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@lushly-dev/afd-testing",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@microsoft/postgres-mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@reticlehq/react",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@microsoft/powerbi-modeling-mcp-win32-x64",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@agentmemory/mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "ecc-universal",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@gleanwork/mcp-config-schema",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "openapi-mcp-generator",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@adcp/sdk",
+      "reason": "name matches library pattern"
+    },
+    {
+      "name": "alvin-bot",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "mcp-from-openapi",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "mockserver-node",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@vibe-agent-toolkit/gateway-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@hypequery/datasets",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "ai-rulez",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "convex-mcp-gateway",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "tiny-stdio-mcp-server",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@letterstory/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "dsh-bili-scroll",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@kubb/plugin-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@commonlyai/cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "ecc-agentshield",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "decocms",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "fastify-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@datadog/pi-plugin",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@mcp-use/modelcontextprotocol-sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@socketsecurity/mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@kya-os/mcp",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@forumone/throughline",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "elysia-mcp",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@phantom/mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@kybernesis/arcana",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "task-master-ai",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "open-computer-use",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "frog",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@forumone/create-throughline",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@blackwell-systems/gcf",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "lousho",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@21st-dev/magic",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "tiny-http-mcp-server",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@procedures/client",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "bce-engine",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@maiaos/protocol",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "usebeeline",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@aifinpay/skill",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@chkp/mcp-utils",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@warmhub/sdk-ts",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "kubernetes-mcp-server-linux-arm64",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@kya-os/consent",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "@gleanwork/mcp-config-glean",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    },
+    {
+      "name": "omni-ai-cli",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "veryfront",
+      "reason": "no MCP server signal (not registry-listed, no SDK dependency, no mcp-server keyword)"
+    },
+    {
+      "name": "@openhex-ai/agent-sdk",
+      "reason": "no bin entry (not launchable as a stdio server)"
+    }
+  ]
+}

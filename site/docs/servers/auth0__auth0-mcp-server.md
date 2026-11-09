@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.1.0-beta.19` |
 | Status | crashed |
-| Weekly downloads | 14323 |
+| Weekly downloads | 12293 |
 | Protocol version | — |
 | Registry entry | com.auth0/mcp |
 | Surface hash | `—` |
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 11 |
 | `maintainer_count` | 21 |
-| `releases_last_90d` | 2 |
+| `releases_last_90d` | 1 |
 | `median_days_between_releases` | 16.01 |
 | `repo_linked` | True |
 | `registry_listed` | True |

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.99.2` |
+| Latest observed version | `1.99.3` |
 | Status | ok |
-| Weekly downloads | 17534 |
+| Weekly downloads | 16435 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.appium/appium-mcp |
 | Surface hash | `sha256:1f23bbf8a0d50e31` |
@@ -21,7 +21,7 @@
 | `direct_dependency_count` | 17 |
 | `maintainer_count` | 5 |
 | `releases_last_90d` | 37 |
-| `median_days_between_releases` | 0.66 |
+| `median_days_between_releases` | 0.67 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

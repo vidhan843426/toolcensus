@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `11.120.0` |
+| Latest observed version | `11.138.0` |
 | Status | requires_configuration |
-| Weekly downloads | 39006 |
+| Weekly downloads | 20719 |
 | Protocol version | — |
 | Registry entry | io.github.asklokesh/loki-mode |
 | Surface hash | `—` |
@@ -25,7 +25,7 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 1 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 496 |
+| `releases_last_90d` | 516 |
 | `median_days_between_releases` | 0.02 |
 | `repo_linked` | True |
 | `registry_listed` | True |

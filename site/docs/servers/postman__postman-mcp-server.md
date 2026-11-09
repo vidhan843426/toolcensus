@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.15.0` |
 | Status | ok |
-| Weekly downloads | 12400 |
+| Weekly downloads | 11682 |
 | Protocol version | 2025-11-25 |
 | Registry entry | com.postman/postman-mcp-server |
 | Surface hash | `sha256:422fb9c7eefd1b0c` |

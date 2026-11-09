@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.82.0` |
+| Latest observed version | `0.82.2` |
 | Status | requires_configuration |
-| Weekly downloads | 27752 |
+| Weekly downloads | 34554 |
 | Protocol version | — |
 | Registry entry | dev.endform/mcp |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
-| `maintainer_count` | 1 |
-| `releases_last_90d` | 19 |
+| `maintainer_count` | 2 |
+| `releases_last_90d` | 21 |
 | `median_days_between_releases` | 0.99 |
 | `repo_linked` | True |
 | `registry_listed` | True |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.23.0` |
+| Latest observed version | `0.26.1` |
 | Status | ok |
-| Weekly downloads | 26422 |
+| Weekly downloads | 52717 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:cfc6bc3ac1ea7961` |
+| Surface hash | `sha256:29ac2002150f3f3d` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
@@ -26,8 +26,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 48 |
-| `median_days_between_releases` | 1.5 |
+| `releases_last_90d` | 46 |
+| `median_days_between_releases` | 1.41 |
 | `repo_linked` | False |
 | `registry_listed` | False |
 
@@ -37,26 +37,26 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `apply_machine_patches` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d41a13858c46` |
-| `convert_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `55c9c8ef6806` |
-| `diff_machines` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d9d14487ebcf` |
+| `apply_machine_patches` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `b4c85cb01bfd` |
+| `convert_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3b2c01d86b7e` |
+| `diff_machines` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f3c6c3e3eaca` |
 | `extract_machines_from_code` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `83f4db543ac5` |
-| `generate_graph_paths` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `dd6347b2d240` |
+| `generate_graph_paths` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `9b6a52fb523a` |
 | `get_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6905b7a9903a` |
 | `get_stately_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f5b370cb5964` |
 | `get_stately_project` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `8bf9154a2e74` |
 | `list_machines` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1b4d76f1ebde` |
 | `list_stately_project_machines` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6d955bf57086` |
 | `list_stately_projects` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `2276f40ff021` |
-| `read_visualization_workspace` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `94363f1917c4` |
+| `read_visualization_workspace` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `39c63607b9a9` |
 | `report_visualization_rendered` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `dce0ca763b82` |
-| `review_machine_implementation` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `efb89cfd9b8f` |
-| `simulate_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `941fe4d28707` |
+| `review_machine_implementation` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3f31f05192cd` |
+| `simulate_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `5bf0384c0f3c` |
 | `update_visualization_workspace` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `33fe71fb589b` |
-| `validate_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `dda67ea76ce0` |
-| `visualize_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `2dd0dedaee28` |
-| `visualize_machines` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `c9ee691b159b` |
-| `visualize_stately_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `fe40e0f70db6` |
+| `validate_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `f7712c4cde0d` |
+| `visualize_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `771ae44397b6` |
+| `visualize_machines` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `97499e098978` |
+| `visualize_stately_machine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `2d0733b7a2d2` |
 
 
 
@@ -79,5 +79,16 @@
 | week 2026-45 | `0.21.0` → `0.23.0` | `visualize_machine` | input_schema_changed (schema_widened) | property 'focus' added (optional); property 'machineId' added (optional); property 'name' added (optional); property 'workspaceId' added (optional) |
 | week 2026-45 | `0.21.0` → `0.23.0` | `visualize_machine` | output_schema_changed |  |
 | week 2026-45 | `0.21.0` → `0.23.0` | `visualize_stately_machine` | output_schema_changed |  |
+| week 2026-46 | `0.23.0` → `0.26.1` | `apply_machine_patches` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `convert_machine` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `diff_machines` | input_schema_changed (schema_other) | property 'base' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `generate_graph_paths` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `read_visualization_workspace` | other_changed | title or other top-level field changed |
+| week 2026-46 | `0.23.0` → `0.26.1` | `review_machine_implementation` | input_schema_changed (schema_other) | property 'base' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `simulate_machine` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `validate_machine` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `visualize_machine` | input_schema_changed (schema_other) | property 'source' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `visualize_machines` | input_schema_changed (schema_other) | property 'models' changed (annotations/descriptions) |
+| week 2026-46 | `0.23.0` → `0.26.1` | `visualize_stately_machine` | other_changed | title or other top-level field changed |
 
 

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.12.2` |
+| Latest observed version | `2.12.3` |
 | Status | requires_configuration |
-| Weekly downloads | 38574 |
+| Weekly downloads | 44369 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 9 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 190 |
-| `median_days_between_releases` | 0.07 |
+| `releases_last_90d` | 167 |
+| `median_days_between_releases` | 0.08 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

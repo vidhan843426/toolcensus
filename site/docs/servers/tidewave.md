@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.10.0` |
 | Status | crashed |
-| Weekly downloads | 29707 |
+| Weekly downloads | 22910 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 3 |
+| `releases_last_90d` | 2 |
 | `median_days_between_releases` | 7.14 |
 | `repo_linked` | True |
 | `registry_listed` | False |

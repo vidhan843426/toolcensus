@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `4.0.0` |
 | Status | not_mcp |
-| Weekly downloads | 149198 |
+| Weekly downloads | 99654 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 75 |
 | `maintainer_count` | 32 |
-| `releases_last_90d` | 6169 |
+| `releases_last_90d` | 5922 |
 | `median_days_between_releases` | 0.01 |
 | `repo_linked` | True |
 | `registry_listed` | False |

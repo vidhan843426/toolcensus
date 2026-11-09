@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.24.38` |
+| Latest observed version | `4.24.57` |
 | Status | ok |
-| Weekly downloads | 60620 |
+| Weekly downloads | 62863 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.chrisryugj/kordoc |
-| Surface hash | `sha256:1c256f5ce1a1b89a` |
+| Surface hash | `sha256:963b1eb6997d5168` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
@@ -25,8 +25,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 153 |
-| `median_days_between_releases` | 0.22 |
+| `releases_last_90d` | 169 |
+| `median_days_between_releases` | 0.24 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -40,7 +40,7 @@
 | `agency_pack_info` | — | yes | no | `9ba790116f55` |
 | `build_agency_pack` | — | yes | no | `9267f64f5fcf` |
 | `compare_documents` | — | yes | no | `ecc7a56f5b3c` |
-| `convert_to_hwpx` | — | yes | no | `2bc532c9a01d` |
+| `convert_to_hwpx` | — | yes | no | `f94f48ea313f` |
 | `crop_regions` | — | yes | no | `2cac515f87f9` |
 | `detect_format` | — | yes | no | `8836db5f1082` |
 | `extract_profile` | — | yes | no | `b5a8a4f9bfbe` |
@@ -49,7 +49,7 @@
 | `generate_document` | — | yes | no | `ccb7807407e6` |
 | `lint_document` | — | no | no | `5301f3ff43f2` |
 | `parse_chunks` | — | yes | no | `9e3e96c6f80e` |
-| `parse_document` | — | yes | no | `b9afe2666c5b` |
+| `parse_document` | — | yes | no | `b88385c8d591` |
 | `parse_form` | — | yes | no | `70c8b5e46ec8` |
 | `parse_metadata` | — | yes | no | `7712aa3b01df` |
 | `parse_pages` | — | yes | no | `d118c1741afc` |
@@ -63,4 +63,9 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-46 | `4.24.38` → `4.24.57` | `convert_to_hwpx` | description_changed | length 270 -&gt; 267 |
+| week 2026-46 | `4.24.38` → `4.24.57` | `parse_document` | input_schema_changed (schema_widened) | property 'ocr_rec': enum values added |
+
+

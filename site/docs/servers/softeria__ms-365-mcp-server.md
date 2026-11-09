@@ -2,16 +2,15 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.178.0` |
+| Latest observed version | `0.182.2` |
 | Status | ok |
-| Weekly downloads | 85307 |
+| Weekly downloads | 62694 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.Softeria/ms-365-mcp-server |
-| Surface hash | `sha256:6b9e5e840c28fef2` |
+| Surface hash | `sha256:022c584a810fa647` |
 
 !!! tip "Improvement hints"
-    - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 5 of 202 tools.
-    - Consider `additionalProperties: false` on the input schema of 190 tool(s) so unexpected arguments are rejected.
+    - Consider `additionalProperties: false` on the input schema of 191 tool(s) so unexpected arguments are rejected.
 
 
 
@@ -24,14 +23,14 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 78 |
-| `median_days_between_releases` | 0.44 |
+| `releases_last_90d` | 88 |
+| `median_days_between_releases` | 0.38 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
 
 
-## Tools (202)
+## Tools (203)
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
@@ -43,7 +42,7 @@
 | `clear-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ede583ad0f13` |
 | `copy-drive-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `2333d0717d3c` |
 | `copy-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `37c81428aa22` |
-| `create-calendar` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `8380761fc0fa` |
+| `create-calendar` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `379ec1740cd8` |
 | `create-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `209905459f98` |
 | `create-calendar-event-attachment-upload-session` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `34971e05f403` |
 | `create-contact-child-folder` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `0f5420099c3a` |
@@ -78,8 +77,8 @@
 | `create-subscription` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `04d55ddf66d3` |
 | `create-todo-checklist-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `456f5ca3e83e` |
 | `create-todo-linked-resource` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `726d894a7970` |
-| `create-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e535b3452700` |
-| `create-todo-task-list` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e73bbc166f94` |
+| `create-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `0a615a7ffff6` |
+| `create-todo-task-list` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a12850633782` |
 | `create-upload-session` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `f55fc76a1f8a` |
 | `decline-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `8afaeb186be9` |
 | `delete-calendar` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `1b138305d510` |
@@ -91,7 +90,8 @@
 | `delete-focused-inbox-override` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `cf1b5f13e1d5` |
 | `delete-mail-attachment` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `50768e7a8ee9` |
 | `delete-mail-folder` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `3225f7faa2ef` |
-| `delete-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `1757b0da9c78` |
+| `delete-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `d96f63665325` |
+| `delete-mail-message-skip-deleted-items` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `b8256a4ea08d` |
 | `delete-mail-rule` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `592b4c745eb4` |
 | `delete-my-calendar-permission` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `598218b90fe7` |
 | `delete-onedrive-file` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `c619a1244f46` |
@@ -106,8 +106,8 @@
 | `delete-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `4b7ff28b9dee` |
 | `delete-todo-task-list` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `cd7c293b1210` |
 | `dismiss-calendar-event-reminder` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `9db8ce70868f` |
-| `download-bytes` | openWorldHint, readOnlyHint | yes | yes | `6f1306f90389` |
-| `download-bytes-to-file` | openWorldHint, readOnlyHint | yes | yes | `d1215956cfaf` |
+| `download-bytes` | openWorldHint, readOnlyHint | yes | yes | `580a95794537` |
+| `download-bytes-to-file` | openWorldHint, readOnlyHint | yes | yes | `a5fb9cb58f75` |
 | `format-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `4dc6ae846303` |
 | `format-excel-range-border` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `36c442ec90e8` |
 | `format-excel-range-fill` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `08dbaab1adcb` |
@@ -117,8 +117,8 @@
 | `get-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `630047bfadac` |
 | `get-calendar-view` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `50c508aa11c0` |
 | `get-current-user` | destructiveHint, openWorldHint, readOnlyHint | no | no | `e1afe8c95a0e` |
-| `get-download-url` | openWorldHint, readOnlyHint | yes | yes | `f5965a441a03` |
-| `get-drive-delta` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `cd8e752037f4` |
+| `get-download-url` | openWorldHint, readOnlyHint | yes | yes | `8d333b6d08ed` |
+| `get-drive-delta` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `2e2d5ea49a86` |
 | `get-drive-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `b46bf0d18de2` |
 | `get-drive-root-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `d18ede675c9f` |
 | `get-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e07b6ffa01fe` |
@@ -127,7 +127,7 @@
 | `get-excel-used-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `eb27ee860f62` |
 | `get-mail-attachment-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a5a471f24c80` |
 | `get-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a913ae92d240` |
-| `get-mail-message-mime` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `956131e1e73e` |
+| `get-mail-message-mime` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `f1895a654143` |
 | `get-mail-tips` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e24e6317b7b8` |
 | `get-mailbox-settings` | destructiveHint, openWorldHint, readOnlyHint | no | no | `f0a56b49f504` |
 | `get-my-profile` | destructiveHint, openWorldHint, readOnlyHint | no | no | `2ba2757eb37d` |
@@ -141,7 +141,7 @@
 | `get-specific-calendar-view` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `40df3fc00f34` |
 | `get-subscription` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `23667eb553c2` |
 | `get-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `610c7d87a1eb` |
-| `get-upload-url` | openWorldHint, readOnlyHint | yes | yes | `1b0b3023c415` |
+| `get-upload-url` | openWorldHint, readOnlyHint | yes | yes | `ca6b5cc85b0e` |
 | `graph-batch` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e44c44c5bb3d` |
 | `insert-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `acf7d629b448` |
 | `list-accounts` | openWorldHint, readOnlyHint | no | no | `44052c4d8712` |
@@ -164,7 +164,7 @@
 | `list-focused-inbox-overrides` | destructiveHint, openWorldHint, readOnlyHint | no | no | `054b36de2a23` |
 | `list-folder-files` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `6e692e636a9c` |
 | `list-group-planner-plans` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `52ff9458c0a3` |
-| `list-mail-attachments` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `f477ef20c015` |
+| `list-mail-attachments` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `dc9f1dfcc2e5` |
 | `list-mail-child-folders` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `811cd806133f` |
 | `list-mail-folder-messages` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `c0977fcf2d29` |
 | `list-mail-folder-messages-delta` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `d0116d6604a0` |
@@ -192,19 +192,19 @@
 | `list-todo-task-lists` | destructiveHint, openWorldHint, readOnlyHint | no | no | `94e1314c9374` |
 | `list-todo-task-lists-delta` | destructiveHint, openWorldHint, readOnlyHint | no | no | `74335948cbcb` |
 | `list-todo-tasks` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `cbddd65edf59` |
-| `login` | — | no | yes | `85fcedc301b8` |
-| `logout` | — | no | no | `107143ab6edb` |
+| `login` | openWorldHint, readOnlyHint | no | yes | `81e9e827b80b` |
+| `logout` | openWorldHint, readOnlyHint | no | no | `7e10b9a6b958` |
 | `merge-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ffe42846a064` |
 | `move-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `57e28066ce13` |
 | `move-rename-onedrive-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ebe57bb848a1` |
 | `parse-teams-url` | openWorldHint, readOnlyHint | yes | yes | `96e64fabbe8f` |
 | `read-mail-text` | openWorldHint, readOnlyHint | no | yes | `e71380b5181e` |
 | `reauthorize-subscription` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a1c6630b2056` |
-| `remove-account` | — | yes | yes | `0b874ec34913` |
+| `remove-account` | openWorldHint, readOnlyHint | yes | yes | `28531f2a566e` |
 | `reply-all-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `0f5601e259cb` |
 | `reply-mail-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e197f3a86efe` |
 | `search-onedrive-files` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `46e21c1c9b34` |
-| `select-account` | — | yes | yes | `81f88b9ee46b` |
+| `select-account` | openWorldHint, readOnlyHint | yes | yes | `bd18d1740b74` |
 | `send-draft-message` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `2847b473a8b4` |
 | `send-mail` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `851af3665788` |
 | `share-drive-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ee15fe3678cd` |
@@ -212,7 +212,7 @@
 | `sort-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `52a0f9f66140` |
 | `tentatively-accept-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ee5b0046248a` |
 | `unmerge-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `f61e503285d9` |
-| `update-calendar` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `bc8206e9e242` |
+| `update-calendar` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e753ab68b866` |
 | `update-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `42b369d43202` |
 | `update-contact-folder` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `63ba533ae0af` |
 | `update-excel-range` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `22bbb7e4cfd6` |
@@ -232,11 +232,11 @@
 | `update-specific-calendar-event` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `af802f89bfd4` |
 | `update-subscription` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `2c3e50445a94` |
 | `update-todo-checklist-item` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `534246f5a500` |
-| `update-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `84cd9f15276a` |
-| `update-todo-task-list` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `41279fdd2b1b` |
+| `update-todo-task` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e00a5c23f7b1` |
+| `update-todo-task-list` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `10a23f5fa3a4` |
 | `upload-file-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `0e2362f06ff5` |
 | `upload-my-profile-photo` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `24ee60948f5a` |
-| `verify-login` | — | no | no | `d9611e2b42e6` |
+| `verify-login` | openWorldHint, readOnlyHint | no | no | `73b629704760` |
 
 
 
@@ -298,5 +298,30 @@
 | week 2026-45 | `0.173.0` → `0.178.0` | `update-todo-checklist-item` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
 | week 2026-45 | `0.173.0` → `0.178.0` | `update-todo-task` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
 | week 2026-45 | `0.173.0` → `0.178.0` | `update-todo-task-list` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `delete-mail-message-skip-deleted-items` | tool_added |  |
+| week 2026-46 | `0.178.0` → `0.182.2` | `create-calendar` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `create-todo-task` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `create-todo-task-list` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `delete-mail-message` | description_changed | length 215 -&gt; 340 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `delete-mail-message` | input_schema_changed (schema_narrowed) | property 'If-Match' removed |
+| week 2026-46 | `0.178.0` → `0.182.2` | `download-bytes` | description_changed | length 594 -&gt; 721 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `download-bytes` | input_schema_changed (schema_widened) | property 'accept' added (optional) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `download-bytes-to-file` | description_changed | length 636 -&gt; 694 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `download-bytes-to-file` | input_schema_changed (schema_widened) | property 'accept' added (optional) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-download-url` | description_changed | length 810 -&gt; 942 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-drive-delta` | description_changed | length 1051 -&gt; 1086 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-drive-delta` | input_schema_changed (schema_widened) | property 'token' added (optional) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-mail-message-mime` | input_schema_changed (schema_narrowed) | property 'Accept': pattern added; property 'Accept': maxLength added |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-upload-url` | description_changed | length 850 -&gt; 1090 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `get-upload-url` | input_schema_changed (schema_other) | property 'conflictBehavior' added (optional); property 'name' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `list-mail-attachments` | description_changed | length 357 -&gt; 523 |
+| week 2026-46 | `0.178.0` → `0.182.2` | `login` | annotations_changed |  |
+| week 2026-46 | `0.178.0` → `0.182.2` | `logout` | annotations_changed |  |
+| week 2026-46 | `0.178.0` → `0.182.2` | `remove-account` | annotations_changed |  |
+| week 2026-46 | `0.178.0` → `0.182.2` | `select-account` | annotations_changed |  |
+| week 2026-46 | `0.178.0` → `0.182.2` | `update-calendar` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `update-todo-task` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `update-todo-task-list` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
+| week 2026-46 | `0.178.0` → `0.182.2` | `verify-login` | annotations_changed |  |
 
 

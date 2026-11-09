@@ -2,15 +2,16 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.4.4` |
+| Latest observed version | `4.6.0` |
 | Status | ok |
-| Weekly downloads | 556118 |
+| Weekly downloads | 1024328 |
 | Protocol version | 2025-11-25 |
-| Registry entry | io.github.upstash/context7 |
+| Registry entry | not listed |
 | Surface hash | `sha256:ccfc6233c4945f1c` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
+    - Consider listing the server in the official MCP Registry.
     - Consider `additionalProperties: false` on the input schema of 2 tool(s) so unexpected arguments are rejected.
 
 
@@ -24,10 +25,10 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 8 |
-| `releases_last_90d` | 21 |
-| `median_days_between_releases` | 3.18 |
+| `releases_last_90d` | 22 |
+| `median_days_between_releases` | 3.2 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 

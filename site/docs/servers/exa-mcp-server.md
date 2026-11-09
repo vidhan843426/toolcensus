@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.4.2` |
+| Latest observed version | `3.4.3` |
 | Status | ok |
-| Weekly downloads | 23534 |
+| Weekly downloads | 64125 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:30595c67a694b6eb` |
+| Surface hash | `sha256:32df6fd3f5172b8d` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 6 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 2 |
-| `median_days_between_releases` | 2.87 |
+| `releases_last_90d` | 3 |
+| `median_days_between_releases` | 2.88 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -34,11 +34,16 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `web_fetch_exa` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `b4ae2a49a95f` |
-| `web_search_exa` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `6a4a818f79e7` |
+| `web_fetch_exa` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `2a81a6baf5cd` |
+| `web_search_exa` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `92c4d40a86ef` |
 
 
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-46 | `3.4.2` → `3.4.3` | `web_fetch_exa` | other_changed | title or other top-level field changed |
+| week 2026-46 | `3.4.2` → `3.4.3` | `web_search_exa` | other_changed | title or other top-level field changed |
+
+

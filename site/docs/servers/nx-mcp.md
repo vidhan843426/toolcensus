@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.25.0` |
+| Latest observed version | `0.25.3` |
 | Status | ok |
-| Weekly downloads | 125210 |
+| Weekly downloads | 123474 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.nrwl/nx-console |
 | Surface hash | `sha256:ffdd28689d0ecb71` |
@@ -19,9 +19,9 @@
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
-| `maintainer_count` | 6 |
-| `releases_last_90d` | 0 |
-| `median_days_between_releases` | 5.8 |
+| `maintainer_count` | 7 |
+| `releases_last_90d` | 1 |
+| `median_days_between_releases` | 5.88 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

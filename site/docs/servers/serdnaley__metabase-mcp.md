@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.4.0` |
+| Latest observed version | `0.5.0` |
 | Status | requires_configuration |
-| Weekly downloads | 47629 |
+| Weekly downloads | 39959 |
 | Protocol version | — |
 | Registry entry | io.github.Serdnaley/metabase-mcp |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 3 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 2 |
-| `median_days_between_releases` | 5.86 |
+| `releases_last_90d` | 3 |
+| `median_days_between_releases` | 6.24 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

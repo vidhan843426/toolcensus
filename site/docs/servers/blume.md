@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.2.6` |
+| Latest observed version | `2.2.7` |
 | Status | install_failed |
-| Weekly downloads | 205807 |
+| Weekly downloads | 179404 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 82 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 34 |
-| `median_days_between_releases` | 0.8 |
+| `releases_last_90d` | 31 |
+| `median_days_between_releases` | 0.85 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -32,7 +32,7 @@
 
 ## Tools (0)
 
-No tools observed (:Isolate*, char const*, v8::OOMDetails const&) [npm install blume@2.2.6]  4: 0x1477ee5  [npm install blume@2.2.6]  5: 0x1477f13  [npm install blume@2.2.6]  6: 0x1490fea  [npm install blume@2.2.6]  7:…).
+No tools observed (:Isolate*, char const*, v8::OOMDetails const&) [npm install blume@2.2.7]  4: 0x1477ee5  [npm install blume@2.2.7]  5: 0x1477f13  [npm install blume@2.2.7]  6: 0x1490fea  [npm install blume@2.2.7]  7:…).
 
 ## Change history
 

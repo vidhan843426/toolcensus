@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.4.5` |
+| Latest observed version | `2.6.5` |
 | Status | ok |
-| Weekly downloads | 36429 |
+| Weekly downloads | 32283 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.browserstack/mcp-server |
-| Surface hash | `sha256:09e6fcca5c7d5d89` |
+| Surface hash | `sha256:9bcd7b4f6d5ffb2b` |
 
 !!! tip "Improvement hints"
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 1 of 52 tools.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 97 |
-| `median_days_between_releases` | 0.56 |
+| `releases_last_90d` | 100 |
+| `median_days_between_releases` | 0.47 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -38,7 +38,7 @@
 | `accessibilityExpert` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1c69a27149c3` |
 | `addPercySnapshotCommands` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `470230e6c034` |
 | `addTestResult` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `2b28dc7bc058` |
-| `askBrowserStackAI` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `694b168e84a3` |
+| `askBrowserStackAI` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `15e7161e2da5` |
 | `createAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `767f83b50967` |
 | `createLCASteps` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `48a9017d74e4` |
 | `createProjectOrFolder` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `e2a684d1ebbd` |
@@ -49,31 +49,31 @@
 | `describeEntity` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d8d19a5fe807` |
 | `expandPercyVisualTesting` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `b564655f9cb7` |
 | `fetchAccessibilityIssues` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `04ba9487d0b1` |
-| `fetchAutomationScreenshots` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `7e6e030beb49` |
-| `fetchBuildInsights` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `9d116cfd68eb` |
+| `fetchAutomationScreenshots` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f8ebf936acc1` |
+| `fetchBuildInsights` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1993fc8ec583` |
 | `fetchPercyChanges` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3713154564de` |
 | `fetchRCA` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `669eec694df9` |
-| `fetchSelfHealedSelectors` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `567ed62cfbdc` |
+| `fetchSelfHealedSelectors` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `e7de36110721` |
 | `getAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `c65df5b526f9` |
-| `getBuildId` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3b49c717bdee` |
-| `getFailureLogs` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `141bf99e3f5a` |
+| `getBuildId` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `f48c59460529` |
+| `getFailureLogs` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `50fd97bd32ba` |
 | `getSubTestPlan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `00e2f11a23b1` |
 | `getTestPlan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `849e2117283b` |
 | `invokeCapability` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `da3a64f39278` |
-| `listBuildId` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `ff8ca5364475` |
+| `listBuildId` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `5702c17e6f16` |
 | `listFolders` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `fed8f57a5f9f` |
 | `listProducts` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `f1e31628e46a` |
-| `listSessions` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e6ecd8d01563` |
+| `listSessions` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1f04b5186279` |
 | `listSubTestPlans` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `9bacf442c316` |
 | `listTestCaseTemplates` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `6ff0cc4763de` |
 | `listTestCases` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d6658d760f7e` |
 | `listTestFiles` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `f492f8213996` |
-| `listTestIds` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `9880a0f35858` |
+| `listTestIds` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `651687aa9518` |
 | `listTestPlans` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `919fb2363454` |
 | `listTestRuns` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `70ea9abf7f3a` |
 | `managePercyBuildApproval` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `5635eb86ad4e` |
 | `percyVisualTestIntegrationAgent` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `46731c762a53` |
-| `prepareSelfHealingPlan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `a2d3c3df0b18` |
+| `prepareSelfHealingPlan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f4c2a44ddd2f` |
 | `runAppLiveSession` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f52b517e820a` |
 | `runAppTestsOnBrowserStack` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `afc98aa2acd0` |
 | `runBrowserLiveSession` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `4bbd5758f356` |
@@ -153,5 +153,22 @@
 | week 2026-45 | `2.2.8` → `2.4.5` | `updateTestCase` | input_schema_changed (schema_other) | property 'automation_status' changed (annotations/descriptions) |
 | week 2026-45 | `2.2.8` → `2.4.5` | `updateTestRun` | description_changed | length 272 -&gt; 134 |
 | week 2026-45 | `2.2.8` → `2.4.5` | `uploadProductRequirementFile` | description_changed | length 429 -&gt; 306 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `askBrowserStackAI` | input_schema_changed (schema_other) | property 'answers' added (optional); property 'attachment_ids' added (optional); property 'conversation_id' added (optional); property 'files' added (optional); property 'perm_id' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `fetchAutomationScreenshots` | input_schema_changed (schema_other) | property 'sessionId' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `fetchBuildInsights` | description_changed | length 99 -&gt; 115 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `fetchBuildInsights` | input_schema_changed (schema_other) | property 'buildId' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `fetchSelfHealedSelectors` | description_changed | length 226 -&gt; 226 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `fetchSelfHealedSelectors` | input_schema_changed (schema_other) | property 'buildUuid' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `getBuildId` | description_changed | length 102 -&gt; 93 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `getBuildId` | input_schema_changed (schema_other) | property 'buildNumber' added (optional); property 'buildUrl' added (optional); property 'browserStackBuildName' no longer required; property 'browserStackProjectName' no longer required; property 'browserStackBuildName' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `getFailureLogs` | description_changed | length 153 -&gt; 153 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `getFailureLogs` | input_schema_changed (schema_other) | property 'sessionId' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listBuildId` | description_changed | length 88 -&gt; 102 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listBuildId` | input_schema_changed (schema_other) | property 'buildNumber' added (optional); property 'buildUrl' added (optional); property 'browserStackBuildName' no longer required; property 'browserStackProjectName' no longer required; property 'browserStackBuildName' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listSessions` | description_changed | length 111 -&gt; 117 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listSessions` | input_schema_changed (schema_other) | property 'buildId' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listTestIds` | description_changed | length 195 -&gt; 172 |
+| week 2026-46 | `2.4.5` → `2.6.5` | `listTestIds` | input_schema_changed (schema_other) | property 'status' no longer required; property 'buildId' changed (annotations/descriptions) |
+| week 2026-46 | `2.4.5` → `2.6.5` | `prepareSelfHealingPlan` | description_changed | length 261 -&gt; 261 |
 
 

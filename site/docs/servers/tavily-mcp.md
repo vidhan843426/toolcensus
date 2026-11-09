@@ -4,13 +4,14 @@
 |---|---|
 | Latest observed version | `0.2.22` |
 | Status | ok |
-| Weekly downloads | 26333 |
+| Weekly downloads | 21436 |
 | Protocol version | 2025-11-25 |
-| Registry entry | io.github.tavily-ai/tavily-mcp |
+| Registry entry | not listed |
 | Surface hash | `sha256:8aef27a12c8b3f5a` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
+    - Consider listing the server in the official MCP Registry.
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 5 of 5 tools.
     - Consider `additionalProperties: false` on the input schema of 5 tool(s) so unexpected arguments are rejected.
 
@@ -25,10 +26,10 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 4 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 1 |
+| `releases_last_90d` | 0 |
 | `median_days_between_releases` | 12.84 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 

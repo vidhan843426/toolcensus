@@ -2,14 +2,15 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.3.19` |
+| Latest observed version | `2.3.22` |
 | Status | requires_configuration |
-| Weekly downloads | 251654 |
+| Weekly downloads | 199316 |
 | Protocol version | — |
-| Registry entry | io.github.zereight/gitlab-mcp |
+| Registry entry | not listed |
 | Surface hash | `—` |
 
 !!! tip "Improvement hints"
+    - Consider listing the server in the official MCP Registry.
     - The server did not start without configuration. Consider advertising tool definitions even when credentials are missing, so clients can inspect them before configuring.
 
 
@@ -23,10 +24,10 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 16 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 97 |
-| `median_days_between_releases` | 0.9 |
+| `releases_last_90d` | 107 |
+| `median_days_between_releases` | 0.89 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 

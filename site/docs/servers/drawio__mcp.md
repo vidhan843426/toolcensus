@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.10.1` |
+| Latest observed version | `1.11.0` |
 | Status | ok |
-| Weekly downloads | 18982 |
+| Weekly downloads | 45060 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
 | Surface hash | `sha256:ef2e1b7a89233097` |
@@ -26,8 +26,8 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 9 |
-| `median_days_between_releases` | 2.98 |
+| `releases_last_90d` | 10 |
+| `median_days_between_releases` | 3.94 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

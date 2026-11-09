@@ -1,6 +1,6 @@
 # ToolCensus — MCP ecosystem health report
 
-*Week 2026-45 · methodology v1.0.0 · 200 servers measured*
+*Week 2026-46 · methodology v1.0.0 · 200 servers measured*
 
 ToolCensus measures the **published metadata** of popular public MCP servers every week:
 supply-chain signals, how precisely tools are described, annotation adoption and how tool
@@ -11,15 +11,15 @@ definitions change over time. These are neutral measurements, not security verdi
 | Metric | This week |
 |---|---|
 | Servers measured | 200 |
-| Reached status `ok` | 49.5% |
-| Tools measured | 3646 |
-| Packages with npm provenance | 59.5% |
-| Packages with install scripts | 12.0% |
-| Tools declaring any annotation | 56.9% |
-| Servers with all tools annotated | 53.5% |
-| Tools with `additionalProperties: false` | 33.4% |
+| Reached status `ok` | 47.5% |
+| Tools measured | 3068 |
+| Packages with npm provenance | 57.0% |
+| Packages with install scripts | 11.0% |
+| Tools declaring any annotation | 56.8% |
+| Servers with all tools annotated | 56.8% |
+| Tools with `additionalProperties: false` | 26.1% |
 | Tools with non-printing code points | 0.0% |
-| Servers with a tool change vs previous week | 23.2% |
+| Servers with a tool change vs previous week | 22.1% |
 
 
 ## Trends

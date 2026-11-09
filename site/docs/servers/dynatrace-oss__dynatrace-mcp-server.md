@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.1.2` |
 | Status | requires_configuration |
-| Weekly downloads | 21528 |
+| Weekly downloads | 26895 |
 | Protocol version | — |
 | Registry entry | io.github.dynatrace-oss/Dynatrace-mcp |
 | Surface hash | `—` |

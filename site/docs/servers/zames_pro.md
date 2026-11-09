@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.94.0` |
+| Latest observed version | `2.96.21` |
 | Status | crashed |
-| Weekly downloads | 36634 |
+| Weekly downloads | 11002 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -25,8 +25,8 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 8 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 381 |
-| `median_days_between_releases` | 0.01 |
+| `releases_last_90d` | 417 |
+| `median_days_between_releases` | 0.02 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

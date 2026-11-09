@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.4.2` |
 | Status | crashed |
-| Weekly downloads | 11185 |
+| Weekly downloads | 11445 |
 | Protocol version | — |
 | Registry entry | io.github.SAP/mdk-mcp-server |
 | Surface hash | `—` |

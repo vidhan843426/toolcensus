@@ -2,14 +2,15 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.22.1` |
+| Latest observed version | `2.23.1` |
 | Status | ok |
-| Weekly downloads | 13102 |
+| Weekly downloads | 15831 |
 | Protocol version | 2025-11-25 |
-| Registry entry | io.github.tufantunc/ssh-mcp |
+| Registry entry | not listed |
 | Surface hash | `sha256:6d40369ad1d85ce3` |
 
 !!! tip "Improvement hints"
+    - Consider listing the server in the official MCP Registry.
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 1 of 15 tools.
     - Consider `additionalProperties: false` on the input schema of 14 tool(s) so unexpected arguments are rejected.
 
@@ -24,10 +25,10 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 9 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 49 |
-| `median_days_between_releases` | 1.09 |
+| `releases_last_90d` | 46 |
+| `median_days_between_releases` | 1.12 |
 | `repo_linked` | True |
-| `registry_listed` | True |
+| `registry_listed` | False |
 
 
 
