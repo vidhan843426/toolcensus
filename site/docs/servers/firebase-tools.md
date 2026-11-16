@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `15.35.0` |
+| Latest observed version | `15.36.0` |
 | Status | crashed |
-| Weekly downloads | 4888224 |
+| Weekly downloads | 5122929 |
 | Protocol version | — |
 | Registry entry | io.github.firebase/firebase-mcp |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 66 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 28 |
+| `releases_last_90d` | 26 |
 | `median_days_between_releases` | 6.01 |
 | `repo_linked` | True |
 | `registry_listed` | True |

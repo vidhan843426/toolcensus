@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.49.0` |
 | Status | crashed |
-| Weekly downloads | 247461 |
+| Weekly downloads | 211045 |
 | Protocol version | — |
 | Registry entry | io.github.getsentry/sentry-mcp |
 | Surface hash | `—` |

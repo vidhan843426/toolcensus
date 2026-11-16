@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.37.5` |
+| Latest observed version | `2.37.7` |
 | Status | ok |
-| Weekly downloads | 78367 |
+| Weekly downloads | 37568 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.TencentCloudBase/cloudbase-mcp |
-| Surface hash | `sha256:5fd0b6a681e02bc2` |
+| Surface hash | `sha256:24422fe7ad37720a` |
 
 !!! tip "Improvement hints"
     - Consider `additionalProperties: false` on the input schema of 42 tool(s) so unexpected arguments are rejected.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 16 |
-| `releases_last_90d` | 36 |
-| `median_days_between_releases` | 1.04 |
+| `releases_last_90d` | 35 |
+| `median_days_between_releases` | 1.05 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -36,9 +36,9 @@
 |---|---|---|---|---|
 | `auth` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1adf82384d3b` |
 | `callCloudApi` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `5f5747fd51cc` |
-| `deployApply` | destructiveHint, openWorldHint, readOnlyHint | no | no | `bf31813ead0a` |
-| `deployBuild` | destructiveHint, openWorldHint, readOnlyHint | no | no | `c4e362bb66f1` |
-| `deployPlan` | destructiveHint, openWorldHint, readOnlyHint | no | no | `8ff7899d440f` |
+| `deployApply` | destructiveHint, openWorldHint, readOnlyHint | no | no | `9a6c25bbee69` |
+| `deployBuild` | destructiveHint, openWorldHint, readOnlyHint | no | no | `8b9c232cfa87` |
+| `deployPlan` | destructiveHint, openWorldHint, readOnlyHint | no | no | `875943fe12d8` |
 | `downloadTemplate` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `959663bb7224` |
 | `envDomainManagement` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `bb66fefce02a` |
 | `manageAgents` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `90fbd45ba797` |
@@ -52,7 +52,7 @@
 | `manageHosting` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `552930f6e5c1` |
 | `manageLogs` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e088f6d5b2e7` |
 | `manageMysqlDatabase` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `fe9c647334e8` |
-| `managePermissions` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d16a0e3e2d00` |
+| `managePermissions` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e97144abe876` |
 | `managePgDatabase` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `0c919286fbe0` |
 | `manageStorage` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6e9d4d568e26` |
 | `modifyDataModel` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `207153c9c3dd` |
@@ -67,7 +67,7 @@
 | `queryHosting` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ccb8a93dbd0b` |
 | `queryLogs` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ddc7920b7675` |
 | `queryMysqlDatabase` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `315cb72980c7` |
-| `queryPermissions` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `cdd7671e2677` |
+| `queryPermissions` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `023bf9bd1dec` |
 | `queryPgDatabase` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a03f03793a21` |
 | `queryPgStorage` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a65882dc5bb8` |
 | `queryStorage` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `7d397a6100a1` |
@@ -129,5 +129,10 @@
 | week 2026-46 | `2.36.2` → `2.37.5` | `searchKnowledgeBase` | input_schema_changed (schema_other) | additionalProperties loosened; property 'apiName' changed (annotations/descriptions) |
 | week 2026-46 | `2.36.2` → `2.37.5` | `writeNoSqlDatabaseContent` | input_schema_changed (schema_other) | additionalProperties loosened; property 'documents': maxItems added; property 'query' changed (annotations/descriptions) |
 | week 2026-46 | `2.36.2` → `2.37.5` | `writeNoSqlDatabaseStructure` | input_schema_changed (schema_other) | additionalProperties loosened; property 'updateOptions' changed (annotations/descriptions) |
+| week 2026-47 | `2.37.5` → `2.37.7` | `deployApply` | description_changed | length 870 -&gt; 1211 |
+| week 2026-47 | `2.37.5` → `2.37.7` | `deployBuild` | description_changed | length 454 -&gt; 542 |
+| week 2026-47 | `2.37.5` → `2.37.7` | `deployPlan` | description_changed | length 652 -&gt; 1076 |
+| week 2026-47 | `2.37.5` → `2.37.7` | `managePermissions` | description_changed | length 2324 -&gt; 2363 |
+| week 2026-47 | `2.37.5` → `2.37.7` | `queryPermissions` | description_changed | length 1167 -&gt; 1225 |
 
 

@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `3.3.0` |
 | Status | ok |
-| Weekly downloads | 153673 |
+| Weekly downloads | 131304 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.mongodb-js/mongodb-mcp-server |
 | Surface hash | `sha256:8b67bdc6273caaa2` |

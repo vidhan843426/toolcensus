@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.102.0` |
 | Status | ok |
-| Weekly downloads | 49935 |
+| Weekly downloads | 47449 |
 | Protocol version | 2025-03-26 |
 | Registry entry | not listed |
 | Surface hash | `sha256:11fd7d3ddd292d55` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 64 |
+| `releases_last_90d` | 61 |
 | `median_days_between_releases` | 0.69 |
 | `repo_linked` | True |
 | `registry_listed` | False |

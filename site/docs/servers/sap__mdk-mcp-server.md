@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.4.2` |
+| Latest observed version | `0.4.3` |
 | Status | crashed |
-| Weekly downloads | 11445 |
+| Weekly downloads | 11097 |
 | Protocol version | — |
 | Registry entry | io.github.SAP/mdk-mcp-server |
 | Surface hash | `—` |
@@ -21,10 +21,10 @@
 | `has_provenance` | True |
 | `has_install_scripts` | True |
 | `install_scripts` | ['postinstall'] |
-| `direct_dependency_count` | 18 |
+| `direct_dependency_count` | 17 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 2 |
-| `median_days_between_releases` | 1.93 |
+| `releases_last_90d` | 3 |
+| `median_days_between_releases` | 10.36 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

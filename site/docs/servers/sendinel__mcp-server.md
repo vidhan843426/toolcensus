@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.0.197` |
+| Latest observed version | `1.0.256` |
 | Status | requires_configuration |
-| Weekly downloads | 21572 |
+| Weekly downloads | 20415 |
 | Protocol version | — |
 | Registry entry | ai.sendinel/mcp-server |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 14 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 187 |
+| `releases_last_90d` | 246 |
 | `median_days_between_releases` | 0.05 |
 | `repo_linked` | True |
 | `registry_listed` | True |

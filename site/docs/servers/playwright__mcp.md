@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.0.84` |
+| Latest observed version | `0.0.85` |
 | Status | ok |
-| Weekly downloads | 10233094 |
+| Weekly downloads | 10908336 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.microsoft/playwright-mcp |
-| Surface hash | `sha256:47017e2326fd831f` |
+| Surface hash | `sha256:02db48a977d2e87e` |
 
 
 
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 5 |
-| `releases_last_90d` | 21 |
+| `releases_last_90d` | 15 |
 | `median_days_between_releases` | 1.0 |
 | `repo_linked` | True |
 | `registry_listed` | True |
@@ -53,7 +53,7 @@
 | `browser_select_option` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `39519dca96a2` |
 | `browser_snapshot` | destructiveHint, openWorldHint, readOnlyHint | no | yes | `d0c0868f6bb7` |
 | `browser_tabs` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `01a6cadb3f41` |
-| `browser_take_screenshot` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `1a9d0225f8f5` |
+| `browser_take_screenshot` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `b3d1b29c8b77` |
 | `browser_type` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `65f884c10e6a` |
 | `browser_wait_for` | destructiveHint, openWorldHint, readOnlyHint | no | yes | `1981693e0645` |
 
@@ -61,4 +61,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-47 | `0.0.84` → `0.0.85` | `browser_take_screenshot` | description_changed | length 123 -&gt; 240 |
+
+

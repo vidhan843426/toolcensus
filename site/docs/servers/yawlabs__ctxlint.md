@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.28.1` |
+| Latest observed version | `0.28.3` |
 | Status | ok |
-| Weekly downloads | 57190 |
+| Weekly downloads | 34579 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.YawLabs/ctxlint |
 | Surface hash | `sha256:051db2f53dad994e` |
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 3 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 19 |
-| `median_days_between_releases` | 0.42 |
+| `releases_last_90d` | 20 |
+| `median_days_between_releases` | 0.46 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

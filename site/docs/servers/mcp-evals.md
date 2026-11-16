@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.0.1` |
 | Status | crashed |
-| Weekly downloads | 58886 |
+| Weekly downloads | 62264 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |

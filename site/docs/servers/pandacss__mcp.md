@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.5.0` |
 | Status | requires_configuration |
-| Weekly downloads | 261131 |
+| Weekly downloads | 282997 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 4 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 19 |
+| `releases_last_90d` | 17 |
 | `median_days_between_releases` | 3.93 |
 | `repo_linked` | True |
 | `registry_listed` | False |

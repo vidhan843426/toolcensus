@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.12.1` |
 | Status | crashed |
-| Weekly downloads | 15286 |
+| Weekly downloads | 11306 |
 | Protocol version | — |
 | Registry entry | io.github.DeusData/codebase-memory-mcp |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 10 |
+| `releases_last_90d` | 5 |
 | `median_days_between_releases` | 1.69 |
 | `repo_linked` | True |
 | `registry_listed` | True |

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.31.3` |
+| Latest observed version | `4.2.0` |
 | Status | ok |
-| Weekly downloads | 204356 |
+| Weekly downloads | 241036 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.hostinger/hostinger-api-mcp |
 | Surface hash | `sha256:a56db669e2374bb8` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 8 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 142 |
-| `median_days_between_releases` | 0.06 |
+| `releases_last_90d` | 178 |
+| `median_days_between_releases` | 0.05 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `6.1.0` |
+| Latest observed version | `6.3.1` |
 | Status | not_mcp |
-| Weekly downloads | 23301 |
+| Weekly downloads | 20160 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -26,7 +26,7 @@
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 2 |
 | `releases_last_90d` | 48 |
-| `median_days_between_releases` | 0.94 |
+| `median_days_between_releases` | 1.01 |
 | `repo_linked` | False |
 | `registry_listed` | False |
 

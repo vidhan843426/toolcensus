@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.5.0` |
 | Status | requires_configuration |
-| Weekly downloads | 39959 |
+| Weekly downloads | 45345 |
 | Protocol version | — |
 | Registry entry | io.github.Serdnaley/metabase-mcp |
 | Surface hash | `—` |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.6.5` |
+| Latest observed version | `2.6.9` |
 | Status | ok |
-| Weekly downloads | 32283 |
+| Weekly downloads | 28046 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.browserstack/mcp-server |
-| Surface hash | `sha256:9bcd7b4f6d5ffb2b` |
+| Surface hash | `sha256:3438bf84e53f7316` |
 
 !!! tip "Improvement hints"
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 1 of 52 tools.
@@ -22,10 +22,10 @@
 | `has_provenance` | True |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
-| `direct_dependency_count` | 13 |
+| `direct_dependency_count` | 14 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 100 |
-| `median_days_between_releases` | 0.47 |
+| `releases_last_90d` | 103 |
+| `median_days_between_releases` | 0.58 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -35,11 +35,11 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `accessibilityExpert` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1c69a27149c3` |
+| `accessibilityExpert` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `18a93e8b0a93` |
 | `addPercySnapshotCommands` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `470230e6c034` |
 | `addTestResult` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `2b28dc7bc058` |
 | `askBrowserStackAI` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `15e7161e2da5` |
-| `createAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `767f83b50967` |
+| `createAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `ce09a0d9fd15` |
 | `createLCASteps` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `48a9017d74e4` |
 | `createProjectOrFolder` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `e2a684d1ebbd` |
 | `createTestCase` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `96ac3b64100b` |
@@ -48,13 +48,13 @@
 | `describeCapability` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `352ec4b44f7b` |
 | `describeEntity` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `d8d19a5fe807` |
 | `expandPercyVisualTesting` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `b564655f9cb7` |
-| `fetchAccessibilityIssues` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `04ba9487d0b1` |
+| `fetchAccessibilityIssues` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `c82ff2a5778a` |
 | `fetchAutomationScreenshots` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `f8ebf936acc1` |
 | `fetchBuildInsights` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `1993fc8ec583` |
 | `fetchPercyChanges` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `3713154564de` |
 | `fetchRCA` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `669eec694df9` |
 | `fetchSelfHealedSelectors` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `e7de36110721` |
-| `getAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `c65df5b526f9` |
+| `getAccessibilityAuthConfig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `a70b10eaf5a2` |
 | `getBuildId` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `f48c59460529` |
 | `getFailureLogs` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `50fd97bd32ba` |
 | `getSubTestPlan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `00e2f11a23b1` |
@@ -81,12 +81,12 @@
 | `searchCapability` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `353bb3dd75f8` |
 | `setupBrowserStackAppAutomateTests` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `946541dc7984` |
 | `setupBrowserStackAutomateTests` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `229266611249` |
-| `startAccessibilityScan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e2ed92adb540` |
+| `startAccessibilityScan` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `380a3f07694f` |
 | `submitFeedback` | — | yes | no | `2bf20ada29c1` |
 | `takeAppScreenshot` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `6bc2527a2427` |
 | `updateTestCase` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `456757fa48c2` |
 | `updateTestRun` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `4487c369f00e` |
-| `uploadProductRequirementFile` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `de38a3473d91` |
+| `uploadProductRequirementFile` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `5b252fc00662` |
 
 
 
@@ -170,5 +170,14 @@
 | week 2026-46 | `2.4.5` → `2.6.5` | `listTestIds` | description_changed | length 195 -&gt; 172 |
 | week 2026-46 | `2.4.5` → `2.6.5` | `listTestIds` | input_schema_changed (schema_other) | property 'status' no longer required; property 'buildId' changed (annotations/descriptions) |
 | week 2026-46 | `2.4.5` → `2.6.5` | `prepareSelfHealingPlan` | description_changed | length 261 -&gt; 261 |
+| week 2026-47 | `2.6.5` → `2.6.9` | `accessibilityExpert` | description_changed | length 97 -&gt; 124 |
+| week 2026-47 | `2.6.5` → `2.6.9` | `accessibilityExpert` | annotations_changed |  |
+| week 2026-47 | `2.6.5` → `2.6.9` | `createAccessibilityAuthConfig` | input_schema_changed (schema_other) | property 'name' changed (annotations/descriptions) |
+| week 2026-47 | `2.6.5` → `2.6.9` | `fetchAccessibilityIssues` | description_changed | length 198 -&gt; 197 |
+| week 2026-47 | `2.6.5` → `2.6.9` | `fetchAccessibilityIssues` | input_schema_changed (schema_other) | property 'compareWith' changed (annotations/descriptions) |
+| week 2026-47 | `2.6.5` → `2.6.9` | `getAccessibilityAuthConfig` | input_schema_changed (schema_other) | property 'configId' changed (annotations/descriptions) |
+| week 2026-47 | `2.6.5` → `2.6.9` | `startAccessibilityScan` | input_schema_changed (schema_other) | property 'localIdentifier' added (optional); property 'scanId' added (optional); property 'advancedRules' changed (annotations/descriptions) |
+| week 2026-47 | `2.6.5` → `2.6.9` | `uploadProductRequirementFile` | description_changed | length 306 -&gt; 212 |
+| week 2026-47 | `2.6.5` → `2.6.9` | `uploadProductRequirementFile` | input_schema_changed (schema_other) | property 'file_path' changed (annotations/descriptions) |
 
 

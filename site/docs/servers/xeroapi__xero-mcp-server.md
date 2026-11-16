@@ -2,15 +2,14 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.0.17` |
+| Latest observed version | `0.0.18` |
 | Status | requires_configuration |
-| Weekly downloads | 17170 |
+| Weekly downloads | 23846 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
 
 !!! tip "Improvement hints"
-    - Consider publishing from CI with npm provenance (`npm publish --provenance`).
     - Consider listing the server in the official MCP Registry.
     - The server did not start without configuration. Consider advertising tool definitions even when credentials are missing, so clients can inspect them before configuring.
 
@@ -20,13 +19,13 @@
 
 | Signal | Value |
 |---|---|
-| `has_provenance` | False |
+| `has_provenance` | True |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 0 |
-| `median_days_between_releases` | 4.04 |
+| `releases_last_90d` | 1 |
+| `median_days_between_releases` | 4.2 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

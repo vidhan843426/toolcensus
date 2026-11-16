@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.182.2` |
+| Latest observed version | `0.185.0` |
 | Status | ok |
-| Weekly downloads | 62694 |
+| Weekly downloads | 116798 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.Softeria/ms-365-mcp-server |
-| Surface hash | `sha256:022c584a810fa647` |
+| Surface hash | `sha256:6a24891ea86cb4a5` |
 
 !!! tip "Improvement hints"
     - Consider `additionalProperties: false` on the input schema of 191 tool(s) so unexpected arguments are rejected.
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 88 |
-| `median_days_between_releases` | 0.38 |
+| `releases_last_90d` | 89 |
+| `median_days_between_releases` | 0.39 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -131,7 +131,7 @@
 | `get-mail-tips` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `e24e6317b7b8` |
 | `get-mailbox-settings` | destructiveHint, openWorldHint, readOnlyHint | no | no | `f0a56b49f504` |
 | `get-my-profile` | destructiveHint, openWorldHint, readOnlyHint | no | no | `2ba2757eb37d` |
-| `get-onenote-page-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `5a3eff6d5ce3` |
+| `get-onenote-page-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `3d3e636c57e3` |
 | `get-outlook-contact` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `334d7600bb30` |
 | `get-planner-bucket` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `4c01a20cd53e` |
 | `get-planner-plan` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `4c95d341aebc` |
@@ -223,7 +223,7 @@
 | `update-mail-rule` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `327e1a822c5c` |
 | `update-mailbox-settings` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `d29e2d1c685d` |
 | `update-my-calendar-permission` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ac6fd9fd1a5f` |
-| `update-onenote-page-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `b2f871d3666c` |
+| `update-onenote-page-content` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `6cc00e4d74c1` |
 | `update-outlook-contact` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ecb4a0edaa87` |
 | `update-planner-bucket` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `5fa733ebe954` |
 | `update-planner-plan` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `58529a22ec37` |
@@ -323,5 +323,7 @@
 | week 2026-46 | `0.178.0` → `0.182.2` | `update-todo-task` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
 | week 2026-46 | `0.178.0` → `0.182.2` | `update-todo-task-list` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
 | week 2026-46 | `0.178.0` → `0.182.2` | `verify-login` | annotations_changed |  |
+| week 2026-47 | `0.182.2` → `0.185.0` | `get-onenote-page-content` | input_schema_changed (schema_widened) | property 'includeIDs' added (optional) |
+| week 2026-47 | `0.182.2` → `0.185.0` | `update-onenote-page-content` | input_schema_changed (schema_other) | property 'body' changed (annotations/descriptions) |
 
 

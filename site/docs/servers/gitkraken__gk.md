@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `3.1.77` |
 | Status | crashed |
-| Weekly downloads | 89000 |
+| Weekly downloads | 99985 |
 | Protocol version | — |
 | Registry entry | com.gitkraken/gk-cli |
 | Surface hash | `—` |

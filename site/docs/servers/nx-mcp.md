@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.25.3` |
 | Status | ok |
-| Weekly downloads | 123474 |
+| Weekly downloads | 111316 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.nrwl/nx-console |
 | Surface hash | `sha256:ffdd28689d0ecb71` |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.21.36` |
+| Latest observed version | `0.21.37` |
 | Status | ok |
-| Weekly downloads | 666963 |
+| Weekly downloads | 681487 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.callstack/agent-device |
-| Surface hash | `sha256:fcee724dfb859c0b` |
+| Surface hash | `sha256:1c039dbc9d51a865` |
 
 !!! tip "Improvement hints"
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 62 of 62 tools.
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 65 |
+| `releases_last_90d` | 68 |
 | `median_days_between_releases` | 0.76 |
 | `repo_linked` | True |
 | `registry_listed` | True |
@@ -34,68 +34,68 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `action-button` | — | no | yes | `18e5f2426817` |
-| `alert` | — | no | yes | `0e59186c7f39` |
-| `app-switcher` | — | no | yes | `24804c524f4a` |
-| `apps` | — | no | yes | `585dec352c58` |
-| `appstate` | — | no | yes | `6c7ba800fdd1` |
-| `artifacts` | — | no | yes | `17b5155cbfa0` |
-| `audio` | — | no | yes | `184f7574977d` |
-| `back` | — | no | yes | `19e2838a6fd1` |
-| `batch` | — | yes | yes | `49b4b0c44bed` |
-| `boot` | — | no | yes | `b46e3c47d499` |
-| `capabilities` | — | no | yes | `01545c0d85f0` |
-| `click` | — | yes | yes | `c4c93433dd43` |
-| `clipboard` | — | yes | yes | `084632946368` |
-| `close` | — | no | yes | `354521e86805` |
-| `debug` | — | yes | yes | `e9d222e342a2` |
-| `devices` | — | no | yes | `fdc715c9184e` |
-| `diff` | — | yes | yes | `5f5809df57c9` |
-| `doctor` | — | no | yes | `dd84365459ca` |
-| `events` | — | no | yes | `8fdb87f6e823` |
-| `fill` | — | yes | yes | `72bd4e98c111` |
-| `find` | — | yes | yes | `9ab077aeaa25` |
-| `focus` | — | yes | yes | `c40955656652` |
-| `fold` | — | no | yes | `44033e7c39d9` |
-| `gesture` | — | yes | yes | `d1f517610c10` |
-| `get` | — | yes | yes | `c099ad5b13e4` |
-| `hardware-button` | — | yes | yes | `54d74836e565` |
+| `action-button` | — | no | yes | `e6e157ff9289` |
+| `alert` | — | no | yes | `86088395c6cd` |
+| `app-switcher` | — | no | yes | `4da7941c8fbe` |
+| `apps` | — | no | yes | `42bd849b5c7a` |
+| `appstate` | — | no | yes | `040cd4d039c5` |
+| `artifacts` | — | no | yes | `d29cc9956c4c` |
+| `audio` | — | no | yes | `7bb4166ce47b` |
+| `back` | — | no | yes | `2a598b8cbb1c` |
+| `batch` | — | yes | yes | `104b47c994af` |
+| `boot` | — | no | yes | `d1ded0b42f95` |
+| `capabilities` | — | no | yes | `b208829d87d1` |
+| `click` | — | no | yes | `7744df0e6bbe` |
+| `clipboard` | — | yes | yes | `1e136ba3f9e3` |
+| `close` | — | no | yes | `24913edff210` |
+| `debug` | — | yes | yes | `edb6b199b723` |
+| `devices` | — | no | yes | `bae9d773fc8a` |
+| `diff` | — | yes | yes | `ca12eac6b131` |
+| `doctor` | — | no | yes | `439ef955d40f` |
+| `events` | — | no | yes | `a0eff79c34e4` |
+| `fill` | — | yes | yes | `6334f6ad7968` |
+| `find` | — | yes | yes | `d43c0be558e3` |
+| `focus` | — | yes | yes | `9595e1f1abb6` |
+| `fold` | — | no | yes | `03a77f8622aa` |
+| `gesture` | — | yes | yes | `464f96ce79a6` |
+| `get` | — | yes | yes | `9925b0d3ca07` |
+| `hardware-button` | — | yes | yes | `c85baf0c37de` |
 | `help` | — | no | yes | `ad054ddc8698` |
-| `home` | — | no | yes | `b219c72e22ae` |
-| `hover` | — | yes | yes | `367575e72878` |
-| `install` | — | yes | yes | `cdaae780ee89` |
-| `install-from-source` | — | yes | yes | `2c6916dc4c28` |
-| `is` | — | yes | yes | `bff65cf780de` |
-| `keyboard` | — | no | yes | `1279b295999a` |
-| `logs` | — | no | yes | `ab1c5f263e7f` |
-| `longpress` | — | yes | yes | `197e343b93ab` |
-| `metro` | — | yes | yes | `996bce610f0d` |
-| `network` | — | no | yes | `aa4ca2dcc5b6` |
-| `open` | — | no | yes | `e3f26c483310` |
-| `orientation` | — | yes | yes | `89f67541af74` |
-| `perf` | — | yes | yes | `2c305be861c5` |
-| `press` | — | yes | yes | `dd46cc7f6e9b` |
-| `push` | — | yes | yes | `0f201cb53faf` |
-| `react-native` | — | yes | yes | `ce33d8ab280b` |
-| `record` | — | yes | yes | `471892aa3154` |
-| `reinstall` | — | yes | yes | `cc6316769723` |
-| `replay` | — | yes | yes | `f53735b837d6` |
-| `screenshot` | — | no | yes | `e865b5f7f24e` |
-| `scroll` | — | yes | yes | `4a6a2026b9e8` |
-| `session` | — | no | yes | `1d89600fedca` |
-| `settings` | — | yes | yes | `e32460352493` |
-| `shutdown` | — | no | yes | `35349d9cd64d` |
-| `snapshot` | — | no | yes | `450b4c11aec9` |
-| `swipe` | — | yes | yes | `6d82d4cb2a02` |
-| `telephony` | — | yes | yes | `001f094cb843` |
-| `test` | — | yes | yes | `10ea664a491c` |
-| `trace` | — | yes | yes | `e06b99161953` |
-| `trigger-app-event` | — | yes | yes | `3d68733fdd54` |
-| `tv-remote` | — | yes | yes | `bff91cbdf2ca` |
-| `type` | — | yes | yes | `a9a457f56adc` |
-| `uninstall` | — | yes | yes | `56d8400ada14` |
-| `viewport` | — | yes | yes | `b203e58d0177` |
-| `wait` | — | no | yes | `a3103a463517` |
+| `home` | — | no | yes | `ec74f8682e03` |
+| `hover` | — | no | yes | `ddf6860a9481` |
+| `install` | — | yes | yes | `9769cbcf4cbd` |
+| `install-from-source` | — | yes | yes | `462bb5828e45` |
+| `is` | — | yes | yes | `221ee2b40bd1` |
+| `keyboard` | — | no | yes | `6f4e582a181e` |
+| `logs` | — | no | yes | `580635f09b7c` |
+| `longpress` | — | no | yes | `14f491302ae6` |
+| `metro` | — | yes | yes | `caab4dd73fda` |
+| `network` | — | no | yes | `f80e31fc1189` |
+| `open` | — | no | yes | `87c7c38c7d29` |
+| `orientation` | — | yes | yes | `5c979a8c3ca5` |
+| `perf` | — | yes | yes | `85bb71eb9419` |
+| `press` | — | no | yes | `644167d70988` |
+| `push` | — | yes | yes | `e98002a7ef0e` |
+| `react-native` | — | yes | yes | `6f551cce8ab6` |
+| `record` | — | yes | yes | `819a969839fd` |
+| `reinstall` | — | yes | yes | `82e0463094cf` |
+| `replay` | — | yes | yes | `08ed640efb45` |
+| `screenshot` | — | no | yes | `b218fd746d7c` |
+| `scroll` | — | yes | yes | `af30481e5b97` |
+| `session` | — | no | yes | `3cdd462e0c68` |
+| `settings` | — | yes | yes | `a450ac18f23d` |
+| `shutdown` | — | no | yes | `49e727c3f3fa` |
+| `snapshot` | — | no | yes | `840d60711468` |
+| `swipe` | — | yes | yes | `c6ef4e473a36` |
+| `telephony` | — | yes | yes | `a3add2e24b16` |
+| `test` | — | yes | yes | `6e6d5d9a1d26` |
+| `trace` | — | yes | yes | `e74bdef98f0c` |
+| `trigger-app-event` | — | yes | yes | `722737f15479` |
+| `tv-remote` | — | yes | yes | `b344b239e5c2` |
+| `type` | — | yes | yes | `c5a2ffec3c5c` |
+| `uninstall` | — | yes | yes | `9f2e9c33982a` |
+| `viewport` | — | yes | yes | `adf86ee49252` |
+| `wait` | — | no | yes | `883e1d0c831f` |
 
 
 
@@ -123,5 +123,108 @@
 | week 2026-46 | `0.21.35` → `0.21.36` | `install-from-source` | description_changed | length 116 -&gt; 238 |
 | week 2026-46 | `0.21.35` → `0.21.36` | `reinstall` | description_changed | length 179 -&gt; 300 |
 | week 2026-46 | `0.21.35` → `0.21.36` | `uninstall` | description_changed | length 156 -&gt; 206 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `action-button` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `action-button` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `alert` | description_changed | length 1189 -&gt; 1167 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `alert` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `app-switcher` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `app-switcher` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `apps` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `apps` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `appstate` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `appstate` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `artifacts` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `audio` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `back` | description_changed | length 430 -&gt; 816 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `back` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `back` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `batch` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `boot` | description_changed | length 220 -&gt; 321 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `boot` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `boot` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `capabilities` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `click` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'x' added (optional); property 'y' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `click` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `clipboard` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `clipboard` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `close` | description_changed | length 576 -&gt; 798 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `close` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `debug` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `devices` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `devices` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `diff` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `diff` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `doctor` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `doctor` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `events` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `fill` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'x' added (optional); property 'y' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `fill` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `find` | description_changed | length 331 -&gt; 711 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `find` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `find` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `focus` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `fold` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `fold` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `gesture` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `get` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `hardware-button` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `hardware-button` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `home` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `home` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `hover` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'x' added (optional); property 'y' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `hover` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `install` | input_schema_changed (schema_other) | property 'deviceBaseline' added (optional); property 'deviceMode' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `install-from-source` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'retentionMs': minimum added; property 'retentionMs': maximum added; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `is` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `keyboard` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `keyboard` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `logs` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `longpress` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'x' added (optional); property 'y' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `longpress` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `metro` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `network` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `open` | description_changed | length 502 -&gt; 651 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `open` | input_schema_changed (schema_other) | property 'deviceBaseline' added (optional); property 'deviceMode' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `orientation` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `orientation` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `perf` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `press` | input_schema_changed (schema_other) | property 'label' added (optional); property 'ref' added (optional); property 'selector' added (optional); property 'x' added (optional); property 'y' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'target' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `press` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `push` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `push` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `react-native` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `record` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `record` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `reinstall` | input_schema_changed (schema_other) | property 'deviceBaseline' added (optional); property 'deviceMode' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `replay` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `replay` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `screenshot` | input_schema_changed (schema_other) | property 'captureBackend' added (optional); property 'screenMask' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `scroll` | description_changed | length 1118 -&gt; 1154 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `scroll` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `scroll` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `session` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `settings` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'app' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `shutdown` | description_changed | length 63 -&gt; 310 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `shutdown` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `shutdown` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `snapshot` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `swipe` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `telephony` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `telephony` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `test` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `test` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `trace` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `trace` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `trigger-app-event` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `trigger-app-event` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `tv-remote` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `tv-remote` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `type` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `uninstall` | input_schema_changed (schema_other) | property 'deviceBaseline' added (optional); property 'deviceMode' added (optional); property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `viewport` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `viewport` | output_schema_changed |  |
+| week 2026-47 | `0.21.36` → `0.21.37` | `wait` | description_changed | length 299 -&gt; 471 |
+| week 2026-47 | `0.21.36` → `0.21.37` | `wait` | input_schema_changed (schema_other) | property 'androidDeviceAllowlist' removed; property 'leaseId' removed; property 'runId' removed; property 'tenant' removed; property 'device' changed (annotations/descriptions) |
+| week 2026-47 | `0.21.36` → `0.21.37` | `wait` | output_schema_changed |  |
 
 

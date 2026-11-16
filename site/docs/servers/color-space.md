@@ -2,12 +2,15 @@
 
 | | |
 |---|---|
-| Latest observed version | `3.5.0` |
+| Latest observed version | `3.6.0` |
 | Status | ok |
-| Weekly downloads | 1304163 |
+| Weekly downloads | 1202838 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.colorjs/color-space |
 | Surface hash | `sha256:831e2177f0529bca` |
+
+!!! tip "Improvement hints"
+    - Consider publishing from CI with npm provenance (`npm publish --provenance`).
 
 
 
@@ -15,13 +18,13 @@
 
 | Signal | Value |
 |---|---|
-| `has_provenance` | True |
+| `has_provenance` | False |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 4 |
-| `median_days_between_releases` | 1.13 |
+| `releases_last_90d` | 5 |
+| `median_days_between_releases` | 1.26 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

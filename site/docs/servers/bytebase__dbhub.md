@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.6.0` |
+| Latest observed version | `1.6.1` |
 | Status | requires_configuration |
-| Weekly downloads | 55874 |
+| Weekly downloads | 72674 |
 | Protocol version | — |
 | Registry entry | io.github.bytebase/dbhub |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 8 |
 | `maintainer_count` | 4 |
-| `releases_last_90d` | 11 |
-| `median_days_between_releases` | 3.65 |
+| `releases_last_90d` | 12 |
+| `median_days_between_releases` | 3.78 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

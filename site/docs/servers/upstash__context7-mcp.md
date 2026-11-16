@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.6.0` |
+| Latest observed version | `4.7.0` |
 | Status | ok |
-| Weekly downloads | 1024328 |
+| Weekly downloads | 1209586 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
 | Surface hash | `sha256:ccfc6233c4945f1c` |
@@ -26,7 +26,7 @@
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 8 |
 | `releases_last_90d` | 22 |
-| `median_days_between_releases` | 3.2 |
+| `median_days_between_releases` | 3.18 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

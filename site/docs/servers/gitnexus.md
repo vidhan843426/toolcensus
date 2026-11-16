@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.6.12` |
 | Status | requires_configuration |
-| Weekly downloads | 51505 |
+| Weekly downloads | 65230 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -25,7 +25,7 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 39 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 346 |
+| `releases_last_90d` | 351 |
 | `median_days_between_releases` | 0.08 |
 | `repo_linked` | True |
 | `registry_listed` | False |

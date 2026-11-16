@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.10.0` |
+| Latest observed version | `2.10.1` |
 | Status | ok |
-| Weekly downloads | 16367 |
+| Weekly downloads | 14717 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.ihor-sokoliuk/mcp-searxng |
 | Surface hash | `sha256:98a544393a158588` |
@@ -24,7 +24,7 @@
 | `direct_dependency_count` | 14 |
 | `maintainer_count` | 1 |
 | `releases_last_90d` | 15 |
-| `median_days_between_releases` | 2.05 |
+| `median_days_between_releases` | 2.07 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.29.0` |
+| Latest observed version | `0.30.1` |
 | Status | requires_configuration |
-| Weekly downloads | 23956 |
+| Weekly downloads | 19895 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |

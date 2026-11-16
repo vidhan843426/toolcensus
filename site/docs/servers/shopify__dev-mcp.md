@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.18.0` |
 | Status | ok |
-| Weekly downloads | 41903 |
+| Weekly downloads | 36523 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
 | Surface hash | `sha256:72923575196c4328` |

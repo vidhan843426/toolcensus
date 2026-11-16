@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `30.1.0` |
+| Latest observed version | `30.2.0` |
 | Status | ok |
-| Weekly downloads | 13311 |
+| Weekly downloads | 11928 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.IgniteUI/igniteui-theming |
-| Surface hash | `sha256:326dc2231a13dbcb` |
+| Surface hash | `sha256:7a928fdcf8d518fb` |
 
 !!! tip "Improvement hints"
     - Consider adding tool annotations (`readOnlyHint`, `destructiveHint`, ...) to 15 of 15 tools.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 3 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 15 |
-| `median_days_between_releases` | 1.24 |
+| `releases_last_90d` | 16 |
+| `median_days_between_releases` | 1.25 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -35,7 +35,7 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `create_component_theme` | — | yes | no | `f7eeb0aa0278` |
+| `create_component_theme` | — | yes | no | `5df91361726e` |
 | `create_custom_palette` | — | yes | no | `72f72dd994ff` |
 | `create_elevations` | — | no | no | `aaefa6dba75d` |
 | `create_palette` | — | yes | no | `82c95576b3fd` |
@@ -74,5 +74,6 @@
 | week 2026-46 | `30.0.0` → `30.1.0` | `set_roundness` | input_schema_changed (schema_widened) | additionalProperties loosened |
 | week 2026-46 | `30.0.0` → `30.1.0` | `set_size` | input_schema_changed (schema_widened) | additionalProperties loosened |
 | week 2026-46 | `30.0.0` → `30.1.0` | `set_spacing` | input_schema_changed (schema_widened) | additionalProperties loosened |
+| week 2026-47 | `30.1.0` → `30.2.0` | `create_component_theme` | description_changed | length 6841 -&gt; 7784 |
 
 

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.7.0` |
+| Latest observed version | `4.8.0` |
 | Status | ok |
-| Weekly downloads | 24106 |
+| Weekly downloads | 16905 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.brightdata/brightdata-mcp |
-| Surface hash | `sha256:103643ed20736458` |
+| Surface hash | `sha256:2ced05aebd3f4499` |
 
 
 
@@ -20,8 +20,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 7 |
-| `releases_last_90d` | 14 |
-| `median_days_between_releases` | 3.84 |
+| `releases_last_90d` | 15 |
+| `median_days_between_releases` | 3.54 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
@@ -40,8 +40,8 @@
 | `perplexity_ai_insights` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `96204e9a7d0b` |
 | `refresh_scrapers` | destructiveHint, openWorldHint, readOnlyHint | no | yes | `df6c865ed4d1` |
 | `run_scraper` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `50757fa2f8ed` |
-| `scrape_as_markdown` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `4c8aa083e313` |
-| `scrape_batch` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `5cc5fe54b59e` |
+| `scrape_as_markdown` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `d3336813272b` |
+| `scrape_batch` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `ab69e432184b` |
 | `scraping_browser_click_ref` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `b1f757365ffc` |
 | `scraping_browser_fill_form` | destructiveHint, openWorldHint, readOnlyHint | yes | yes | `f78842df8636` |
 | `scraping_browser_get_html` | destructiveHint, openWorldHint, readOnlyHint | no | yes | `98b944add1de` |
@@ -77,5 +77,8 @@
 | week 2026-46 | `4.3.0` → `4.7.0` | `search_engine` | input_schema_changed (schema_other) | property 'query': minLength added; property 'page' changed (annotations/descriptions) |
 | week 2026-46 | `4.3.0` → `4.7.0` | `search_engine_batch` | description_changed | length 220 -&gt; 220 |
 | week 2026-46 | `4.3.0` → `4.7.0` | `search_engine_batch` | input_schema_changed (schema_other) | property 'queries' changed (annotations/descriptions) |
+| week 2026-47 | `4.7.0` → `4.8.0` | `scrape_as_markdown` | description_changed | length 492 -&gt; 636 |
+| week 2026-47 | `4.7.0` → `4.8.0` | `scrape_as_markdown` | input_schema_changed (schema_widened) | property 'snapshot_id' added (optional); property 'start' added (optional) |
+| week 2026-47 | `4.7.0` → `4.8.0` | `scrape_batch` | description_changed | length 615 -&gt; 827 |
 
 

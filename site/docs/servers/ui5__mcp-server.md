@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.3.2` |
+| Latest observed version | `0.3.3` |
 | Status | ok |
-| Weekly downloads | 103538 |
+| Weekly downloads | 94288 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.UI5/mcp-server |
 | Surface hash | `sha256:1fba53a36e015611` |
@@ -24,7 +24,7 @@
 | `direct_dependency_count` | 15 |
 | `maintainer_count` | 1 |
 | `releases_last_90d` | 6 |
-| `median_days_between_releases` | 10.62 |
+| `median_days_between_releases` | 10.96 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

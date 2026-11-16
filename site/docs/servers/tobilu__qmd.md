@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.8.3` |
 | Status | not_mcp |
-| Weekly downloads | 64850 |
+| Weekly downloads | 58915 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -23,7 +23,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 1 |
+| `releases_last_90d` | 0 |
 | `median_days_between_releases` | 1.83 |
 | `repo_linked` | True |
 | `registry_listed` | False |

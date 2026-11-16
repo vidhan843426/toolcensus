@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.0.1` |
 | Status | crashed |
-| Weekly downloads | 22376 |
+| Weekly downloads | 32449 |
 | Protocol version | — |
 | Registry entry | com.microsoft/powerbi-modeling-mcp |
 | Surface hash | `—` |

@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.4.0` |
+| Latest observed version | `2.5.0` |
 | Status | ok |
-| Weekly downloads | 45019 |
+| Weekly downloads | 39920 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:1bba0e3657e23c16` |
+| Surface hash | `sha256:362ddef48a849943` |
 
 !!! tip "Improvement hints"
     - Consider publishing from CI with npm provenance (`npm publish --provenance`).
@@ -25,8 +25,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 5 |
-| `median_days_between_releases` | 2.83 |
+| `releases_last_90d` | 6 |
+| `median_days_between_releases` | 3.05 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -36,7 +36,7 @@
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
-| `browser` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `d9483c7c69a8` |
+| `browser` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `261b56e056fb` |
 
 
 
@@ -57,5 +57,6 @@
 | week 2026-45 | `0.1.3` → `2.3.0` | `browser_snapshot` | tool_removed |  |
 | week 2026-45 | `0.1.3` → `2.3.0` | `browser_type` | tool_removed |  |
 | week 2026-45 | `0.1.3` → `2.3.0` | `browser_wait` | tool_removed |  |
+| week 2026-47 | `2.4.0` → `2.5.0` | `browser` | description_changed | length 838 -&gt; 853 |
 
 

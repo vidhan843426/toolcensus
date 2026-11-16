@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.2.1` |
+| Latest observed version | `2.3.0` |
 | Status | ok |
-| Weekly downloads | 435347 |
+| Weekly downloads | 326122 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:7a8ef3235d03ca51` |
+| Surface hash | `sha256:5461af62472fa6d8` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -22,10 +22,10 @@
 | `has_provenance` | True |
 | `has_install_scripts` | False |
 | `install_scripts` | — |
-| `direct_dependency_count` | 7 |
+| `direct_dependency_count` | 6 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 7 |
-| `median_days_between_releases` | 12.95 |
+| `releases_last_90d` | 8 |
+| `median_days_between_releases` | 12.72 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -40,7 +40,7 @@
 | `get-env` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1bfe300a1c6d` |
 | `get-header-params` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `81004e0be698` |
 | `get-resource-links` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `b1a37f5759af` |
-| `get-resource-reference` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `1e9f3b67e454` |
+| `get-resource-reference` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `a676304f5156` |
 | `get-structured-content` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `e01899dbf0e0` |
 | `get-sum` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | no | `c0bfe393aeb2` |
 | `get-tiny-image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | no | `d167988219fd` |
@@ -75,5 +75,6 @@
 | week 2026-46 | `2.1.0` → `2.2.1` | `trigger-log-messages` | other_changed | title or other top-level field changed |
 | week 2026-46 | `2.1.0` → `2.2.1` | `trigger-long-running-operation` | other_changed | title or other top-level field changed |
 | week 2026-46 | `2.1.0` → `2.2.1` | `trigger-resource-update` | other_changed | title or other top-level field changed |
+| week 2026-47 | `2.2.1` → `2.3.0` | `get-resource-reference` | input_schema_changed (schema_other) | property 'resourceId' changed (annotations/descriptions) |
 
 

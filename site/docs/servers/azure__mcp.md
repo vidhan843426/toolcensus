@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `4.0.0-beta.6` |
+| Latest observed version | `4.0.0-beta.7` |
 | Status | crashed |
-| Weekly downloads | 202327 |
+| Weekly downloads | 173987 |
 | Protocol version | — |
 | Registry entry | com.microsoft/azure |
 | Surface hash | `—` |
@@ -24,8 +24,8 @@
 | `install_scripts` | ['postinstall'] |
 | `direct_dependency_count` | 6 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 24 |
-| `median_days_between_releases` | 2.19 |
+| `releases_last_90d` | 23 |
+| `median_days_between_releases` | 2.2 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

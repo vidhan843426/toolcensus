@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.6.10` |
+| Latest observed version | `0.6.11` |
 | Status | ok |
-| Weekly downloads | 23798 |
+| Weekly downloads | 33735 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:6b4fd9d226e0a9e3` |
+| Surface hash | `sha256:85130e88c7fd89be` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -22,9 +22,9 @@
 | `has_install_scripts` | False |
 | `install_scripts` | — |
 | `direct_dependency_count` | 5 |
-| `maintainer_count` | 3 |
-| `releases_last_90d` | 13 |
-| `median_days_between_releases` | 4.29 |
+| `maintainer_count` | 4 |
+| `releases_last_90d` | 14 |
+| `median_days_between_releases` | 4.01 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -43,13 +43,13 @@
 | `meshy_creative_lab` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `c954b91bca02` |
 | `meshy_download_model` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `b573115f09bb` |
 | `meshy_get_task_status` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `672d88f035b0` |
-| `meshy_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `bd51bc8759d6` |
+| `meshy_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `db9c14c941e1` |
 | `meshy_image_to_image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `4ca663814a66` |
 | `meshy_list_animations` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `1c276742f78d` |
 | `meshy_list_models` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `c974bbeb0d5d` |
 | `meshy_list_tasks` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `030057d2719a` |
 | `meshy_list_usage` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `9782ee2594b2` |
-| `meshy_multi_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `186b75d99aa8` |
+| `meshy_multi_image_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `7d721b787cce` |
 | `meshy_process_multicolor` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `930963cb487a` |
 | `meshy_remesh` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `c7f635438ef7` |
 | `meshy_repair_printability` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `7f753f5544af` |
@@ -58,7 +58,7 @@
 | `meshy_rig` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `4ff7c1b4decf` |
 | `meshy_send_to_slicer` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `bb41bc9e1728` |
 | `meshy_text_to_3d` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `5b29ff6a68f4` |
-| `meshy_text_to_3d_refine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `d75e7c2af17d` |
+| `meshy_text_to_3d_refine` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `52e5793f0ee5` |
 | `meshy_text_to_image` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `9e49ccae3b14` |
 | `meshy_text_to_motion` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | yes | yes | `0e29f59a72c4` |
 | `meshy_uv_unwrap` | destructiveHint, idempotentHint, openWorldHint, readOnlyHint | no | yes | `2a1b8837af17` |
@@ -83,5 +83,8 @@
 | week 2026-46 | `0.6.7` → `0.6.10` | `meshy_text_to_3d` | input_schema_changed (schema_other) | property 'ai_model' changed (annotations/descriptions) |
 | week 2026-46 | `0.6.7` → `0.6.10` | `meshy_text_to_3d_refine` | input_schema_changed (schema_other) | property 'texture_resolution' changed (annotations/descriptions) |
 | week 2026-46 | `0.6.7` → `0.6.10` | `meshy_text_to_image` | input_schema_changed (schema_other) | property 'aspect_ratio' changed (annotations/descriptions) |
+| week 2026-47 | `0.6.10` → `0.6.11` | `meshy_image_to_3d` | input_schema_changed (schema_other) | property 'texture_image_url' changed (annotations/descriptions) |
+| week 2026-47 | `0.6.10` → `0.6.11` | `meshy_multi_image_to_3d` | input_schema_changed (schema_other) | property 'texture_image_url' changed (annotations/descriptions) |
+| week 2026-47 | `0.6.10` → `0.6.11` | `meshy_text_to_3d_refine` | input_schema_changed (schema_other) | property 'texture_image_url' changed (annotations/descriptions) |
 
 

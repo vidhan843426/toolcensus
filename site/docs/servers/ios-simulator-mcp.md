@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.2.0` |
+| Latest observed version | `2.2.1` |
 | Status | ok |
-| Weekly downloads | 11342 |
+| Weekly downloads | 14684 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:b5430252c745a3db` |
+| Surface hash | `sha256:b8aa1c0c8c905c46` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -24,8 +24,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 3 |
-| `median_days_between_releases` | 13.54 |
+| `releases_last_90d` | 2 |
+| `median_days_between_releases` | 13.68 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -50,11 +50,15 @@
 | `ui_find_element` | openWorldHint, readOnlyHint | yes | no | `25b32c920835` |
 | `ui_swipe` | openWorldHint, readOnlyHint | yes | no | `f691c5790650` |
 | `ui_tap` | openWorldHint, readOnlyHint | yes | no | `20334fd59a35` |
-| `ui_type` | openWorldHint, readOnlyHint | yes | no | `3423880718e2` |
+| `ui_type` | openWorldHint, readOnlyHint | yes | no | `e6d9105028b7` |
 | `ui_view` | openWorldHint, readOnlyHint | no | no | `46b93982d9bb` |
 
 
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-47 | `2.2.0` → `2.2.1` | `ui_type` | input_schema_changed (schema_other) | property 'method' changed (annotations/descriptions) |
+
+

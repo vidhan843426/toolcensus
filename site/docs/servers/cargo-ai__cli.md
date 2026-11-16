@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.0.146` |
+| Latest observed version | `1.0.154` |
 | Status | crashed |
-| Weekly downloads | 66012 |
+| Weekly downloads | 111012 |
 | Protocol version | — |
 | Registry entry | io.github.getcargohq/cargo |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 16 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 91 |
-| `median_days_between_releases` | 0.77 |
+| `releases_last_90d` | 89 |
+| `median_days_between_releases` | 0.76 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

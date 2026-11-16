@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.1.2` |
+| Latest observed version | `0.1.3` |
 | Status | crashed |
-| Weekly downloads | 66514 |
+| Weekly downloads | 57985 |
 | Protocol version | — |
 | Registry entry | io.github.containers/kubernetes-mcp-server |
 | Surface hash | `—` |
@@ -20,8 +20,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 6 |
-| `median_days_between_releases` | 5.86 |
+| `releases_last_90d` | 7 |
+| `median_days_between_releases` | 5.89 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

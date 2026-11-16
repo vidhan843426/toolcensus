@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `2.7.0` |
 | Status | crashed |
-| Weekly downloads | 130486 |
+| Weekly downloads | 75873 |
 | Protocol version | — |
 | Registry entry | com.xcodebuildmcp/XcodeBuildMCP |
 | Surface hash | `—` |

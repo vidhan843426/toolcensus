@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `5.5.0` |
+| Latest observed version | `6.0.4` |
 | Status | requires_configuration |
-| Weekly downloads | 18786 |
+| Weekly downloads | 46000 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -25,7 +25,7 @@
 | `direct_dependency_count` | 21 |
 | `maintainer_count` | 1 |
 | `releases_last_90d` | 16 |
-| `median_days_between_releases` | 5.1 |
+| `median_days_between_releases` | 5.11 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 

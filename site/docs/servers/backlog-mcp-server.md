@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.23.3` |
 | Status | requires_configuration |
-| Weekly downloads | 32642 |
+| Weekly downloads | 12482 |
 | Protocol version | — |
 | Registry entry | not listed |
 | Surface hash | `—` |
@@ -24,7 +24,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 10 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 21 |
+| `releases_last_90d` | 18 |
 | `median_days_between_releases` | 2.03 |
 | `repo_linked` | True |
 | `registry_listed` | False |

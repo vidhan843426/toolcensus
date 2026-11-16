@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.4.1` |
 | Status | ok |
-| Weekly downloads | 28839 |
+| Weekly downloads | 14315 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.pijusz/mcp-gsc |
 | Surface hash | `sha256:9f998ca43d76bec0` |

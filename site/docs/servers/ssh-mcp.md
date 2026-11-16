@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `2.23.1` |
+| Latest observed version | `2.26.0` |
 | Status | ok |
-| Weekly downloads | 15831 |
+| Weekly downloads | 19654 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:6d40369ad1d85ce3` |
+| Surface hash | `sha256:54374ec7b1a52400` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -25,7 +25,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 9 |
 | `maintainer_count` | 1 |
-| `releases_last_90d` | 46 |
+| `releases_last_90d` | 43 |
 | `median_days_between_releases` | 1.12 |
 | `repo_linked` | True |
 | `registry_listed` | False |
@@ -39,7 +39,7 @@
 | `close-session` | destructiveHint | yes | no | `a78ba6e9da61` |
 | `list-connections` | readOnlyHint | no | no | `fc9c5b77d9ee` |
 | `list-sessions` | readOnlyHint | no | no | `c092d6f94585` |
-| `open-session` | — | yes | no | `875ec6804b0f` |
+| `open-session` | — | yes | no | `bd23a5cca7cd` |
 | `privileged-command` | destructiveHint | yes | no | `f832e0781dbf` |
 | `read-command` | readOnlyHint | yes | no | `c1b2859faadb` |
 | `read-session-output` | readOnlyHint | yes | no | `e0197ad018e7` |
@@ -56,4 +56,8 @@
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-47 | `2.23.1` → `2.26.0` | `open-session` | input_schema_changed (schema_widened) | property 'ttlMs' added (optional) |
+
+

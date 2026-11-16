@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.7.0` |
+| Latest observed version | `0.8.0` |
 | Status | ok |
-| Weekly downloads | 58587 |
+| Weekly downloads | 67120 |
 | Protocol version | 2025-11-25 |
 | Registry entry | not listed |
-| Surface hash | `sha256:17e0396109c5f888` |
+| Surface hash | `sha256:181760c603baffa8` |
 
 !!! tip "Improvement hints"
     - Consider listing the server in the official MCP Registry.
@@ -25,8 +25,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 2 |
 | `maintainer_count` | 6 |
-| `releases_last_90d` | 6 |
-| `median_days_between_releases` | 8.07 |
+| `releases_last_90d` | 7 |
+| `median_days_between_releases` | 8.43 |
 | `repo_linked` | True |
 | `registry_listed` | False |
 
@@ -41,7 +41,7 @@
 | `device_close_app` | — | yes | no | `94cf4eee1864` |
 | `device_context` | — | yes | no | `e7ef1b0765ca` |
 | `device_dismiss_alert` | — | yes | no | `6df945ef7004` |
-| `device_dismiss_keyboard` | — | no | no | `93b01b97a7fe` |
+| `device_dismiss_keyboard` | — | no | no | `d9ee6f4c9a5d` |
 | `device_generate_locators` | readOnlyHint | no | no | `4f811db237da` |
 | `device_get_alert_text` | readOnlyHint | no | no | `e130f651bc48` |
 | `device_get_element_text` | — | no | no | `e01737cd7c71` |
@@ -51,17 +51,17 @@
 | `device_logs` | readOnlyHint | no | no | `63b24bbf0c59` |
 | `device_long_press` | — | no | no | `2d5937e8be0b` |
 | `device_open_app` | — | yes | no | `ecf0431c7535` |
-| `device_press_button` | — | yes | no | `4b5a388d6275` |
+| `device_press_button` | — | yes | no | `620d2e03ffcf` |
 | `device_screen_recording` | — | yes | no | `5876a46dd012` |
 | `device_screenshot` | readOnlyHint | no | no | `e745c4b96536` |
-| `device_scroll_to_element` | — | no | no | `5a40553d5a9d` |
+| `device_scroll_to_element` | — | no | no | `9c5ffae74fa0` |
 | `device_select_device` | — | yes | no | `7efb06bf159a` |
 | `device_snapshot` | readOnlyHint | no | no | `5780509fc0c4` |
 | `device_swipe` | — | yes | no | `1010d605e45c` |
 | `device_tap_coordinates` | — | yes | no | `a3808b757467` |
 | `device_tap_element` | — | no | no | `39bf55108765` |
 | `device_type` | — | yes | no | `3fc178b92b30` |
-| `device_wait_for` | — | no | no | `60aa083978c9` |
+| `device_wait_for` | — | no | no | `f8f62f9d751d` |
 | `hermes_cdp` | — | yes | no | `88c82063b94e` |
 | `hermes_targets` | readOnlyHint | no | no | `052134ef6746` |
 | `webview_cdp` | — | yes | no | `5208abec0736` |
@@ -73,5 +73,10 @@
 | Observed | Version | Tool | Change | Details |
 |---|---|---|---|---|
 | week 2026-45 | `0.5.0` → `0.7.0` | `device_clipboard` | description_changed | length 153 -&gt; 180 |
+| week 2026-47 | `0.7.0` → `0.8.0` | `device_dismiss_keyboard` | description_changed | length 103 -&gt; 222 |
+| week 2026-47 | `0.7.0` → `0.8.0` | `device_press_button` | description_changed | length 83 -&gt; 175 |
+| week 2026-47 | `0.7.0` → `0.8.0` | `device_scroll_to_element` | description_changed | length 191 -&gt; 285 |
+| week 2026-47 | `0.7.0` → `0.8.0` | `device_scroll_to_element` | input_schema_changed (schema_other) | property 'direction': enum values added; property 'maxAttempts' changed (annotations/descriptions) |
+| week 2026-47 | `0.7.0` → `0.8.0` | `device_wait_for` | description_changed | length 132 -&gt; 185 |
 
 

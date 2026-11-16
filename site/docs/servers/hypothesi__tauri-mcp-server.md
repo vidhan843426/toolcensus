@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `0.13.2` |
 | Status | ok |
-| Weekly downloads | 11609 |
+| Weekly downloads | 27476 |
 | Protocol version | 2024-11-05 |
 | Registry entry | io.github.hypothesi/mcp-server-tauri |
 | Surface hash | `sha256:12d10318b30c0cb2` |

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.16.1` |
+| Latest observed version | `0.17.0` |
 | Status | requires_configuration |
-| Weekly downloads | 243998 |
+| Weekly downloads | 214662 |
 | Protocol version | — |
 | Registry entry | com.supabase/mcp |
 | Surface hash | `—` |
@@ -23,8 +23,8 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 7 |
 | `maintainer_count` | 2 |
-| `releases_last_90d` | 7 |
-| `median_days_between_releases` | 2.84 |
+| `releases_last_90d` | 8 |
+| `median_days_between_releases` | 2.86 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 

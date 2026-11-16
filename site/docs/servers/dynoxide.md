@@ -4,7 +4,7 @@
 |---|---|
 | Latest observed version | `1.6.0` |
 | Status | ok |
-| Weekly downloads | 18517 |
+| Weekly downloads | 20484 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.nubo-db/dynoxide |
 | Surface hash | `sha256:3ae5ea538816844d` |

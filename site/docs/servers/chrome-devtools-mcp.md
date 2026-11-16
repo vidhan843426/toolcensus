@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.12.0` |
+| Latest observed version | `1.13.0` |
 | Status | ok |
-| Weekly downloads | 1887698 |
+| Weekly downloads | 2497116 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.ChromeDevTools/chrome-devtools-mcp |
-| Surface hash | `sha256:91887292495d3ae5` |
+| Surface hash | `sha256:3407ce9aa0d44bce` |
 
 
 
@@ -20,14 +20,14 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 0 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 6 |
-| `median_days_between_releases` | 5.29 |
+| `releases_last_90d` | 7 |
+| `median_days_between_releases` | 5.58 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
 
 
-## Tools (32)
+## Tools (33)
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
@@ -50,22 +50,30 @@
 | `navigate_page` | readOnlyHint | yes | yes | `74ba9498f961` |
 | `new_page` | readOnlyHint | yes | yes | `debd9f89eb2a` |
 | `performance_analyze_insight` | readOnlyHint | yes | yes | `f155d05fb475` |
-| `performance_start_trace` | readOnlyHint | yes | yes | `cacc30e79764` |
+| `performance_start_trace` | readOnlyHint | yes | yes | `37e876a0cc19` |
 | `performance_stop_trace` | readOnlyHint | yes | yes | `52aa9f649258` |
-| `press_key` | readOnlyHint | yes | yes | `fcdb2cdc4f1a` |
+| `press_key` | readOnlyHint | yes | yes | `317558a0858f` |
 | `resize_page` | readOnlyHint | yes | yes | `3e266b3ee533` |
 | `screencast_start` | readOnlyHint | yes | yes | `a1a42df994a8` |
 | `screencast_stop` | readOnlyHint | yes | yes | `54030d4a8c85` |
 | `select_page` | readOnlyHint | yes | yes | `e2e65a2963bf` |
+| `set_logpoints` | readOnlyHint | yes | yes | `91cf9f244253` |
 | `take_heapsnapshot` | readOnlyHint | yes | yes | `6bf0c536a019` |
 | `take_screenshot` | readOnlyHint | yes | yes | `b64d774d3770` |
 | `take_snapshot` | readOnlyHint | yes | yes | `4e54a6c4b866` |
 | `type_text` | readOnlyHint | yes | yes | `0602a661ed3d` |
 | `upload_file` | readOnlyHint | yes | yes | `ab7f2dbb65c5` |
-| `wait_for` | readOnlyHint | yes | yes | `439dd376a5b0` |
+| `wait_for` | readOnlyHint | yes | yes | `7e0df49572f3` |
 
 
 
 ## Change history
 
-No tool-definition changes observed.
+| Observed | Version | Tool | Change | Details |
+|---|---|---|---|---|
+| week 2026-47 | `1.12.0` → `1.13.0` | `set_logpoints` | tool_added |  |
+| week 2026-47 | `1.12.0` → `1.13.0` | `performance_start_trace` | input_schema_changed (schema_other) | property 'ignoreCache' changed (annotations/descriptions) |
+| week 2026-47 | `1.12.0` → `1.13.0` | `press_key` | description_changed | length 166 -&gt; 323 |
+| week 2026-47 | `1.12.0` → `1.13.0` | `wait_for` | input_schema_changed (schema_other) | property 'text' changed (annotations/descriptions) |
+
+

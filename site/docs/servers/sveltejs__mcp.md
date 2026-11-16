@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `0.1.28` |
+| Latest observed version | `0.1.30` |
 | Status | crashed |
-| Weekly downloads | 69205 |
+| Weekly downloads | 107816 |
 | Protocol version | — |
 | Registry entry | dev.svelte/mcp |
 | Surface hash | `—` |
@@ -20,7 +20,7 @@
 | `install_scripts` | — |
 | `direct_dependency_count` | 3 |
 | `maintainer_count` | 3 |
-| `releases_last_90d` | 3 |
+| `releases_last_90d` | 4 |
 | `median_days_between_releases` | 3.71 |
 | `repo_linked` | True |
 | `registry_listed` | True |

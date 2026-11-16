@@ -2,15 +2,15 @@
 
 | | |
 |---|---|
-| Latest observed version | `1.0.14` |
+| Latest observed version | `1.0.17` |
 | Status | ok |
-| Weekly downloads | 13226 |
+| Weekly downloads | 49105 |
 | Protocol version | 2025-11-25 |
 | Registry entry | io.github.mobile-next/mobile-mcp |
-| Surface hash | `sha256:b70e0ea28e2645f6` |
+| Surface hash | `sha256:d6045311be6d43bb` |
 
 !!! tip "Improvement hints"
-    - Consider `additionalProperties: false` on the input schema of 31 tool(s) so unexpected arguments are rejected.
+    - Consider `additionalProperties: false` on the input schema of 32 tool(s) so unexpected arguments are rejected.
 
 
 
@@ -24,19 +24,20 @@
 | `direct_dependency_count` | 13 |
 | `maintainer_count` | 2 |
 | `releases_last_90d` | 15 |
-| `median_days_between_releases` | 6.15 |
+| `median_days_between_releases` | 6.09 |
 | `repo_linked` | True |
 | `registry_listed` | True |
 
 
 
-## Tools (34)
+## Tools (35)
 
 | Tool | Annotations | Required declared | additionalProperties false | Tool hash |
 |---|---|---|---|---|
 | `get_more_tools` | openWorldHint, readOnlyHint | yes | no | `9d669d1a4804` |
 | `mobile_allocate_remote_device` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `8dd6d4de72c9` |
-| `mobile_batch_commands` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `2c8f354b7f10` |
+| `mobile_batch_commands` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `0726328afe00` |
+| `mobile_clear_app_data` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `44ff5e7146aa` |
 | `mobile_click_on_screen_at_coordinates` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `524fde81aedb` |
 | `mobile_clipboard` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `ece454381f8d` |
 | `mobile_double_tap_on_screen` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `a07db8d2c6ae` |
@@ -51,7 +52,7 @@
 | `mobile_list_apps` | openWorldHint, readOnlyHint | yes | no | `4e1a15e389e0` |
 | `mobile_list_available_devices` | openWorldHint, readOnlyHint | no | no | `64dfd9fe3588` |
 | `mobile_list_crashes` | openWorldHint, readOnlyHint | yes | no | `68182364f2da` |
-| `mobile_list_elements_on_screen` | openWorldHint, readOnlyHint | yes | no | `feef455b5969` |
+| `mobile_list_elements_on_screen` | openWorldHint, readOnlyHint | yes | no | `cd515f13440f` |
 | `mobile_list_remote_devices` | openWorldHint, readOnlyHint | no | no | `d80aa153a4ef` |
 | `mobile_login_to_cloud_provider` | destructiveHint, openWorldHint, readOnlyHint | no | no | `d8d4a602cbe4` |
 | `mobile_long_press_on_screen_at_coordinates` | destructiveHint, openWorldHint, readOnlyHint | yes | no | `b2fed38a53ec` |

@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| Latest observed version | `11.138.0` |
+| Latest observed version | `11.143.0` |
 | Status | requires_configuration |
-| Weekly downloads | 20719 |
+| Weekly downloads | 12934 |
 | Protocol version | — |
 | Registry entry | io.github.asklokesh/loki-mode |
 | Surface hash | `—` |
